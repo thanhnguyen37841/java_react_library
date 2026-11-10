@@ -1,0 +1,22 @@
+databaseChangeLog:
+  - changeSet:
+      id: 4
+      author: dev
+      changes:
+        - createTable:
+            tableName: change_email_tokens
+            columns:
+              - column: { name: id, type: BIGINT, autoIncrement: true, constraints: { primaryKey: true } }
+              - column: { name: new_email, type: VARCHAR(255), constraints: { nullable: false } }
+              - column: { name: code, type: VARCHAR(6), constraints: { nullable: false } }
+              - column: { name: expiry_date, type: DATETIME, constraints: { nullable: false } }
+              - column: { name: user_id, type: BIGINT, constraints: { nullable: false } }
+              - column: { name: created_at, type: DATETIME }
+              - column: { name: updated_at, type: DATETIME }
+        - addForeignKeyConstraint: { baseTableName: change_email_tokens, baseColumnNames: user_id, referencedTableName: users, referencedColumnNames: id, constraintName: fk_change_email_tokens_user_id }
+        - createIndex:
+            tableName: change_email_tokens
+            indexName: idx_change_email_tokens_user_code
+            columns:
+              - column: { name: user_id }
+              - column: { name: code }

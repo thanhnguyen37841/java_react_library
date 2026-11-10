@@ -1,0 +1,111 @@
+
+databaseChangeLog:
+  - changeSet:
+      id: 021-split-paper-borrow-permissions
+      author: dev
+      changes:
+        - sql:
+            sql: |
+              INSERT INTO permissions
+                (name, description, created_at, updated_at)
+              SELECT
+                'BORROW_APPROVE',
+                'Duyệt yêu cầu mượn sách giấy',
+                CURRENT_TIMESTAMP,
+                CURRENT_TIMESTAMP
+              WHERE NOT EXISTS (
+                SELECT 1 FROM permissions
+                WHERE name = 'BORROW_APPROVE'
+              );
+
+              INSERT INTO permissions
+                (name, description, created_at, updated_at)
+              SELECT
+                'BORROW_REJECT',
+                'Từ chối yêu cầu mượn sách giấy',
+                CURRENT_TIMESTAMP,
+                CURRENT_TIMESTAMP
+              WHERE NOT EXISTS (
+                SELECT 1 FROM permissions
+                WHERE name = 'BORROW_REJECT'
+              );
+
+              INSERT INTO permissions
+                (name, description, created_at, updated_at)
+              SELECT
+                'BORROW_HANDOVER',
+                'Xác nhận bàn giao sách giấy',
+                CURRENT_TIMESTAMP,
+                CURRENT_TIMESTAMP
+              WHERE NOT EXISTS (
+                SELECT 1 FROM permissions
+                WHERE name = 'BORROW_HANDOVER'
+              );
+
+              -- Giữ nguyên quyền của các Role đã có BORROW_CREATE.
+              INSERT INTO role_permissions (role_id, permission_id)
+              SELECT DISTINCT rp.role_id, p_new.id
+              FROM role_permissions rp
+              JOIN permissions p_old
+                ON p_old.id = rp.permission_id
+               AND p_old.name = 'BORROW_CREATE'
+              JOIN permissions p_new
+                ON p_new.name IN (
+                  'BORROW_APPROVE',
+                  'BORROW_REJECT',
+                  'BORROW_HANDOVER'
+                )
+              WHERE NOT EXISTS (
+                SELECT 1
+                FROM role_permissions existing_rp
+                WHERE existing_rp.role_id = rp.role_id
+                  AND existing_rp.permission_id = p_new.id
+              );
+
+              -- Giữ nguyên quyền của các nhóm quyền đã có BORROW_CREATE.
+              INSERT INTO permission_group_permissions
+                (group_id, permission_id)
+              SELECT DISTINCT gp.group_id, p_new.id
+              FROM permission_group_permissions gp
+              JOIN permissions p_old
+                ON p_old.id = gp.permission_id
+               AND p_old.name = 'BORROW_CREATE'
+              JOIN permissions p_new
+                ON p_new.name IN (
+                  'BORROW_APPROVE',
+                  'BORROW_REJECT',
+                  'BORROW_HANDOVER'
+                )
+              WHERE NOT EXISTS (
+                SELECT 1
+                FROM permission_group_permissions existing_gp
+                WHERE existing_gp.group_id = gp.group_id
+                  AND existing_gp.permission_id = p_new.id
+              );
+
+              -- Sao chép cả quyền ghi đè cấp cá nhân:
+              -- granted = 1 thành cấp quyền; granted = 0 thành từ chối.
+              INSERT INTO user_permission_overrides
+                (user_id, permission_id, granted, created_at, updated_at)
+              SELECT
+                old_override.user_id,
+                p_new.id,
+                old_override.granted,
+                CURRENT_TIMESTAMP,
+                CURRENT_TIMESTAMP
+              FROM user_permission_overrides old_override
+              JOIN permissions p_old
+                ON p_old.id = old_override.permission_id
+               AND p_old.name = 'BORROW_CREATE'
+              JOIN permissions p_new
+                ON p_new.name IN (
+                  'BORROW_APPROVE',
+                  'BORROW_REJECT',
+                  'BORROW_HANDOVER'
+                )
+              WHERE NOT EXISTS (
+                SELECT 1
+                FROM user_permission_overrides existing_override
+                WHERE existing_override.user_id = old_override.user_id
+                  AND existing_override.permission_id = p_new.id
+              );

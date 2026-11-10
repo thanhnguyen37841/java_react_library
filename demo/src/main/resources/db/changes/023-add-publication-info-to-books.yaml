@@ -1,0 +1,38 @@
+
+databaseChangeLog:
+  - changeSet:
+      id: 023-add-publication-info-to-books
+      author: developer
+      changes:
+        - addColumn:
+            tableName: books
+            columns:
+              - column:
+                  name: description
+                  type: TEXT
+                  constraints:
+                    nullable: true
+
+              - column:
+                  name: publisher
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: true
+
+              - column:
+                  name: publication_year
+                  type: INT
+                  constraints:
+                    nullable: true
+
+              - column:
+                  name: book_language
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: true
+
+              - column:
+                  name: page_count
+                  type: INT
+                  constraints:
+                    nullable: true

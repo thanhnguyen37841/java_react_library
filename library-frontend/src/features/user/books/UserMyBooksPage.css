@@ -1,0 +1,260 @@
+
+.my-books-page {
+  width: min(1200px, calc(100% - 32px));
+  margin: 32px auto 56px;
+  color: #1f2937;
+}
+
+.my-books-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.my-books-eyebrow {
+  margin: 0 0 8px;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.my-books-header h1 {
+  margin: 0;
+  font-size: clamp(25px, 3vw, 34px);
+}
+
+.my-books-description {
+  margin: 10px 0 0;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.my-books-total {
+  min-width: 150px;
+  padding: 18px 22px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.my-books-total span,
+.my-books-total strong {
+  display: block;
+}
+
+.my-books-total span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.my-books-total strong {
+  margin-top: 6px;
+  font-size: 28px;
+}
+
+.my-books-toolbar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.my-books-toolbar input,
+.my-books-toolbar select {
+  min-width: 0;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #fff;
+  font: inherit;
+}
+
+.my-books-toolbar input {
+  flex: 1;
+}
+
+.my-books-search-button,
+.my-books-pagination button,
+.my-books-error button {
+  min-height: 40px;
+  padding: 9px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #fff;
+  color: #1e293b;
+  font: inherit;
+  cursor: pointer;
+}
+
+.my-books-search-button {
+  border-color: #2563eb;
+  background: #2563eb;
+  color: #fff;
+}
+
+.my-books-page button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.my-books-table-card {
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.my-books-table-wrapper {
+  overflow-x: auto;
+}
+
+.my-books-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.my-books-table th,
+.my-books-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+.my-books-table th {
+  background: #f8fafc;
+  color: #475569;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.my-books-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.my-books-title {
+  min-width: 190px;
+  max-width: 320px;
+  white-space: normal !important;
+  font-weight: 600;
+}
+
+.my-books-status,
+.my-books-warning {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.my-books-status--borrowing {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.my-books-status--overdue {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.my-books-status--returned {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.my-books-warning--overdue {
+  background: #fee4e2;
+  color: #b42318;
+}
+
+.my-books-warning--due-today {
+  background: #fef0c7;
+  color: #b54708;
+}
+
+.my-books-warning--due-soon {
+  background: #d1e9ff;
+  color: #175cd3;
+}
+
+.my-books-state {
+  padding: 48px 20px;
+  color: #64748b;
+  text-align: center;
+}
+
+.my-books-state strong {
+  color: #334155;
+}
+
+.my-books-state p {
+  margin-bottom: 0;
+}
+
+.my-books-error {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding: 14px 16px;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.my-books-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 20px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.my-books-pagination > div {
+  display: flex;
+  gap: 8px;
+}
+
+@media (max-width: 640px) {
+  .my-books-page {
+    width: min(100% - 24px, 1200px);
+    margin-top: 22px;
+  }
+
+  .my-books-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .my-books-total {
+    min-width: 0;
+  }
+
+  .my-books-toolbar {
+    flex-direction: column;
+  }
+
+  .my-books-toolbar input,
+  .my-books-toolbar select,
+  .my-books-search-button {
+    width: 100%;
+  }
+
+  .my-books-pagination {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .my-books-error {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

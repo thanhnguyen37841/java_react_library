@@ -1,0 +1,358 @@
+
+/* =====================================================
+   ADMIN UI REFINEMENT
+   Chỉ áp dụng trong AdminLayout.
+   Không thay đổi logic hoặc cấu trúc nghiệp vụ.
+===================================================== */
+
+.admin-shell {
+  --admin-bg: #f5f7fb;
+  --admin-surface: #ffffff;
+  --admin-text: #172033;
+  --admin-muted: #64748b;
+  --admin-border: #e2e8f0;
+  --admin-primary: #2563eb;
+  --admin-primary-hover: #1d4ed8;
+  --admin-radius: 12px;
+  --admin-shadow:
+    0 4px 18px rgb(15 23 42 / 4%);
+
+  background: var(--admin-bg);
+  color: var(--admin-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+.admin-shell *,
+.admin-shell *::before,
+.admin-shell *::after {
+  box-sizing: border-box;
+}
+
+.admin-shell .admin-sidebar {
+  background: var(--admin-surface);
+  border-right-color: var(--admin-border);
+  box-shadow: 2px 0 14px rgb(15 23 42 / 2%);
+}
+
+.admin-shell .admin-brand {
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.admin-shell .admin-brand-mark {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgb(37 99 235 / 18%);
+}
+
+.admin-shell .admin-navigation {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+.admin-shell .admin-nav-group {
+  margin-bottom: 20px;
+}
+
+.admin-shell .admin-nav-heading {
+  line-height: 1.5;
+}
+
+.admin-shell .admin-nav-item {
+  min-height: 44px;
+  border: 1px solid transparent;
+  transition:
+    color 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease;
+}
+
+.admin-shell .admin-nav-item:hover {
+  background: #f5f8ff;
+  border-color: #e8efff;
+}
+
+.admin-shell .admin-nav-item.active {
+  background: #edf3ff;
+  border-color: #dce7ff;
+  color: var(--admin-primary);
+}
+
+.admin-shell .admin-nav-item:focus-visible,
+.admin-shell .admin-brand:focus-visible,
+.admin-shell .admin-logout-button:focus-visible,
+.admin-shell .admin-menu-toggle:focus-visible {
+  outline: 3px solid rgb(37 99 235 / 28%);
+  outline-offset: 2px;
+}
+
+.admin-shell .admin-sidebar-footer {
+  border-top-color: var(--admin-border);
+}
+
+.admin-shell .admin-profile-avatar {
+  background: #edf3ff;
+}
+
+.admin-shell .admin-main {
+  background: var(--admin-bg);
+}
+
+.admin-shell .admin-topbar {
+  border-bottom-color: var(--admin-border);
+  background: rgb(255 255 255 / 96%);
+  backdrop-filter: blur(12px);
+}
+
+.admin-shell .admin-breadcrumb strong {
+  color: var(--admin-text);
+}
+
+.admin-shell .admin-content {
+  padding: 30px;
+}
+
+/* Tiêu đề trang */
+
+.admin-shell .admin-page-heading {
+  margin-bottom: 24px;
+}
+
+.admin-shell .admin-page-heading h1 {
+  color: var(--admin-text);
+  letter-spacing: -0.7px;
+}
+
+.admin-shell .admin-page-heading p {
+  color: var(--admin-muted);
+}
+
+.admin-shell .admin-eyebrow {
+  letter-spacing: 1.2px;
+}
+
+.admin-shell .admin-dashboard-status {
+  border-color: var(--admin-border);
+  border-radius: 999px;
+  box-shadow: 0 2px 5px rgb(15 23 42 / 2%);
+}
+
+/* Khu vực chào mừng */
+
+.admin-shell .admin-welcome-panel {
+  border-color: #dce6fb;
+  border-radius: 16px;
+  box-shadow: var(--admin-shadow);
+}
+
+.admin-shell .admin-welcome-button {
+  min-height: 42px;
+  border-radius: 9px;
+  transition:
+    background-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.admin-shell .admin-welcome-button:hover {
+  background: var(--admin-primary-hover);
+  box-shadow: 0 7px 16px rgb(37 99 235 / 20%);
+}
+
+/* Thẻ truy cập nhanh */
+
+.admin-shell .admin-shortcuts-section {
+  margin-top: 30px;
+}
+
+.admin-shell .admin-shortcut-grid {
+  gap: 16px;
+}
+
+.admin-shell .admin-shortcut-card {
+  border-color: var(--admin-border);
+  border-radius: var(--admin-radius);
+  box-shadow: 0 2px 8px rgb(15 23 42 / 2%);
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.admin-shell .admin-shortcut-card:hover {
+  border-color: #c7d8ff;
+  box-shadow: 0 10px 24px rgb(15 23 42 / 7%);
+  transform: translateY(-2px);
+}
+
+.admin-shell .admin-shortcut-card:focus-visible,
+.admin-shell .admin-welcome-button:focus-visible {
+  outline: 3px solid rgb(37 99 235 / 28%);
+  outline-offset: 3px;
+}
+
+/* Bảng dữ liệu trong khu vực quản trị */
+
+.admin-shell table {
+  color: var(--admin-text);
+}
+
+.admin-shell th {
+  color: #475569;
+  font-weight: 700;
+}
+
+.admin-shell td {
+  color: #334155;
+}
+
+.admin-shell th,
+.admin-shell td {
+  border-color: var(--admin-border);
+}
+
+.admin-shell input:not([type='checkbox']):not([type='radio']),
+.admin-shell select,
+.admin-shell textarea {
+  max-width: 100%;
+  border-color: #cbd5e1;
+  border-radius: 9px;
+}
+
+.admin-shell input:not([type='checkbox']):not([type='radio']):focus,
+.admin-shell select:focus,
+.admin-shell textarea:focus {
+  border-color: #93b4ff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgb(37 99 235 / 11%);
+}
+
+/* Chuyển động nhẹ, không ảnh hưởng hành vi */
+
+@media (prefers-reduced-motion: reduce) {
+  .admin-shell *,
+  .admin-shell *::before,
+  .admin-shell *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Màn hình vừa */
+
+@media (max-width: 1100px) {
+  .admin-shell .admin-content {
+    padding: 24px;
+  }
+
+  .admin-shell .admin-shortcut-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .admin-shell .admin-topbar {
+    gap: 14px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+/* Điện thoại */
+
+@media (max-width: 768px) {
+  .admin-shell .admin-main {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .admin-shell .admin-topbar {
+    min-height: 62px;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 10px 16px;
+  }
+
+  .admin-shell .admin-menu-toggle {
+    display: grid;
+  }
+
+  .admin-shell .admin-topbar-right {
+    margin-left: auto;
+  }
+
+  .admin-shell .admin-topbar-right > span:nth-child(2),
+  .admin-shell .admin-topbar-divider {
+    display: none;
+  }
+
+  .admin-shell .admin-topbar-email {
+    max-width: 135px;
+  }
+
+  .admin-shell .admin-content {
+    padding: 20px 16px;
+  }
+
+  .admin-shell .admin-page-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .admin-shell .admin-page-heading h1 {
+    font-size: 27px;
+  }
+
+  .admin-shell .admin-welcome-panel {
+    min-height: 0;
+    padding: 25px;
+  }
+
+  .admin-shell .admin-welcome-symbol {
+    width: 80px;
+    height: 80px;
+    margin: 0 0 0 12px;
+    border-radius: 22px;
+    font-size: 44px;
+  }
+
+  .admin-shell .admin-shortcuts-section {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-shell .admin-content {
+    padding: 16px 12px;
+  }
+
+  .admin-shell .admin-shortcut-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .admin-shell .admin-shortcut-card {
+    min-height: 170px;
+    padding: 18px;
+  }
+
+  .admin-shell .admin-welcome-panel {
+    padding: 20px;
+  }
+
+  .admin-shell .admin-welcome-content h2 {
+    font-size: 21px;
+  }
+
+  .admin-shell .admin-welcome-symbol {
+    display: none;
+  }
+
+  .admin-shell .admin-topbar-email {
+    max-width: 105px;
+    font-size: 10px;
+  }
+
+  .admin-shell .admin-breadcrumb {
+    gap: 7px;
+  }
+}

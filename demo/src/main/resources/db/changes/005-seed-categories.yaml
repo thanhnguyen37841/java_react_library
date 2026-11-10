@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: 5
+      author: dev
+      changes:
+        - insert:
+            tableName: categories
+            columns:
+              - column: { name: name, value: "Công nghệ thông tin" }
+              - column: { name: description, value: "Sách về lập trình, phần mềm, công nghệ" }
+              - column: { name: created_at, valueDate: now() }
+        - insert:
+            tableName: categories
+            columns:
+              - column: { name: name, value: "Văn học" }
+              - column: { name: description, value: "Tiểu thuyết, truyện ngắn, thơ ca" }
+              - column: { name: created_at, valueDate: now() }
+        - insert:
+            tableName: categories
+            columns:
+              - column: { name: name, value: "Kinh tế" }
+              - column: { name: description, value: "Sách về kinh doanh, tài chính, quản trị" }
+              - column: { name: created_at, valueDate: now() }

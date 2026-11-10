@@ -1,0 +1,40 @@
+databaseChangeLog:
+  - changeSet:
+      id: 018-add-isbn-to-books
+      author: developer
+      preConditions:
+        - onFail: MARK_RAN
+          onError: HALT
+        - not:
+            - columnExists:
+                tableName: books
+                columnName: isbn
+      changes:
+        - addColumn:
+            tableName: books
+            columns:
+              - column:
+                  name: isbn
+                  type: VARCHAR(20)
+                  constraints:
+                    nullable: true
+
+  - changeSet:
+      id: 018-add-edition-to-books
+      author: developer
+      preConditions:
+        - onFail: MARK_RAN
+          onError: HALT
+        - not:
+            - columnExists:
+                tableName: books
+                columnName: edition
+      changes:
+        - addColumn:
+            tableName: books
+            columns:
+              - column:
+                  name: edition
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: true

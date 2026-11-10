@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: 010-add-member-contact-info
+      author: developer
+      changes:
+        - addColumn:
+            tableName: members
+            columns:
+              - column:
+                  name: phone_number
+                  type: varchar(20)
+              - column:
+                  name: address
+                  type: varchar(255)

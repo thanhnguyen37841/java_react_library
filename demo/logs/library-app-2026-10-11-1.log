@@ -1,0 +1,842 @@
+2026-10-11 14:20:14.787 [restartedMain] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 17.0.12 with PID 17204 (D:\Java_Sps\demo\target\classes started by thanh in D:\Java_Sps\demo)
+2026-10-11 14:20:14.812 [restartedMain] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-11 14:20:14.899 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-11 14:20:14.900 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-11 14:20:15.317 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-10-11 14:20:16.712 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-11 14:20:16.913 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 175 ms. Found 13 JPA repository interfaces.
+2026-10-11 14:20:18.922 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-11 14:20:18.970 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-11 14:20:18.977 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-11 14:20:18.978 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-11 14:20:19.171 [restartedMain] INFO  org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 4263 ms
+2026-10-11 14:20:19.672 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-11 14:20:20.873 [restartedMain] ERROR org.springframework.boot.tomcat.servlet.DeferredServletContainerInitializers - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in file [D:\Java_Sps\demo\target\classes\com\example\demo\security\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'customUserDetailsService' defined in file [D:\Java_Sps\demo\target\classes\com\example\demo\security\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in com.example.demo.repository.UserRepository defined in @EnableJpaRepositories declared on DataJpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+2026-10-11 14:20:20.939 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2026-10-11 14:20:20.960 [restartedMain] WARN  org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2026-10-11 14:20:20.982 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-10-11 14:20:21.065 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:167)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:615)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:150)
+	at org.springframework.boot.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:110)
+	at org.springframework.boot.tomcat.servlet.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:429)
+	at org.springframework.boot.tomcat.servlet.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:167)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:190)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164)
+	... 13 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthenticationFilter' defined in file [D:\Java_Sps\demo\target\classes\com\example\demo\security\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'customUserDetailsService' defined in file [D:\Java_Sps\demo\target\classes\com\example\demo\security\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in com.example.demo.repository.UserRepository defined in @EnableJpaRepositories declared on DataJpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:231)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:185)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:180)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:165)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:97)
+	at org.springframework.boot.web.context.servlet.WebApplicationContextInitializer.initialize(WebApplicationContextInitializer.java:53)
+	at org.springframework.boot.tomcat.servlet.DeferredServletContainerInitializers.onStartup(DeferredServletContainerInitializers.java:55)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4573)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1204)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1200)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:92)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:732)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1204)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1200)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:92)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:732)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:871)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:452)
+	at org.springframework.boot.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:131)
+	... 18 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsService' defined in file [D:\Java_Sps\demo\target\classes\com\example\demo\security\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in com.example.demo.repository.UserRepository defined in @EnableJpaRepositories declared on DataJpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1711)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1658)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 58 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.example.demo.repository.UserRepository defined in @EnableJpaRepositories declared on DataJpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1710)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1711)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1658)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 72 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaSharedEM_entityManagerFactory': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:691)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1360)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:356)
+	... 86 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/liquibase/autoconfigure/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.DatabaseException: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1815)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:309)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	... 98 more
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.DatabaseException: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1811)
+	... 107 more
+Caused by: liquibase.exception.DatabaseException: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:281)
+	at liquibase.Scope.lambda$child$0(Scope.java:243)
+	at liquibase.Scope.child(Scope.java:252)
+	at liquibase.Scope.child(Scope.java:242)
+	at liquibase.Scope.child(Scope.java:221)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:272)
+	... 109 more
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:840)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:416)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:373)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:210)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:276)
+	... 114 more
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:142)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:964)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	... 125 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53)
+	... 128 more
+2026-10-11 14:25:09.519 [restartedMain] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 17.0.12 with PID 27856 (D:\Java_Sps\demo\target\classes started by thanh in d:\Java_Sps\demo)
+2026-10-11 14:25:09.537 [restartedMain] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-11 14:25:09.632 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-11 14:25:09.632 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-11 14:25:10.048 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-10-11 14:25:11.237 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-11 14:25:11.382 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 125 ms. Found 13 JPA repository interfaces.
+2026-10-11 14:25:13.229 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-11 14:25:13.263 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-11 14:25:13.271 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-11 14:25:13.272 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-11 14:25:13.424 [restartedMain] INFO  org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3787 ms
+2026-10-11 14:25:13.781 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-11 14:25:14.433 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41395f35
+2026-10-11 14:25:14.435 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-11 14:25:17.460 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-11 14:25:18.027 [restartedMain] INFO  liquibase.lockservice - Successfully acquired change log lock
+2026-10-11 14:25:18.030 [restartedMain] INFO  liquibase.command - Using deploymentId: 1703513717
+2026-10-11 14:25:18.036 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-11 14:25:18.087 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changes/009-create-user-permission-overrides.yaml::9::dev
+2026-10-11 14:25:18.146 [restartedMain] INFO  liquibase.changelog - Table user_permission_overrides created
+2026-10-11 14:25:18.221 [restartedMain] INFO  liquibase.changelog - Primary key added to user_permission_overrides (user_id, permission_id)
+2026-10-11 14:25:18.305 [restartedMain] INFO  liquibase.changelog - Foreign key constraint added to user_permission_overrides (user_id)
+2026-10-11 14:25:18.406 [restartedMain] INFO  liquibase.changelog - Foreign key constraint added to user_permission_overrides (permission_id)
+2026-10-11 14:25:18.410 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changes/009-create-user-permission-overrides.yaml::9::dev ran successfully in 318ms
+2026-10-11 14:25:18.445 [restartedMain] INFO  liquibase.util - UPDATE SUMMARY
+2026-10-11 14:25:18.446 [restartedMain] INFO  liquibase.util - Run:                          1
+2026-10-11 14:25:18.447 [restartedMain] INFO  liquibase.util - Previously run:               8
+2026-10-11 14:25:18.447 [restartedMain] INFO  liquibase.util - Filtered out:                 0
+2026-10-11 14:25:18.447 [restartedMain] INFO  liquibase.util - -------------------------------
+2026-10-11 14:25:18.448 [restartedMain] INFO  liquibase.util - Total change sets:            9
+2026-10-11 14:25:18.449 [restartedMain] INFO  liquibase.util - Update summary generated
+2026-10-11 14:25:18.460 [restartedMain] INFO  liquibase.command - Update command completed successfully.
+2026-10-11 14:25:18.462 [restartedMain] INFO  liquibase.ui - Liquibase: Update has been successful. Rows affected: 0
+2026-10-11 14:25:18.473 [restartedMain] INFO  liquibase.lockservice - Successfully released change log lock
+2026-10-11 14:25:18.476 [restartedMain] INFO  liquibase.command - Command execution complete
+2026-10-11 14:25:18.707 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-11 14:25:18.853 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-11 14:25:19.665 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-11 14:25:19.805 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/library_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Ho_Chi_Minh]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: library_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-11 14:25:21.578 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-11 14:25:21.641 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-11 14:25:21.773 [restartedMain] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-11 14:25:23.400 [restartedMain] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-11 14:25:24.011 [restartedMain] WARN  org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-11 14:25:26.088 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-11 14:25:26.123 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-11 14:25:26.135 [restartedMain] INFO  com.example.demo.DemoApplication - Started DemoApplication in 17.425 seconds (process running for 18.312)
+2026-10-11 14:25:26.146 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-11 14:25:26.147 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-11 14:26:14.356 [restartedMain] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 17.0.12 with PID 20828 (D:\Java_Sps\demo\target\classes started by thanh in D:\Java_Sps\demo)
+2026-10-11 14:26:14.378 [restartedMain] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-11 14:26:14.527 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-11 14:26:14.527 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-11 14:26:14.992 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-10-11 14:26:16.355 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-11 14:26:16.549 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 174 ms. Found 13 JPA repository interfaces.
+2026-10-11 14:26:18.846 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-11 14:26:18.908 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-11 14:26:18.927 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-11 14:26:18.929 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-11 14:26:19.182 [restartedMain] INFO  org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 4643 ms
+2026-10-11 14:26:19.614 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-11 14:26:20.248 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6edd4a81
+2026-10-11 14:26:20.251 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-11 14:26:22.411 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-11 14:26:22.713 [restartedMain] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-10-11 14:26:22.716 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-11 14:26:22.734 [restartedMain] INFO  liquibase.util - UPDATE SUMMARY
+2026-10-11 14:26:22.735 [restartedMain] INFO  liquibase.util - Run:                          0
+2026-10-11 14:26:22.735 [restartedMain] INFO  liquibase.util - Previously run:               9
+2026-10-11 14:26:22.737 [restartedMain] INFO  liquibase.util - Filtered out:                 0
+2026-10-11 14:26:22.737 [restartedMain] INFO  liquibase.util - -------------------------------
+2026-10-11 14:26:22.738 [restartedMain] INFO  liquibase.util - Total change sets:            9
+2026-10-11 14:26:22.739 [restartedMain] INFO  liquibase.util - Update summary generated
+2026-10-11 14:26:22.743 [restartedMain] INFO  liquibase.command - Command execution complete
+2026-10-11 14:26:22.962 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-11 14:26:23.100 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-11 14:26:23.875 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-11 14:26:24.012 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/library_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Ho_Chi_Minh]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: library_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-11 14:26:25.836 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-11 14:26:25.911 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-11 14:26:26.035 [restartedMain] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-11 14:26:27.931 [restartedMain] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-11 14:26:28.425 [restartedMain] WARN  org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-11 14:26:30.459 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-11 14:26:30.519 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-11 14:26:30.543 [restartedMain] INFO  com.example.demo.DemoApplication - Started DemoApplication in 17.103 seconds (process running for 18.185)
+2026-10-11 14:26:30.558 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-11 14:26:30.559 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-11 14:44:46.633 [restartedMain] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 17.0.12 with PID 22368 (D:\Java_Sps\demo\target\classes started by thanh in D:\Java_Sps\demo)
+2026-10-11 14:44:46.651 [restartedMain] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-11 14:44:46.754 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-11 14:44:46.754 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-11 14:44:47.160 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-10-11 14:44:48.465 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-11 14:44:48.628 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 146 ms. Found 14 JPA repository interfaces.
+2026-10-11 14:44:50.997 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-11 14:44:51.034 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-11 14:44:51.040 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-11 14:44:51.041 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-11 14:44:51.206 [restartedMain] INFO  org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 4444 ms
+2026-10-11 14:44:51.664 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-11 14:44:52.248 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d82c57a
+2026-10-11 14:44:52.251 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-11 14:44:54.612 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-11 14:44:54.894 [restartedMain] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-10-11 14:44:54.898 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-11 14:44:54.917 [restartedMain] INFO  liquibase.util - UPDATE SUMMARY
+2026-10-11 14:44:54.919 [restartedMain] INFO  liquibase.util - Run:                          0
+2026-10-11 14:44:54.919 [restartedMain] INFO  liquibase.util - Previously run:               9
+2026-10-11 14:44:54.920 [restartedMain] INFO  liquibase.util - Filtered out:                 0
+2026-10-11 14:44:54.921 [restartedMain] INFO  liquibase.util - -------------------------------
+2026-10-11 14:44:54.922 [restartedMain] INFO  liquibase.util - Total change sets:            9
+2026-10-11 14:44:54.924 [restartedMain] INFO  liquibase.util - Update summary generated
+2026-10-11 14:44:54.926 [restartedMain] INFO  liquibase.command - Command execution complete
+2026-10-11 14:44:55.151 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-11 14:44:55.280 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-11 14:44:56.057 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-11 14:44:56.172 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/library_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Ho_Chi_Minh]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: library_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-11 14:44:57.900 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-11 14:44:57.964 [restartedMain] ERROR org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema validation: wrong column type encountered in column [granted] in table [user_permission_overrides]; found [tinyint (Types#TINYINT)], but expecting [bit (Types#BOOLEAN)]
+2026-10-11 14:44:57.967 [restartedMain] ERROR org.springframework.boot.tomcat.servlet.DeferredServletContainerInitializers - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in file [D:\Java_Sps\demo\target\classes\com\example\demo\security\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'customUserDetailsService' defined in file [D:\Java_Sps\demo\target\classes\com\example\demo\security\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in com.example.demo.repository.UserRepository defined in @EnableJpaRepositories declared on DataJpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+2026-10-11 14:44:58.004 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2026-10-11 14:44:58.009 [restartedMain] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1:housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.12/java.lang.Thread.run(Thread.java:842)
+2026-10-11 14:44:58.016 [restartedMain] WARN  org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2026-10-11 14:44:58.021 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-10-11 14:44:58.030 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-10-11 14:44:58.040 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-10-11 14:44:58.071 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:167)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:615)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:150)
+	at org.springframework.boot.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:110)
+	at org.springframework.boot.tomcat.servlet.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:429)
+	at org.springframework.boot.tomcat.servlet.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:167)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:190)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164)
+	... 13 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthenticationFilter' defined in file [D:\Java_Sps\demo\target\classes\com\example\demo\security\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'customUserDetailsService' defined in file [D:\Java_Sps\demo\target\classes\com\example\demo\security\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in com.example.demo.repository.UserRepository defined in @EnableJpaRepositories declared on DataJpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:231)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:185)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:180)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:165)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:97)
+	at org.springframework.boot.web.context.servlet.WebApplicationContextInitializer.initialize(WebApplicationContextInitializer.java:53)
+	at org.springframework.boot.tomcat.servlet.DeferredServletContainerInitializers.onStartup(DeferredServletContainerInitializers.java:55)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4573)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1204)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1200)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:92)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:732)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:794)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1204)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1200)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:92)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:732)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:871)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:170)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:452)
+	at org.springframework.boot.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:131)
+	... 18 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsService' defined in file [D:\Java_Sps\demo\target\classes\com\example\demo\security\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in com.example.demo.repository.UserRepository defined in @EnableJpaRepositories declared on DataJpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1711)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1658)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 58 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.example.demo.repository.UserRepository defined in @EnableJpaRepositories declared on DataJpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1710)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1711)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1658)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 72 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaSharedEM_entityManagerFactory': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:691)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1360)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:356)
+	... 86 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema validation: wrong column type encountered in column [granted] in table [user_permission_overrides]; found [tinyint (Types#TINYINT)], but expecting [bit (Types#BOOLEAN)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1815)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	... 98 more
+Caused by: jakarta.persistence.PersistenceException: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema validation: wrong column type encountered in column [granted] in table [user_permission_overrides]; found [tinyint (Types#TINYINT)], but expecting [bit (Types#BOOLEAN)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:448)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1811)
+	... 105 more
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema validation: wrong column type encountered in column [granted] in table [user_permission_overrides]; found [tinyint (Types#TINYINT)], but expecting [bit (Types#BOOLEAN)]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateColumnType(AbstractSchemaValidator.java:163)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:148)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:42)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:97)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:75)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:278)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$1(SchemaManagementToolCoordinator.java:101)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:100)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:327)
+	at org.hibernate.internal.SessionFactoryRegistry.instantiateSessionFactory(SessionFactoryRegistry.java:64)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:458)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1452)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436)
+	... 109 more
+2026-10-11 14:53:14.487 [restartedMain] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 17.0.12 with PID 27056 (D:\Java_Sps\demo\target\classes started by thanh in D:\Java_Sps\demo)
+2026-10-11 14:53:14.509 [restartedMain] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-11 14:53:14.613 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-11 14:53:14.614 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-11 14:53:15.167 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-10-11 14:53:16.591 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-11 14:53:16.740 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 138 ms. Found 14 JPA repository interfaces.
+2026-10-11 14:53:18.994 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-11 14:53:19.036 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-11 14:53:19.042 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-11 14:53:19.045 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-11 14:53:19.212 [restartedMain] INFO  org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 4592 ms
+2026-10-11 14:53:19.672 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-11 14:53:20.275 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d9871a3
+2026-10-11 14:53:20.280 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-11 14:53:22.834 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-11 14:53:23.126 [restartedMain] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-10-11 14:53:23.129 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-11 14:53:23.149 [restartedMain] INFO  liquibase.util - UPDATE SUMMARY
+2026-10-11 14:53:23.151 [restartedMain] INFO  liquibase.util - Run:                          0
+2026-10-11 14:53:23.151 [restartedMain] INFO  liquibase.util - Previously run:               9
+2026-10-11 14:53:23.152 [restartedMain] INFO  liquibase.util - Filtered out:                 0
+2026-10-11 14:53:23.152 [restartedMain] INFO  liquibase.util - -------------------------------
+2026-10-11 14:53:23.152 [restartedMain] INFO  liquibase.util - Total change sets:            9
+2026-10-11 14:53:23.154 [restartedMain] INFO  liquibase.util - Update summary generated
+2026-10-11 14:53:23.155 [restartedMain] INFO  liquibase.command - Command execution complete
+2026-10-11 14:53:23.371 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-11 14:53:23.486 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-11 14:53:24.201 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-11 14:53:24.325 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/library_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Ho_Chi_Minh]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: library_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-11 14:53:26.193 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-11 14:53:26.258 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-11 14:53:26.367 [restartedMain] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-11 14:53:28.484 [restartedMain] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-11 14:53:29.346 [restartedMain] WARN  org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-11 14:53:31.391 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-11 14:53:31.440 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-11 14:53:31.458 [restartedMain] INFO  com.example.demo.DemoApplication - Started DemoApplication in 17.964 seconds (process running for 19.08)
+2026-10-11 14:53:31.470 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-11 14:53:31.470 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-11 14:57:02.716 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-11 14:57:02.718 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-11 14:57:02.719 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-10-11 14:57:04.488 [http-nio-8080-exec-9] INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1147 ms
+2026-10-11 14:58:03.316 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-11 14:58:03.857 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 539ms | URI: /auth/login
+2026-10-11 15:16:47.369 [restartedMain] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 17.0.12 with PID 22684 (D:\Java_Sps\demo\target\classes started by thanh in D:\Java_Sps\demo)
+2026-10-11 15:16:47.387 [restartedMain] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-11 15:16:47.479 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-11 15:16:47.480 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-11 15:16:47.836 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-10-11 15:16:48.974 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-11 15:16:49.164 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 177 ms. Found 14 JPA repository interfaces.
+2026-10-11 15:16:51.100 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-11 15:16:51.151 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-11 15:16:51.166 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-11 15:16:51.168 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-11 15:16:51.330 [restartedMain] INFO  org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3845 ms
+2026-10-11 15:16:51.718 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-11 15:16:52.288 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1191205
+2026-10-11 15:16:52.291 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-11 15:16:54.888 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-11 15:16:55.174 [restartedMain] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-10-11 15:16:55.179 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-11 15:16:55.196 [restartedMain] INFO  liquibase.util - UPDATE SUMMARY
+2026-10-11 15:16:55.197 [restartedMain] INFO  liquibase.util - Run:                          0
+2026-10-11 15:16:55.198 [restartedMain] INFO  liquibase.util - Previously run:               9
+2026-10-11 15:16:55.198 [restartedMain] INFO  liquibase.util - Filtered out:                 0
+2026-10-11 15:16:55.199 [restartedMain] INFO  liquibase.util - -------------------------------
+2026-10-11 15:16:55.199 [restartedMain] INFO  liquibase.util - Total change sets:            9
+2026-10-11 15:16:55.201 [restartedMain] INFO  liquibase.util - Update summary generated
+2026-10-11 15:16:55.203 [restartedMain] INFO  liquibase.command - Command execution complete
+2026-10-11 15:16:55.395 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-11 15:16:55.512 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-11 15:16:56.292 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-11 15:16:56.391 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/library_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Ho_Chi_Minh]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: library_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-11 15:16:58.130 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-11 15:16:58.189 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-11 15:16:58.300 [restartedMain] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-11 15:17:00.147 [restartedMain] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-11 15:17:00.677 [restartedMain] WARN  org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-11 15:17:02.352 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-11 15:17:02.381 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-11 15:17:02.395 [restartedMain] INFO  com.example.demo.DemoApplication - Started DemoApplication in 15.821 seconds (process running for 16.708)
+2026-10-11 15:17:02.404 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-11 15:17:02.404 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-11 15:21:17.422 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-11 15:21:17.424 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-11 15:21:17.426 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-10-11 15:21:19.111 [http-nio-8080-exec-9] INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 928 ms
+2026-10-11 15:21:58.128 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-11 15:21:58.567 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 437ms | URI: /auth/login
+2026-10-11 15:25:53.385 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 15:25:53.432 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 45ms | URI: /api/admin/users/6/permissions
+2026-10-11 15:29:59.956 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: PUT | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 15:30:00.026 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 67ms | URI: /api/admin/users/6/permissions
+2026-10-11 15:30:23.254 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 15:30:23.280 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 24ms | URI: /api/admin/users/6/permissions
+2026-10-11 15:31:32.257 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: PUT | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 15:31:32.301 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 42ms | URI: /api/admin/users/6/permissions
+2026-10-11 15:31:38.089 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 15:31:38.105 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 15ms | URI: /api/admin/users/6/permissions
+2026-10-11 15:32:28.712 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: PUT | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 15:32:28.748 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 34ms | URI: /api/admin/users/6/permissions
+2026-10-11 15:32:34.795 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 15:32:34.812 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 16ms | URI: /api/admin/users/6/permissions
+2026-10-11 15:35:48.084 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-11 15:35:48.186 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 100ms | URI: /auth/login
+2026-10-11 15:36:09.731 [http-nio-8080-exec-7] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 15:37:45.971 [http-nio-8080-exec-9] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 15:45:34.465 [http-nio-8080-exec-3] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 15:47:06.734 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-11 15:47:06.827 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 91ms | URI: /auth/login
+2026-10-11 15:48:09.762 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: PUT | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 15:48:09.790 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 27ms | URI: /api/admin/users/6/permissions
+2026-10-11 15:48:16.162 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 15:48:16.184 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 21ms | URI: /api/admin/users/6/permissions
+2026-10-11 15:49:11.817 [http-nio-8080-exec-7] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 15:49:26.393 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-11 15:49:26.439 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 45ms | URI: /api/books
+2026-10-11 15:49:26.446 [http-nio-8080-exec-8] WARN  org.springframework.data.web.config.SpringDataJackson3Configuration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-10-11 15:49:57.473 [http-nio-8080-exec-9] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 15:50:33.934 [http-nio-8080-exec-10] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 15:50:59.923 [http-nio-8080-exec-3] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 15:51:14.445 [http-nio-8080-exec-2] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 15:52:19.952 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-11 15:52:20.056 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 102ms | URI: /auth/login
+2026-10-11 15:52:51.933 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: PUT | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 15:52:51.959 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 25ms | URI: /api/admin/users/6/permissions
+2026-10-11 15:53:03.273 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 15:53:03.294 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 17ms | URI: /api/admin/users/6/permissions
+2026-10-11 15:53:36.007 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-11 15:53:36.103 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 95ms | URI: /auth/login
+2026-10-11 15:54:56.108 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /api/books | Params: []
+2026-10-11 15:54:56.117 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/books
+2026-10-11 15:54:56.118 [http-nio-8080-exec-9] WARN  com.example.demo.exception.GlobalExceptionHandler - Business error: Danh m?c không t?n t?i
+2026-10-11 15:54:56.120 [http-nio-8080-exec-9] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [java.lang.RuntimeException: Danh m?c không t?n t?i]
+2026-10-11 15:55:15.803 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /api/books | Params: []
+2026-10-11 15:55:15.831 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 26ms | URI: /api/books
+2026-10-11 15:57:11.689 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-11 15:57:11.788 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 97ms | URI: /auth/login
+2026-10-11 15:57:34.730 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: PUT | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 15:57:34.762 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 31ms | URI: /api/admin/users/6/permissions
+2026-10-11 15:57:41.960 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 15:57:41.978 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 17ms | URI: /api/admin/users/6/permissions
+2026-10-11 15:58:13.651 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-11 15:58:13.753 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 99ms | URI: /auth/login
+2026-10-11 15:58:41.928 [http-nio-8080-exec-5] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 15:59:39.181 [http-nio-8080-exec-7] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 16:03:01.793 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 16:03:01.809 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 14ms | URI: /api/admin/users/6/permissions
+2026-10-11 16:03:18.317 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: PUT | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 16:03:18.346 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 30ms | URI: /api/admin/users/6/permissions
+2026-10-11 16:03:23.777 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 16:03:23.794 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 16ms | URI: /api/admin/users/6/permissions
+2026-10-11 16:04:28.487 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-11 16:04:28.577 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 88ms | URI: /auth/login
+2026-10-11 16:05:02.430 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /api/books | Params: []
+2026-10-11 16:05:02.454 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 21ms | URI: /api/books
+2026-10-11 16:06:37.217 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-11 16:06:37.310 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 92ms | URI: /auth/login
+2026-10-11 16:06:56.813 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: PUT | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 16:06:56.843 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 29ms | URI: /api/admin/users/6/permissions
+2026-10-11 16:07:05.586 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 16:07:05.603 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 15ms | URI: /api/admin/users/6/permissions
+2026-10-11 16:07:29.180 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-11 16:07:29.281 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 102ms | URI: /auth/login
+2026-10-11 16:07:48.888 [http-nio-8080-exec-10] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 16:07:59.976 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-11 16:07:59.988 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 12ms | URI: /api/books
+2026-10-11 16:08:09.866 [http-nio-8080-exec-2] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 16:08:14.551 [http-nio-8080-exec-1] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 16:08:17.287 [http-nio-8080-exec-4] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 16:08:28.739 [http-nio-8080-exec-6] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 16:11:29.289 [http-nio-8080-exec-7] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 16:11:42.638 [http-nio-8080-exec-8] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 16:11:55.277 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: PUT | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 16:11:55.310 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 32ms | URI: /api/admin/users/6/permissions
+2026-10-11 16:12:01.978 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 16:12:01.995 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 15ms | URI: /api/admin/users/6/permissions
+2026-10-11 16:12:24.770 [http-nio-8080-exec-3] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 16:12:35.192 [http-nio-8080-exec-2] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 16:12:49.722 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /api/books | Params: []
+2026-10-11 16:12:49.747 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 24ms | URI: /api/books
+2026-10-11 16:13:16.846 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: PUT | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 16:13:16.879 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 32ms | URI: /api/admin/users/6/permissions
+2026-10-11 16:13:22.313 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 16:13:22.327 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 13ms | URI: /api/admin/users/6/permissions
+2026-10-11 16:13:41.537 [http-nio-8080-exec-5] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 16:13:46.856 [http-nio-8080-exec-7] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 16:13:52.114 [http-nio-8080-exec-8] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 16:13:53.043 [http-nio-8080-exec-9] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 16:14:01.860 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-11 16:14:01.872 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 10ms | URI: /api/books
+2026-10-11 16:15:33.975 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-11 16:15:33.986 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/books
+2026-10-11 16:15:46.955 [http-nio-8080-exec-1] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 16:29:00.382 [restartedMain] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 17.0.12 with PID 10736 (D:\Java_Sps\demo\target\classes started by thanh in D:\Java_Sps\demo)
+2026-10-11 16:29:00.402 [restartedMain] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-11 16:29:00.490 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-11 16:29:00.492 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-11 16:29:00.881 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-10-11 16:29:02.227 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-11 16:29:02.400 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 157 ms. Found 14 JPA repository interfaces.
+2026-10-11 16:29:04.417 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-11 16:29:04.459 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-11 16:29:04.467 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-11 16:29:04.469 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-11 16:29:04.638 [restartedMain] INFO  org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 4139 ms
+2026-10-11 16:29:05.027 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-11 16:29:05.607 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3eb39651
+2026-10-11 16:29:05.610 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-11 16:29:08.261 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-11 16:29:08.572 [restartedMain] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-10-11 16:29:08.577 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-11 16:29:08.606 [restartedMain] INFO  liquibase.util - UPDATE SUMMARY
+2026-10-11 16:29:08.606 [restartedMain] INFO  liquibase.util - Run:                          0
+2026-10-11 16:29:08.607 [restartedMain] INFO  liquibase.util - Previously run:               9
+2026-10-11 16:29:08.607 [restartedMain] INFO  liquibase.util - Filtered out:                 0
+2026-10-11 16:29:08.607 [restartedMain] INFO  liquibase.util - -------------------------------
+2026-10-11 16:29:08.607 [restartedMain] INFO  liquibase.util - Total change sets:            9
+2026-10-11 16:29:08.609 [restartedMain] INFO  liquibase.util - Update summary generated
+2026-10-11 16:29:08.611 [restartedMain] INFO  liquibase.command - Command execution complete
+2026-10-11 16:29:08.848 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-11 16:29:09.014 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-11 16:29:10.108 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-11 16:29:10.208 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/library_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Ho_Chi_Minh]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: library_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-11 16:29:11.892 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-11 16:29:11.951 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-11 16:29:12.080 [restartedMain] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-11 16:29:14.224 [restartedMain] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-11 16:29:14.892 [restartedMain] WARN  org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-11 16:29:16.898 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-11 16:29:16.936 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-11 16:29:16.952 [restartedMain] INFO  com.example.demo.DemoApplication - Started DemoApplication in 17.377 seconds (process running for 18.731)
+2026-10-11 16:29:16.959 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-11 16:29:16.960 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-11 16:31:17.471 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-11 16:31:17.474 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-11 16:31:17.476 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-10-11 16:31:19.122 [http-nio-8080-exec-9] INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 937 ms
+2026-10-11 16:31:55.994 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-11 16:31:56.489 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 493ms | URI: /auth/login
+2026-10-11 16:32:26.806 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: PUT | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 16:32:26.892 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 85ms | URI: /api/admin/users/6/permissions
+2026-10-11 16:32:35.120 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 16:32:35.169 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 49ms | URI: /api/admin/users/6/permissions
+2026-10-11 16:33:09.956 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: DELETE | URI: /api/admin/users/6/permissions/2 | Params: []
+2026-10-11 16:33:10.029 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 70ms | URI: /api/admin/users/6/permissions/2
+2026-10-11 16:33:17.620 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 16:33:17.641 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 20ms | URI: /api/admin/users/6/permissions
+2026-10-11 16:35:02.445 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-11 16:35:02.538 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 91ms | URI: /auth/login
+2026-10-11 16:35:20.531 [http-nio-8080-exec-2] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 16:35:43.683 [http-nio-8080-exec-5] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 16:36:00.758 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-11 16:36:00.789 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 29ms | URI: /api/books
+2026-10-11 16:36:00.796 [http-nio-8080-exec-4] WARN  org.springframework.data.web.config.SpringDataJackson3Configuration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-10-11 16:37:35.248 [http-nio-8080-exec-7] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 16:37:43.905 [http-nio-8080-exec-6] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-11 16:37:53.411 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 16:37:53.428 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 16ms | URI: /api/admin/users/6/permissions
+2026-10-11 16:38:04.656 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: DELETE | URI: /api/admin/users/6/permissions/1 | Params: []
+2026-10-11 16:38:04.689 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 30ms | URI: /api/admin/users/6/permissions/1
+2026-10-11 16:38:17.756 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users/6/permissions | Params: []
+2026-10-11 16:38:17.774 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 17ms | URI: /api/admin/users/6/permissions

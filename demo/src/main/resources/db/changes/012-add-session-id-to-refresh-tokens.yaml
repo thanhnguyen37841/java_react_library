@@ -1,0 +1,27 @@
+
+databaseChangeLog:
+  - changeSet:
+      id: 12
+      author: dev
+      changes:
+        - addColumn:
+            tableName: refresh_tokens
+            columns:
+              - column:
+                  name: session_id
+                  type: VARCHAR(36)
+
+        - createIndex:
+            tableName: refresh_tokens
+            indexName: idx_refresh_tokens_session_id
+            columns:
+              - column:
+                  name: session_id
+
+      rollback:
+        - dropIndex:
+            tableName: refresh_tokens
+            indexName: idx_refresh_tokens_session_id
+        - dropColumn:
+            tableName: refresh_tokens
+            columnName: session_id

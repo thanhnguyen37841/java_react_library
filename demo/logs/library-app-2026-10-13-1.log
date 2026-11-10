@@ -1,0 +1,617 @@
+2026-10-13 14:46:11.963 [restartedMain] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 17.0.12 with PID 3116 (D:\Java_Sps\demo\target\classes started by thanh in D:\Java_Sps\demo)
+2026-10-13 14:46:12.060 [restartedMain] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-13 14:46:12.318 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-13 14:46:12.333 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-13 14:46:13.824 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-10-13 14:46:17.968 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-13 14:46:18.344 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 344 ms. Found 14 JPA repository interfaces.
+2026-10-13 14:46:22.209 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-13 14:46:22.315 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-13 14:46:22.330 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-13 14:46:22.332 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-13 14:46:22.706 [restartedMain] INFO  org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 10362 ms
+2026-10-13 14:46:23.313 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-13 14:46:24.114 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@8bc64e6
+2026-10-13 14:46:24.116 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-13 14:46:27.841 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-13 14:46:28.269 [restartedMain] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-10-13 14:46:28.277 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-13 14:46:28.312 [restartedMain] INFO  liquibase.util - UPDATE SUMMARY
+2026-10-13 14:46:28.312 [restartedMain] INFO  liquibase.util - Run:                          0
+2026-10-13 14:46:28.313 [restartedMain] INFO  liquibase.util - Previously run:               9
+2026-10-13 14:46:28.317 [restartedMain] INFO  liquibase.util - Filtered out:                 0
+2026-10-13 14:46:28.319 [restartedMain] INFO  liquibase.util - -------------------------------
+2026-10-13 14:46:28.320 [restartedMain] INFO  liquibase.util - Total change sets:            9
+2026-10-13 14:46:28.322 [restartedMain] INFO  liquibase.util - Update summary generated
+2026-10-13 14:46:28.325 [restartedMain] INFO  liquibase.command - Command execution complete
+2026-10-13 14:46:28.573 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-13 14:46:28.798 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-13 14:46:29.874 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-13 14:46:30.064 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/library_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Ho_Chi_Minh]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: library_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-13 14:46:32.843 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-13 14:46:32.949 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-13 14:46:33.127 [restartedMain] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-13 14:46:35.884 [restartedMain] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-13 14:46:36.567 [restartedMain] WARN  org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-13 14:46:39.113 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-13 14:46:39.184 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-13 14:46:39.199 [restartedMain] INFO  com.example.demo.DemoApplication - Started DemoApplication in 30.599 seconds (process running for 34.313)
+2026-10-13 14:46:39.213 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-13 14:46:39.214 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-13 14:52:55.050 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-13 14:52:55.051 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-13 14:52:55.053 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-10-13 14:56:45.617 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-10-13 14:56:45.626 [Thread-1] INFO  org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-13 14:56:45.629 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-10-13 14:56:45.810 [tomcat-shutdown] INFO  org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-13 14:56:45.811 [Thread-1] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-10-13 14:56:45.818 [Thread-1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-13 14:56:45.824 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-10-13 14:56:45.838 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-10-13 14:56:46.008 [restartedMain] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 17.0.12 with PID 3116 (D:\Java_Sps\demo\target\classes started by thanh in D:\Java_Sps\demo)
+2026-10-13 14:56:46.010 [restartedMain] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-13 14:56:46.638 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-13 14:56:46.748 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 106 ms. Found 14 JPA repository interfaces.
+2026-10-13 14:56:47.077 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-13 14:56:47.079 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-13 14:56:47.080 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-13 14:56:47.081 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-13 14:56:47.118 [restartedMain] INFO  org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1103 ms
+2026-10-13 14:56:47.202 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-10-13 14:56:47.234 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@190ededc
+2026-10-13 14:56:47.234 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-10-13 14:56:47.665 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-13 14:56:47.824 [restartedMain] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-10-13 14:56:47.829 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-13 14:56:47.836 [restartedMain] INFO  liquibase.util - UPDATE SUMMARY
+2026-10-13 14:56:47.837 [restartedMain] INFO  liquibase.util - Run:                          0
+2026-10-13 14:56:47.837 [restartedMain] INFO  liquibase.util - Previously run:               9
+2026-10-13 14:56:47.838 [restartedMain] INFO  liquibase.util - Filtered out:                 0
+2026-10-13 14:56:47.838 [restartedMain] INFO  liquibase.util - -------------------------------
+2026-10-13 14:56:47.840 [restartedMain] INFO  liquibase.util - Total change sets:            9
+2026-10-13 14:56:47.840 [restartedMain] INFO  liquibase.util - Update summary generated
+2026-10-13 14:56:47.841 [restartedMain] INFO  liquibase.command - Command execution complete
+2026-10-13 14:56:47.894 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-13 14:56:47.969 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-13 14:56:47.975 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/library_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Ho_Chi_Minh]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: library_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-13 14:56:48.554 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-13 14:56:48.578 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-13 14:56:49.019 [restartedMain] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-13 14:56:49.310 [restartedMain] WARN  org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-13 14:56:49.769 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-13 14:56:49.775 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-13 14:56:49.781 [restartedMain] INFO  com.example.demo.DemoApplication - Started DemoApplication in 3.841 seconds (process running for 644.894)
+2026-10-13 14:56:49.785 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-10-13 14:56:49.787 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-13 14:56:49.787 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-13 14:57:33.212 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-10-13 14:57:33.216 [Thread-5] INFO  org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-13 14:57:33.217 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-10-13 14:57:33.363 [tomcat-shutdown] INFO  org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-13 14:57:33.363 [Thread-5] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-10-13 14:57:33.367 [Thread-5] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-13 14:57:33.368 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-10-13 14:57:33.376 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-10-13 14:57:33.492 [restartedMain] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 17.0.12 with PID 3116 (D:\Java_Sps\demo\target\classes started by thanh in D:\Java_Sps\demo)
+2026-10-13 14:57:33.493 [restartedMain] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-13 14:57:33.952 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-13 14:57:34.035 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 14 JPA repository interfaces.
+2026-10-13 14:57:34.240 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-13 14:57:34.242 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-13 14:57:34.243 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-13 14:57:34.244 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-13 14:57:34.276 [restartedMain] INFO  org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 778 ms
+2026-10-13 14:57:34.332 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2026-10-13 14:57:34.350 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1028595c
+2026-10-13 14:57:34.350 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2026-10-13 14:57:34.652 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-13 14:57:34.768 [restartedMain] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-10-13 14:57:34.775 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-13 14:57:34.783 [restartedMain] INFO  liquibase.util - UPDATE SUMMARY
+2026-10-13 14:57:34.784 [restartedMain] INFO  liquibase.util - Run:                          0
+2026-10-13 14:57:34.785 [restartedMain] INFO  liquibase.util - Previously run:               9
+2026-10-13 14:57:34.786 [restartedMain] INFO  liquibase.util - Filtered out:                 0
+2026-10-13 14:57:34.788 [restartedMain] INFO  liquibase.util - -------------------------------
+2026-10-13 14:57:34.789 [restartedMain] INFO  liquibase.util - Total change sets:            9
+2026-10-13 14:57:34.790 [restartedMain] INFO  liquibase.util - Update summary generated
+2026-10-13 14:57:34.791 [restartedMain] INFO  liquibase.command - Command execution complete
+2026-10-13 14:57:34.827 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-13 14:57:34.881 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-13 14:57:34.885 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/library_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Ho_Chi_Minh]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: library_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-13 14:57:35.365 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-13 14:57:35.381 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-13 14:57:35.740 [restartedMain] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-13 14:57:35.969 [restartedMain] WARN  org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-13 14:57:36.272 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-13 14:57:36.277 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-13 14:57:36.283 [restartedMain] INFO  com.example.demo.DemoApplication - Started DemoApplication in 2.832 seconds (process running for 691.395)
+2026-10-13 14:57:36.286 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-10-13 14:57:36.287 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-13 14:57:36.287 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-13 14:58:13.269 [restartedMain] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 17.0.12 with PID 9436 (D:\Java_Sps\demo\target\classes started by thanh in D:\Java_Sps\demo)
+2026-10-13 14:58:13.288 [restartedMain] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-13 14:58:13.367 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-13 14:58:13.368 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-13 14:58:13.775 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-10-13 14:58:15.125 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-13 14:58:15.324 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 182 ms. Found 14 JPA repository interfaces.
+2026-10-13 14:58:17.017 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-13 14:58:17.045 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-13 14:58:17.053 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-13 14:58:17.054 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-13 14:58:17.174 [restartedMain] INFO  org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3802 ms
+2026-10-13 14:58:17.487 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-13 14:58:17.916 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@10801678
+2026-10-13 14:58:17.920 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-13 14:58:20.642 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-13 14:58:20.934 [restartedMain] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-10-13 14:58:20.939 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-13 14:58:20.962 [restartedMain] INFO  liquibase.util - UPDATE SUMMARY
+2026-10-13 14:58:20.964 [restartedMain] INFO  liquibase.util - Run:                          0
+2026-10-13 14:58:20.965 [restartedMain] INFO  liquibase.util - Previously run:               9
+2026-10-13 14:58:20.966 [restartedMain] INFO  liquibase.util - Filtered out:                 0
+2026-10-13 14:58:20.968 [restartedMain] INFO  liquibase.util - -------------------------------
+2026-10-13 14:58:20.969 [restartedMain] INFO  liquibase.util - Total change sets:            9
+2026-10-13 14:58:20.974 [restartedMain] INFO  liquibase.util - Update summary generated
+2026-10-13 14:58:20.983 [restartedMain] INFO  liquibase.command - Command execution complete
+2026-10-13 14:58:21.223 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-13 14:58:21.356 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-13 14:58:22.115 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-13 14:58:22.213 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/library_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Ho_Chi_Minh]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: library_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-13 14:58:23.946 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-13 14:58:24.015 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-13 14:58:24.137 [restartedMain] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-13 14:58:26.283 [restartedMain] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-13 14:58:26.948 [restartedMain] WARN  org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-13 14:58:28.729 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-13 14:58:28.779 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-13 14:58:28.792 [restartedMain] INFO  com.example.demo.DemoApplication - Started DemoApplication in 16.338 seconds (process running for 17.298)
+2026-10-13 14:58:28.802 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-13 14:58:28.802 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-13 15:00:59.983 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-13 15:00:59.986 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-13 15:00:59.988 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-10-13 15:01:00.232 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 15:01:00.986 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 751ms | URI: /auth/login
+2026-10-13 15:14:45.203 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 15:14:45.305 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 101ms | URI: /auth/login
+2026-10-13 15:20:03.639 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 15:20:03.723 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 82ms | URI: /auth/login
+2026-10-13 15:20:03.743 [http-nio-8080-exec-8] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2026-10-13 15:20:09.141 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 15:20:09.246 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 104ms | URI: /auth/login
+2026-10-13 15:20:11.764 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 15:20:11.819 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 54ms | URI: /api/books
+2026-10-13 15:20:11.828 [http-nio-8080-exec-2] WARN  org.springframework.data.web.config.SpringDataJackson3Configuration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-10-13 15:20:25.430 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 15:20:25.444 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 14ms | URI: /api/books
+2026-10-13 15:38:21.653 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 15:38:21.672 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 16ms | URI: /api/books
+2026-10-13 15:39:05.177 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 15:39:05.286 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 107ms | URI: /auth/login
+2026-10-13 15:46:11.201 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 15:46:11.305 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 102ms | URI: /auth/login
+2026-10-13 15:46:11.366 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 15:46:11.382 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 14ms | URI: /api/books
+2026-10-13 15:46:36.884 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 15:46:36.982 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 97ms | URI: /auth/login
+2026-10-13 15:46:37.043 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 15:46:37.054 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 10ms | URI: /api/books
+2026-10-13 15:46:48.159 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], keyword=[abc]]
+2026-10-13 15:46:48.202 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 42ms | URI: /api/books
+2026-10-13 15:46:50.040 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], keyword=[a]]
+2026-10-13 15:46:50.055 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 14ms | URI: /api/books
+2026-10-13 15:46:54.005 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], keyword=[5]]
+2026-10-13 15:46:54.018 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 11ms | URI: /api/books
+2026-10-13 15:46:57.930 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], keyword=[miss]]
+2026-10-13 15:46:57.939 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/books
+2026-10-13 15:46:59.651 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 15:46:59.666 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 14ms | URI: /api/books
+2026-10-13 15:47:07.926 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], keyword=[Action]]
+2026-10-13 15:47:07.938 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 10ms | URI: /api/books
+2026-10-13 15:47:14.751 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 15:47:14.766 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 14ms | URI: /api/books
+2026-10-13 15:58:21.992 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 15:58:22.066 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 72ms | URI: /auth/login
+2026-10-13 15:58:22.069 [http-nio-8080-exec-5] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2026-10-13 15:58:27.076 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 15:58:27.177 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 99ms | URI: /auth/login
+2026-10-13 15:58:27.221 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 15:58:27.235 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 13ms | URI: /api/books
+2026-10-13 15:58:32.478 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/logout | Params: []
+2026-10-13 15:58:32.499 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 21ms | URI: /auth/logout
+2026-10-13 16:02:06.312 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 16:02:06.441 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 128ms | URI: /auth/login
+2026-10-13 16:02:06.487 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 16:02:06.513 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 24ms | URI: /api/books
+2026-10-13 16:02:09.516 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/logout | Params: []
+2026-10-13 16:02:09.543 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 26ms | URI: /auth/logout
+2026-10-13 16:04:47.626 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 16:04:47.726 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 98ms | URI: /auth/login
+2026-10-13 16:04:47.772 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 16:04:47.787 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 14ms | URI: /api/books
+2026-10-13 16:04:51.376 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/logout | Params: []
+2026-10-13 16:04:51.402 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 25ms | URI: /auth/logout
+2026-10-13 16:13:02.222 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 16:13:02.324 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 101ms | URI: /auth/login
+2026-10-13 16:13:02.367 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 16:13:02.383 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 15ms | URI: /api/books
+2026-10-13 16:13:04.820 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/logout | Params: []
+2026-10-13 16:13:04.847 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 27ms | URI: /auth/logout
+2026-10-13 16:19:46.165 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 16:19:46.281 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 115ms | URI: /auth/login
+2026-10-13 16:19:46.312 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 16:19:46.326 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 13ms | URI: /api/books
+2026-10-13 16:34:19.032 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 16:34:19.129 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 94ms | URI: /auth/login
+2026-10-13 16:34:19.164 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 16:34:19.182 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 17ms | URI: /api/books
+2026-10-13 16:34:23.569 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/logout | Params: []
+2026-10-13 16:34:23.593 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 23ms | URI: /auth/logout
+2026-10-13 16:34:39.666 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 16:34:39.751 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 84ms | URI: /auth/login
+2026-10-13 16:34:39.754 [http-nio-8080-exec-6] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2026-10-13 16:34:43.549 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 16:34:43.628 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 78ms | URI: /auth/login
+2026-10-13 16:34:43.630 [http-nio-8080-exec-7] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2026-10-13 16:35:08.406 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 16:35:08.487 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 78ms | URI: /auth/login
+2026-10-13 16:35:08.489 [http-nio-8080-exec-9] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2026-10-13 16:35:14.973 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 16:35:15.068 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 93ms | URI: /auth/login
+2026-10-13 16:35:15.108 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 16:35:15.126 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 16ms | URI: /api/books
+2026-10-13 16:35:19.129 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/logout | Params: []
+2026-10-13 16:35:19.147 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 17ms | URI: /auth/logout
+2026-10-13 16:40:06.966 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 16:40:07.080 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 113ms | URI: /auth/login
+2026-10-13 16:40:07.120 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 16:40:07.136 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 14ms | URI: /api/books
+2026-10-13 16:40:10.032 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/logout | Params: []
+2026-10-13 16:40:10.090 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 58ms | URI: /auth/logout
+2026-10-13 16:40:30.622 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 16:40:30.700 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 76ms | URI: /auth/login
+2026-10-13 16:40:30.701 [http-nio-8080-exec-4] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2026-10-13 16:40:32.745 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 16:40:32.840 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 95ms | URI: /auth/login
+2026-10-13 16:40:32.878 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 16:40:32.889 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 10ms | URI: /api/books
+2026-10-13 16:40:34.431 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 16:40:34.443 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 11ms | URI: /api/books
+2026-10-13 16:40:35.081 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 16:40:35.091 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/books
+2026-10-13 16:40:35.495 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 16:40:35.509 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 13ms | URI: /api/books
+2026-10-13 16:40:35.694 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 16:40:35.704 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 11ms | URI: /api/books
+2026-10-13 16:40:45.679 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], keyword=[acb]]
+2026-10-13 16:40:45.687 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/books
+2026-10-13 16:50:01.229 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/logout | Params: []
+2026-10-13 16:50:01.254 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 23ms | URI: /auth/logout
+2026-10-13 16:50:16.936 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 16:50:17.028 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 91ms | URI: /auth/login
+2026-10-13 16:50:17.070 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 16:50:17.088 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 17ms | URI: /api/books
+2026-10-13 16:50:19.337 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 16:50:19.349 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 11ms | URI: /api/books
+2026-10-13 16:50:19.975 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 16:50:19.986 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 10ms | URI: /api/books
+2026-10-13 16:50:20.181 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 16:50:20.191 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/books
+2026-10-13 16:50:20.362 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 16:50:20.373 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 10ms | URI: /api/books
+2026-10-13 16:50:22.276 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], keyword=[ab]]
+2026-10-13 16:50:22.281 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/books
+2026-10-13 16:50:32.423 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 16:50:32.435 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 11ms | URI: /api/books
+2026-10-13 16:50:33.878 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/logout | Params: []
+2026-10-13 16:50:33.902 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 23ms | URI: /auth/logout
+2026-10-13 16:53:41.049 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/register | Params: []
+2026-10-13 16:53:48.085 [http-nio-8080-exec-3] INFO  com.example.demo.service.MailService - ?ã g?i email xác th?c t?i: user2@gmail.com
+2026-10-13 16:53:48.125 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7074ms | URI: /auth/register
+2026-10-13 17:13:34.611 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 17:13:34.700 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 86ms | URI: /auth/login
+2026-10-13 17:13:34.702 [http-nio-8080-exec-6] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2026-10-13 17:13:37.735 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 17:13:37.828 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 92ms | URI: /auth/login
+2026-10-13 17:13:37.864 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 17:13:37.876 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 11ms | URI: /api/books
+2026-10-13 17:13:51.423 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/logout | Params: []
+2026-10-13 17:13:51.451 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 26ms | URI: /auth/logout
+2026-10-13 17:14:08.800 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 17:14:08.898 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 95ms | URI: /auth/login
+2026-10-13 17:14:08.956 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 17:14:08.969 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 11ms | URI: /api/books
+2026-10-13 17:14:21.698 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/logout | Params: []
+2026-10-13 17:14:21.712 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 13ms | URI: /auth/logout
+2026-10-13 17:38:37.532 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-10-13 17:38:37.572 [Thread-1] INFO  org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-13 17:38:37.576 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-10-13 17:38:37.709 [tomcat-shutdown] INFO  org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-13 17:38:37.710 [Thread-1] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-10-13 17:38:37.728 [Thread-1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-13 17:38:37.752 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-10-13 17:38:37.759 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-10-13 17:38:38.137 [restartedMain] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 17.0.12 with PID 9436 (D:\Java_Sps\demo\target\classes started by thanh in D:\Java_Sps\demo)
+2026-10-13 17:38:38.138 [restartedMain] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-13 17:38:38.780 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-13 17:38:38.908 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 125 ms. Found 14 JPA repository interfaces.
+2026-10-13 17:38:39.465 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-13 17:38:39.467 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-13 17:38:39.468 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-13 17:38:39.470 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-13 17:38:39.507 [restartedMain] INFO  org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1365 ms
+2026-10-13 17:38:39.588 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-10-13 17:38:39.609 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@554f2ec8
+2026-10-13 17:38:39.610 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-10-13 17:38:41.693 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-13 17:38:41.828 [restartedMain] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-10-13 17:38:41.832 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-13 17:38:41.841 [restartedMain] INFO  liquibase.util - UPDATE SUMMARY
+2026-10-13 17:38:41.843 [restartedMain] INFO  liquibase.util - Run:                          0
+2026-10-13 17:38:41.844 [restartedMain] INFO  liquibase.util - Previously run:               9
+2026-10-13 17:38:41.845 [restartedMain] INFO  liquibase.util - Filtered out:                 0
+2026-10-13 17:38:41.847 [restartedMain] INFO  liquibase.util - -------------------------------
+2026-10-13 17:38:41.847 [restartedMain] INFO  liquibase.util - Total change sets:            9
+2026-10-13 17:38:41.848 [restartedMain] INFO  liquibase.util - Update summary generated
+2026-10-13 17:38:41.848 [restartedMain] INFO  liquibase.command - Command execution complete
+2026-10-13 17:38:41.896 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-13 17:38:41.957 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-13 17:38:41.962 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/library_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Ho_Chi_Minh]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: library_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-13 17:38:42.411 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-13 17:38:42.426 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-13 17:38:42.744 [restartedMain] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-13 17:38:42.972 [restartedMain] WARN  org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-13 17:38:43.414 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-13 17:38:43.419 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-13 17:38:43.427 [restartedMain] INFO  com.example.demo.DemoApplication - Started DemoApplication in 5.345 seconds (process running for 9641.487)
+2026-10-13 17:38:43.432 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-10-13 17:38:43.432 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-13 17:38:43.432 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-13 17:38:44.836 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-10-13 17:38:44.837 [Thread-5] INFO  org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-13 17:38:44.838 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-10-13 17:38:44.972 [tomcat-shutdown] INFO  org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-13 17:38:44.973 [Thread-5] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-10-13 17:38:44.977 [Thread-5] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-13 17:38:44.978 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-10-13 17:38:44.982 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-10-13 17:38:45.108 [restartedMain] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 17.0.12 with PID 9436 (D:\Java_Sps\demo\target\classes started by thanh in D:\Java_Sps\demo)
+2026-10-13 17:38:45.109 [restartedMain] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-13 17:41:51.781 [restartedMain] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 17.0.12 with PID 5856 (D:\Java_Sps\demo\target\classes started by thanh in D:\Java_Sps\demo)
+2026-10-13 17:41:51.802 [restartedMain] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-13 17:41:51.985 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-13 17:41:51.986 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-13 17:41:52.601 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-10-13 17:41:54.170 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-13 17:41:54.333 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 145 ms. Found 14 JPA repository interfaces.
+2026-10-13 17:41:56.543 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-13 17:41:56.608 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-13 17:41:56.618 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-13 17:41:56.619 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-13 17:41:56.781 [restartedMain] INFO  org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 4787 ms
+2026-10-13 17:41:57.176 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-13 17:41:57.981 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5dfde9f7
+2026-10-13 17:41:57.985 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-13 17:42:00.656 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-13 17:42:00.922 [restartedMain] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-10-13 17:42:00.927 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-13 17:42:00.950 [restartedMain] INFO  liquibase.util - UPDATE SUMMARY
+2026-10-13 17:42:00.951 [restartedMain] INFO  liquibase.util - Run:                          0
+2026-10-13 17:42:00.951 [restartedMain] INFO  liquibase.util - Previously run:               9
+2026-10-13 17:42:00.952 [restartedMain] INFO  liquibase.util - Filtered out:                 0
+2026-10-13 17:42:00.953 [restartedMain] INFO  liquibase.util - -------------------------------
+2026-10-13 17:42:00.953 [restartedMain] INFO  liquibase.util - Total change sets:            9
+2026-10-13 17:42:00.955 [restartedMain] INFO  liquibase.util - Update summary generated
+2026-10-13 17:42:00.957 [restartedMain] INFO  liquibase.command - Command execution complete
+2026-10-13 17:42:01.168 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-13 17:42:01.343 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-13 17:42:02.146 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-13 17:42:02.286 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/library_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Ho_Chi_Minh]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: library_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-13 17:42:04.176 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-13 17:42:04.245 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-13 17:42:04.350 [restartedMain] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-13 17:42:07.459 [restartedMain] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-13 17:42:07.950 [restartedMain] WARN  org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-13 17:42:09.584 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-13 17:42:09.630 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-13 17:42:09.643 [restartedMain] INFO  com.example.demo.DemoApplication - Started DemoApplication in 18.841 seconds (process running for 19.985)
+2026-10-13 17:42:09.652 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-13 17:42:09.653 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-13 17:42:36.232 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-13 17:42:36.232 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-13 17:42:36.234 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-10-13 17:42:36.453 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 17:42:37.117 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 662ms | URI: /auth/login
+2026-10-13 17:42:37.303 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 17:42:37.356 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 52ms | URI: /api/books
+2026-10-13 17:42:37.370 [http-nio-8080-exec-4] WARN  org.springframework.data.web.config.SpringDataJackson3Configuration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-10-13 17:42:42.201 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/logout | Params: []
+2026-10-13 17:42:42.221 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 18ms | URI: /auth/logout
+2026-10-13 17:49:23.812 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 17:49:24.150 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 337ms | URI: /auth/login
+2026-10-13 17:49:24.200 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 17:49:24.216 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 15ms | URI: /api/books
+2026-10-13 17:49:25.944 [http-nio-8080-exec-3] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-13 17:49:31.203 [http-nio-8080-exec-5] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-13 17:49:46.479 [http-nio-8080-exec-6] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-13 17:49:49.028 [http-nio-8080-exec-7] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-13 17:49:50.810 [http-nio-8080-exec-9] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-13 17:49:51.476 [http-nio-8080-exec-10] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-13 17:49:53.018 [http-nio-8080-exec-2] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-13 17:49:55.876 [http-nio-8080-exec-3] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-13 17:49:58.087 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/logout | Params: []
+2026-10-13 17:49:58.114 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 26ms | URI: /auth/logout
+2026-10-13 17:50:04.660 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 17:50:04.742 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 80ms | URI: /auth/login
+2026-10-13 17:50:04.743 [http-nio-8080-exec-6] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2026-10-13 17:50:11.622 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 17:50:11.713 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 90ms | URI: /auth/login
+2026-10-13 17:50:11.788 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 17:50:11.791 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [keyword=[], page=[0], size=[8]]
+2026-10-13 17:50:11.806 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 17ms | URI: /api/books
+2026-10-13 17:50:11.836 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 44ms | URI: /api/admin/users
+2026-10-13 17:54:25.845 [File Watcher] INFO  org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-10-13 17:54:25.852 [Thread-1] INFO  org.springframework.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-13 17:54:25.855 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-10-13 17:54:25.987 [tomcat-shutdown] INFO  org.springframework.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-13 17:54:25.989 [Thread-1] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-10-13 17:54:25.995 [Thread-1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-13 17:54:26.000 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-10-13 17:54:26.011 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-10-13 17:54:26.157 [restartedMain] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 17.0.12 with PID 5856 (D:\Java_Sps\demo\target\classes started by thanh in D:\Java_Sps\demo)
+2026-10-13 17:54:26.159 [restartedMain] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-13 17:57:37.367 [restartedMain] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 17.0.12 with PID 30208 (D:\Java_Sps\demo\target\classes started by thanh in D:\Java_Sps\demo)
+2026-10-13 17:57:37.388 [restartedMain] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-13 17:57:37.470 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-13 17:57:37.470 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-13 17:57:37.850 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-10-13 17:57:39.210 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-13 17:57:39.384 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 160 ms. Found 14 JPA repository interfaces.
+2026-10-13 17:57:41.263 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-13 17:57:41.297 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-13 17:57:41.306 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-13 17:57:41.307 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-13 17:57:41.435 [restartedMain] INFO  org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3959 ms
+2026-10-13 17:57:41.741 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-13 17:57:42.443 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7aa2a51c
+2026-10-13 17:57:42.446 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-13 17:57:46.166 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-13 17:57:46.475 [restartedMain] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-10-13 17:57:46.481 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-13 17:57:46.514 [restartedMain] INFO  liquibase.util - UPDATE SUMMARY
+2026-10-13 17:57:46.516 [restartedMain] INFO  liquibase.util - Run:                          0
+2026-10-13 17:57:46.516 [restartedMain] INFO  liquibase.util - Previously run:               9
+2026-10-13 17:57:46.516 [restartedMain] INFO  liquibase.util - Filtered out:                 0
+2026-10-13 17:57:46.517 [restartedMain] INFO  liquibase.util - -------------------------------
+2026-10-13 17:57:46.517 [restartedMain] INFO  liquibase.util - Total change sets:            9
+2026-10-13 17:57:46.519 [restartedMain] INFO  liquibase.util - Update summary generated
+2026-10-13 17:57:46.522 [restartedMain] INFO  liquibase.command - Command execution complete
+2026-10-13 17:57:46.760 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-13 17:57:46.957 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-13 17:57:47.871 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-13 17:57:48.032 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/library_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Ho_Chi_Minh]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: library_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-13 17:57:50.171 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-13 17:57:50.238 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-13 17:57:50.366 [restartedMain] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-13 17:57:53.368 [restartedMain] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-13 17:57:53.790 [restartedMain] WARN  org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-13 17:57:55.197 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-13 17:57:55.293 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-13 17:57:55.312 [restartedMain] INFO  com.example.demo.DemoApplication - Started DemoApplication in 18.843 seconds (process running for 19.901)
+2026-10-13 17:57:55.324 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-13 17:57:55.325 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-13 17:58:11.589 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-13 17:58:11.591 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-13 17:58:11.593 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-10-13 17:58:11.867 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 17:58:12.430 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 561ms | URI: /auth/login
+2026-10-13 17:58:12.665 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 17:58:12.720 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 54ms | URI: /api/books
+2026-10-13 17:58:12.743 [http-nio-8080-exec-4] WARN  org.springframework.data.web.config.SpringDataJackson3Configuration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-10-13 17:58:14.509 [http-nio-8080-exec-7] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authorization.AuthorizationDeniedException: Access Denied]
+2026-10-13 17:58:28.468 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/logout | Params: []
+2026-10-13 17:58:28.500 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 30ms | URI: /auth/logout
+2026-10-13 17:58:32.247 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-13 17:58:32.347 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 100ms | URI: /auth/login
+2026-10-13 17:58:32.417 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-13 17:58:32.433 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 15ms | URI: /api/books
+2026-10-13 17:58:36.262 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [keyword=[], page=[0], size=[8]]
+2026-10-13 17:58:36.303 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 40ms | URI: /api/admin/users
+2026-10-13 17:58:41.337 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users/5/permissions | Params: []
+2026-10-13 17:58:41.365 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 26ms | URI: /api/admin/users/5/permissions
+2026-10-13 17:58:58.526 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users/1/permissions | Params: []
+2026-10-13 17:58:58.544 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 17ms | URI: /api/admin/users/1/permissions
+2026-10-13 17:59:03.417 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users/6/permissions | Params: []
+2026-10-13 17:59:03.442 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 23ms | URI: /api/admin/users/6/permissions
+2026-10-13 17:59:14.046 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users/3/permissions | Params: []
+2026-10-13 17:59:14.063 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 16ms | URI: /api/admin/users/3/permissions
+2026-10-13 17:59:25.285 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/logout | Params: []
+2026-10-13 17:59:25.303 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 18ms | URI: /auth/logout

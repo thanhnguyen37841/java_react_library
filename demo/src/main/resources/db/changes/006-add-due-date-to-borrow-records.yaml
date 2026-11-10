@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: add-due-date-to-borrow-records
+      author: admin
+      changes:
+        - addColumn:
+            tableName: borrow_records
+            columns:
+              - column:
+                  name: due_date
+                  type: date
+                  constraints:
+                    nullable: false

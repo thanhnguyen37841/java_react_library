@@ -1,0 +1,102 @@
+
+databaseChangeLog:
+  - changeSet:
+      id: 013-create-permission-groups
+      author: thanh
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            tableExists:
+              tableName: permission_groups
+      changes:
+        - createTable:
+            tableName: permission_groups
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: description
+                  type: VARCHAR(255)
+              - column:
+                  name: created_at
+                  type: DATETIME
+              - column:
+                  name: updated_at
+                  type: DATETIME
+
+        - createTable:
+            tableName: permission_group_permissions
+            columns:
+              - column:
+                  name: group_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: permission_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+        - addPrimaryKey:
+            tableName: permission_group_permissions
+            columnNames: group_id, permission_id
+            constraintName: pk_permission_group_permissions
+
+        - addForeignKeyConstraint:
+            baseTableName: permission_group_permissions
+            baseColumnNames: group_id
+            referencedTableName: permission_groups
+            referencedColumnNames: id
+            constraintName: fk_group_permissions_group
+
+        - addForeignKeyConstraint:
+            baseTableName: permission_group_permissions
+            baseColumnNames: permission_id
+            referencedTableName: permissions
+            referencedColumnNames: id
+            constraintName: fk_group_permissions_permission
+
+        - createTable:
+            tableName: permission_group_users
+            columns:
+              - column:
+                  name: group_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: user_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+        - addPrimaryKey:
+            tableName: permission_group_users
+            columnNames: group_id, user_id
+            constraintName: pk_permission_group_users
+
+        - addForeignKeyConstraint:
+            baseTableName: permission_group_users
+            baseColumnNames: group_id
+            referencedTableName: permission_groups
+            referencedColumnNames: id
+            constraintName: fk_group_users_group
+
+        - addForeignKeyConstraint:
+            baseTableName: permission_group_users
+            baseColumnNames: user_id
+            referencedTableName: users
+            referencedColumnNames: id
+            constraintName: fk_group_users_user

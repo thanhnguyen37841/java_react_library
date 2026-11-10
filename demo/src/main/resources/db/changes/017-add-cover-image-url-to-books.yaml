@@ -1,0 +1,21 @@
+
+databaseChangeLog:
+  - changeSet:
+      id: 017-add-cover-image-url-to-books
+      author: developer
+      changes:
+        - preConditions:
+            - onFail: MARK_RAN
+              onError: HALT
+            - not:
+                - columnExists:
+                    tableName: books
+                    columnName: cover_image_url
+        - addColumn:
+            tableName: books
+            columns:
+              - column:
+                  name: cover_image_url
+                  type: VARCHAR(1000)
+                  constraints:
+                    nullable: true

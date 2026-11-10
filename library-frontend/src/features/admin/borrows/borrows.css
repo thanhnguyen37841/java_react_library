@@ -1,0 +1,741 @@
+
+/* =========================================================
+   ADMIN BORROWS — Responsive UI
+   Chỉ điều chỉnh giao diện, giữ nguyên nghiệp vụ.
+   ========================================================= */
+
+/* =========================================================
+   LAYOUT & THEME
+   Kết hợp library-content để bỏ giới hạn chiều rộng 1200px.
+   ========================================================= */
+
+.library-content.admin-borrows {
+  --borrow-ink: #172033;
+  --borrow-muted: #667085;
+  --borrow-border: #e5e9f1;
+  --borrow-primary: #3157d5;
+  --borrow-primary-hover: #2445b8;
+
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin: 0;
+  padding: 32px 0;
+  box-sizing: border-box;
+  color: var(--borrow-ink);
+}
+
+.admin-borrows *,
+.admin-borrows *::before,
+.admin-borrows *::after {
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.admin-borrows__heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  width: 100%;
+  margin: 0 0 24px;
+  padding: 0 0 22px;
+  border-bottom: 1px solid #e9edf4;
+}
+
+.admin-borrows__heading .eyebrow {
+  margin: 0 0 9px;
+  color: var(--borrow-primary);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.admin-borrows__heading h1 {
+  margin: 0 0 9px;
+  color: var(--borrow-ink);
+  font-size: clamp(24px, 2.1vw, 31px);
+  font-weight: 780;
+  letter-spacing: -0.035em;
+  line-height: 1.3;
+}
+
+.admin-borrows__heading p:not(.eyebrow) {
+  margin: 0;
+  color: var(--borrow-muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.admin-borrows__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  min-height: 37px;
+  padding: 8px 12px;
+  border: 1px solid var(--borrow-primary);
+  border-radius: 9px;
+
+  background: var(--borrow-primary);
+  box-shadow: 0 2px 4px rgb(49 87 213 / 10%);
+  color: #fff;
+
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.4;
+  white-space: nowrap;
+
+  cursor: pointer;
+  transition:
+    background 0.16s ease,
+    border-color 0.16s ease,
+    box-shadow 0.16s ease,
+    transform 0.16s ease;
+}
+
+.admin-borrows__button:hover:not(:disabled) {
+  border-color: var(--borrow-primary-hover);
+  background: var(--borrow-primary-hover);
+  box-shadow: 0 4px 9px rgb(49 87 213 / 16%);
+  transform: translateY(-1px);
+}
+
+.admin-borrows__button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.admin-borrows__button:disabled {
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.5;
+  transform: none;
+}
+
+.admin-borrows__button--secondary {
+  border-color: #d8deea;
+  background: #fff;
+  box-shadow: none;
+  color: #344054;
+}
+
+.admin-borrows__button--secondary:hover:not(:disabled) {
+  border-color: #b9c6e0;
+  background: #f5f7fc;
+  box-shadow: none;
+  color: #243b75;
+}
+
+.admin-borrows__button:focus-visible,
+.admin-borrows input:focus-visible,
+.admin-borrows select:focus-visible {
+  outline: 3px solid rgb(49 87 213 / 22%);
+  outline-offset: 2px;
+}
+
+/* =========================================================
+   SEARCH & FILTERS
+   ========================================================= */
+
+.admin-borrows__filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 14px;
+
+  border: 1px solid #e7ebf3;
+  border-radius: 13px;
+  background: #f8faff;
+}
+
+.admin-borrows__filters input,
+.admin-borrows__filters select {
+  min-width: 0;
+  min-height: 41px;
+  padding: 9px 12px;
+
+  border: 1px solid #d8deea;
+  border-radius: 9px;
+  background: #fff;
+  color: #344054;
+
+  font: inherit;
+  font-size: 13px;
+
+  transition:
+    border-color 0.16s ease,
+    box-shadow 0.16s ease;
+}
+
+.admin-borrows__filters input {
+  flex: 1 1 320px;
+  width: auto;
+}
+
+.admin-borrows__filters input::placeholder {
+  color: #98a2b3;
+}
+
+.admin-borrows__filters select {
+  flex: 0 1 205px;
+  cursor: pointer;
+}
+
+.admin-borrows__filters input:focus,
+.admin-borrows__filters select:focus {
+  border-color: #91a5ed;
+  box-shadow: 0 0 0 3px rgb(49 87 213 / 9%);
+  outline: none;
+}
+
+/* =========================================================
+   ALERTS
+   ========================================================= */
+
+.admin-borrows__alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+
+  width: 100%;
+  margin: 0 0 16px;
+  padding: 12px 15px;
+
+  border: 1px solid transparent;
+  border-radius: 10px;
+
+  font-size: 13px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.admin-borrows__alert--error {
+  border-color: #f4c7c5;
+  background: #fff5f4;
+  color: #b42318;
+}
+
+.admin-borrows__alert--success {
+  border-color: #b7e5c9;
+  background: #f0fbf5;
+  color: #067647;
+}
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.admin-borrows__table-card {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+
+  border: 1px solid var(--borrow-border);
+  border-radius: 13px;
+  background: #fff;
+  box-shadow: 0 4px 14px rgb(16 24 40 / 3%);
+}
+
+.admin-borrows__table {
+  width: 100%;
+  min-width: 1050px;
+
+  border-collapse: separate;
+  border-spacing: 0;
+
+  color: #344054;
+  font-size: 12px;
+  text-align: left;
+}
+
+.admin-borrows__table th,
+.admin-borrows__table td {
+  padding: 14px 15px;
+  border-bottom: 1px solid #edf0f5;
+  text-align: left;
+  vertical-align: middle;
+  line-height: 1.55;
+}
+
+.admin-borrows__table th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  background: #f7f9fc;
+  color: #667085;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.admin-borrows__table tbody tr {
+  transition: background 0.14s ease;
+}
+
+.admin-borrows__table tbody tr:hover {
+  background: #f8faff;
+}
+
+.admin-borrows__table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+/* Member and book names */
+
+.admin-borrows__table td:nth-child(2),
+.admin-borrows__table td:nth-child(3) {
+  min-width: 145px;
+  overflow-wrap: anywhere;
+}
+
+/* Borrow code */
+
+.admin-borrows__table td:first-child {
+  color: #344054;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Borrow and due dates */
+
+.admin-borrows__table td:nth-child(4),
+.admin-borrows__table td:nth-child(5) {
+  min-width: 105px;
+  color: #667085;
+  white-space: nowrap;
+}
+
+/* Actions */
+
+.admin-borrows__table td:last-child {
+  min-width: 145px;
+}
+
+.admin-borrows__table td:last-child .admin-borrows__button {
+  margin: 2px 2px 2px 0;
+}
+
+/* =========================================================
+   STATUS BADGES
+   ========================================================= */
+
+.admin-borrows__status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  padding: 6px 10px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+
+  font-size: 11px;
+  font-weight: 750;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.admin-borrows__status::before {
+  width: 6px;
+  height: 6px;
+  flex: 0 0 6px;
+  border-radius: 50%;
+  background: currentColor;
+  content: "";
+}
+
+.admin-borrows__status--active {
+  border-color: #d8e5ff;
+  background: #eff5ff;
+  color: #2457c5;
+}
+
+.admin-borrows__status--returned {
+  border-color: #b7e5c9;
+  background: #f0fbf5;
+  color: #067647;
+}
+
+.admin-borrows__status--overdue {
+  border-color: #f4c7c5;
+  background: #fff1f0;
+  color: #b42318;
+}
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.admin-borrows__empty {
+  min-height: 110px;
+  padding: 35px 16px !important;
+  color: #8490a3;
+  font-size: 13px;
+  text-align: center !important;
+}
+
+/* =========================================================
+   PAGINATION
+   ========================================================= */
+
+.admin-borrows__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+
+  width: 100%;
+  margin-top: 17px;
+  padding: 13px 2px 0;
+}
+
+.admin-borrows__muted {
+  color: #667085;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.admin-borrows__pagination-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.admin-borrows__pagination-actions > span {
+  min-width: 82px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+/* =========================================================
+   DETAIL MODAL
+   ========================================================= */
+
+.admin-borrows__modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  display: grid;
+  place-items: center;
+
+  overflow-y: auto;
+  padding: 22px;
+
+  background: rgb(15 23 42 / 58%);
+  backdrop-filter: blur(4px);
+
+  animation: borrow-backdrop-in 0.16s ease-out;
+}
+
+.admin-borrows__modal {
+  width: min(900px, calc(100vw - 44px));
+  max-width: none;
+  max-height: min(86vh, 850px);
+
+  overflow: auto;
+  padding: 24px;
+
+  border: 1px solid rgb(255 255 255 / 70%);
+  border-radius: 17px;
+  background: #fff;
+  box-shadow: 0 24px 70px rgb(15 23 42 / 25%);
+
+  animation: borrow-modal-in 0.18s ease-out;
+}
+
+.admin-borrows__modal h2 {
+  margin: 0 0 8px;
+  padding-bottom: 17px;
+
+  border-bottom: 1px solid #edf0f5;
+  color: var(--borrow-ink);
+
+  font-size: 20px;
+  font-weight: 760;
+  letter-spacing: -0.025em;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.admin-borrows__modal > p {
+  color: var(--borrow-muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.admin-borrows__details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 11px;
+
+  margin: 18px 0;
+}
+
+.admin-borrows__detail {
+  min-width: 0;
+  padding: 13px;
+
+  border: 1px solid #e9edf4;
+  border-radius: 10px;
+  background: #f8f9fc;
+
+  overflow-wrap: anywhere;
+}
+
+.admin-borrows__detail span {
+  display: block;
+  margin-bottom: 7px;
+  color: #7a8497;
+  font-size: 11px;
+  font-weight: 650;
+}
+
+.admin-borrows__detail strong {
+  color: #344054;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.admin-borrows__modal-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-top: 22px;
+  padding-top: 17px;
+  border-top: 1px solid #edf0f5;
+}
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+
+@keyframes borrow-backdrop-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes borrow-modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(7px) scale(0.99);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 760px) {
+  .library-content.admin-borrows {
+    padding: 24px 0;
+  }
+
+  .admin-borrows__heading {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .admin-borrows__heading > button {
+    align-self: flex-start;
+  }
+
+  .admin-borrows__filters {
+    align-items: stretch;
+    flex-direction: column;
+    padding: 11px;
+  }
+
+  .admin-borrows__filters input,
+  .admin-borrows__filters select,
+  .admin-borrows__filters button {
+    width: 100%;
+    flex: 1 1 auto;
+  }
+
+  .admin-borrows__table {
+    min-width: 920px;
+  }
+
+  .admin-borrows__pagination {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .admin-borrows__pagination-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .admin-borrows__modal {
+    width: calc(100vw - 24px);
+    padding: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-borrows__details {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-borrows__modal-backdrop {
+    place-items: start center;
+    padding: 12px;
+  }
+
+  .admin-borrows__modal {
+    width: 100%;
+    max-height: calc(100vh - 24px);
+    border-radius: 13px;
+  }
+
+  .admin-borrows__modal-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .admin-borrows__modal-actions .admin-borrows__button {
+    width: 100%;
+  }
+}
+
+/* Respect reduced-motion preference */
+
+@media (prefers-reduced-motion: reduce) {
+  .admin-borrows *,
+  .admin-borrows *::before,
+  .admin-borrows *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* =========================================================
+   TYPOGRAPHY REFINEMENT — dễ đọc hơn trên màn hình lớn
+   ========================================================= */
+
+/* Nội dung bảng */
+.admin-borrows__table {
+  font-size: 14px;
+}
+
+.admin-borrows__table th,
+.admin-borrows__table td {
+  padding: 16px 18px;
+  line-height: 1.65;
+}
+
+/* Tiêu đề cột */
+.admin-borrows__table th {
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+/* Mã phiếu, tên độc giả và tên sách */
+.admin-borrows__table td:first-child {
+  font-size: 13px;
+}
+
+.admin-borrows__table td:nth-child(2),
+.admin-borrows__table td:nth-child(3) {
+  font-size: 14px;
+}
+
+/* Trạng thái */
+.admin-borrows__status {
+  padding: 7px 11px;
+  font-size: 12px;
+}
+
+/* Nút thao tác */
+.admin-borrows__button {
+  min-height: 39px;
+  padding: 9px 13px;
+  font-size: 13px;
+}
+
+/* Tìm kiếm và bộ lọc */
+.admin-borrows__filters input,
+.admin-borrows__filters select {
+  min-height: 44px;
+  font-size: 14px;
+}
+
+/* Thông báo và phân trang */
+.admin-borrows__alert {
+  font-size: 14px;
+}
+
+.admin-borrows__muted {
+  font-size: 13px;
+}
+
+/* Thông tin trong modal */
+.admin-borrows__modal h2 {
+  font-size: 23px;
+}
+
+.admin-borrows__detail span {
+  font-size: 12px;
+}
+
+.admin-borrows__detail strong {
+  font-size: 14px;
+}
+
+/* Trên màn hình nhỏ, hạn chế bảng quá lớn */
+@media (max-width: 760px) {
+  .admin-borrows__table {
+    font-size: 13px;
+  }
+
+  .admin-borrows__table th,
+  .admin-borrows__table td {
+    padding: 13px 14px;
+  }
+
+  .admin-borrows__table th {
+    font-size: 11px;
+  }
+}

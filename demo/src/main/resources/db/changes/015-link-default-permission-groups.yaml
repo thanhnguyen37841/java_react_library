@@ -1,0 +1,86 @@
+
+databaseChangeLog:
+  - changeSet:
+      id: 015-link-default-permission-groups
+      author: thanh
+      changes:
+        - sql:
+            sql: |
+              INSERT INTO permission_group_permissions (group_id, permission_id)
+              SELECT g.id, p.id
+              FROM permission_groups g
+              JOIN permissions p
+                ON p.name IN (
+                  'BOOK_READ', 'BOOK_CREATE', 'BOOK_UPDATE',
+                  'BOOK_DELETE', 'BOOK_IMPORT'
+                )
+              WHERE g.name = 'Quản lý sách'
+                AND NOT EXISTS (
+                  SELECT 1
+                  FROM permission_group_permissions gp
+                  WHERE gp.group_id = g.id
+                    AND gp.permission_id = p.id
+                );
+
+              INSERT INTO permission_group_permissions (group_id, permission_id)
+              SELECT g.id, p.id
+              FROM permission_groups g
+              JOIN permissions p
+                ON p.name IN (
+                  'MEMBER_READ', 'MEMBER_CREATE',
+                  'MEMBER_UPDATE', 'MEMBER_DELETE'
+                )
+              WHERE g.name = 'Quản lý thành viên'
+                AND NOT EXISTS (
+                  SELECT 1
+                  FROM permission_group_permissions gp
+                  WHERE gp.group_id = g.id
+                    AND gp.permission_id = p.id
+                );
+
+              INSERT INTO permission_group_permissions (group_id, permission_id)
+              SELECT g.id, p.id
+              FROM permission_groups g
+              JOIN permissions p
+                ON p.name IN (
+                  'BORROW_READ', 'BORROW_CREATE', 'BORROW_RETURN'
+                )
+              WHERE g.name = 'Quản lý mượn/trả'
+                AND NOT EXISTS (
+                  SELECT 1
+                  FROM permission_group_permissions gp
+                  WHERE gp.group_id = g.id
+                    AND gp.permission_id = p.id
+                );
+
+              INSERT INTO permission_group_permissions (group_id, permission_id)
+              SELECT g.id, p.id
+              FROM permission_groups g
+              JOIN permissions p
+                ON p.name IN (
+                  'ACCOUNT_CHANGE_PASSWORD',
+                  'ACCOUNT_CHANGE_EMAIL'
+                )
+              WHERE g.name = 'Quản lý tài khoản'
+                AND NOT EXISTS (
+                  SELECT 1
+                  FROM permission_group_permissions gp
+                  WHERE gp.group_id = g.id
+                    AND gp.permission_id = p.id
+                );
+
+              INSERT INTO permission_group_permissions (group_id, permission_id)
+              SELECT g.id, p.id
+              FROM permission_groups g
+              JOIN permissions p
+                ON p.name IN (
+                  'SYSTEM_CONFIG_READ',
+                  'SYSTEM_CONFIG_UPDATE'
+                )
+              WHERE g.name = 'Quản lý hệ thống'
+                AND NOT EXISTS (
+                  SELECT 1
+                  FROM permission_group_permissions gp
+                  WHERE gp.group_id = g.id
+                    AND gp.permission_id = p.id
+                );

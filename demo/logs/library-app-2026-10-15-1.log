@@ -1,0 +1,1446 @@
+2026-10-15 09:20:02.200 [restartedMain] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 17.0.12 with PID 1220 (D:\Java_Sps\demo\target\classes started by thanh in D:\Java_Sps\demo)
+2026-10-15 09:20:02.218 [restartedMain] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-15 09:20:02.286 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-15 09:20:02.287 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-15 09:20:02.665 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-10-15 09:20:03.708 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-15 09:20:03.866 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 134 ms. Found 14 JPA repository interfaces.
+2026-10-15 09:20:04.929 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-15 09:20:04.952 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-15 09:20:04.958 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-15 09:20:04.958 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-15 09:20:05.034 [restartedMain] INFO  org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2745 ms
+2026-10-15 09:20:05.233 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-15 09:20:05.771 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@265b6c1
+2026-10-15 09:20:05.773 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-15 09:20:08.002 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-15 09:20:08.158 [restartedMain] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-10-15 09:20:08.164 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-15 09:20:08.179 [restartedMain] INFO  liquibase.util - UPDATE SUMMARY
+2026-10-15 09:20:08.179 [restartedMain] INFO  liquibase.util - Run:                          0
+2026-10-15 09:20:08.180 [restartedMain] INFO  liquibase.util - Previously run:              10
+2026-10-15 09:20:08.180 [restartedMain] INFO  liquibase.util - Filtered out:                 0
+2026-10-15 09:20:08.180 [restartedMain] INFO  liquibase.util - -------------------------------
+2026-10-15 09:20:08.181 [restartedMain] INFO  liquibase.util - Total change sets:           10
+2026-10-15 09:20:08.183 [restartedMain] INFO  liquibase.util - Update summary generated
+2026-10-15 09:20:08.184 [restartedMain] INFO  liquibase.command - Command execution complete
+2026-10-15 09:20:08.301 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-15 09:20:08.396 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-15 09:20:08.997 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-15 09:20:09.108 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/library_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Ho_Chi_Minh]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: library_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-15 09:20:10.712 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-15 09:20:10.767 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-15 09:20:10.866 [restartedMain] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-15 09:20:13.006 [restartedMain] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-15 09:20:13.359 [restartedMain] WARN  org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-15 09:20:14.408 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-15 09:20:14.447 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-15 09:20:14.457 [restartedMain] INFO  com.example.demo.DemoApplication - Started DemoApplication in 12.982 seconds (process running for 13.97)
+2026-10-15 09:20:14.462 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-15 09:20:14.462 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-15 09:20:23.797 [http-nio-8080-exec-6] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-15 09:20:23.798 [http-nio-8080-exec-6] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-15 09:20:23.800 [http-nio-8080-exec-6] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-10-15 09:20:23.997 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-15 09:20:24.610 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 612ms | URI: /auth/login
+2026-10-15 09:20:24.797 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 09:20:24.842 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 44ms | URI: /api/admin/users
+2026-10-15 09:20:24.852 [http-nio-8080-exec-4] WARN  org.springframework.data.web.config.SpringDataJackson3Configuration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-10-15 09:20:25.039 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 09:20:25.045 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/admin/users
+2026-10-15 09:28:12.993 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-15 09:28:13.100 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 106ms | URI: /auth/login
+2026-10-15 09:28:13.144 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 09:28:13.150 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/admin/users
+2026-10-15 09:28:13.308 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 09:28:13.317 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/admin/users
+2026-10-15 09:28:16.486 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 09:28:16.492 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/admin/users
+2026-10-15 09:36:58.116 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 09:36:58.123 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/admin/users
+2026-10-15 09:37:14.815 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 09:37:14.883 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 66ms | URI: /api/books
+2026-10-15 09:37:17.317 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 09:37:17.324 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/admin/users
+2026-10-15 09:37:17.362 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 09:37:17.370 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/admin/users
+2026-10-15 09:37:19.957 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 09:37:19.969 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 12ms | URI: /api/books
+2026-10-15 09:37:20.769 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 09:37:20.781 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 10ms | URI: /api/books
+2026-10-15 09:37:38.365 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-15 09:37:38.463 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 97ms | URI: /auth/login
+2026-10-15 09:37:38.499 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 09:37:38.507 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/admin/users
+2026-10-15 09:37:38.548 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 09:37:38.554 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/admin/users
+2026-10-15 09:37:40.524 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 09:37:40.530 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/admin/users
+2026-10-15 09:37:41.767 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 09:37:41.779 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 11ms | URI: /api/books
+2026-10-15 09:44:50.080 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 09:44:50.080 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 09:44:50.086 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/admin/users
+2026-10-15 09:44:50.098 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 16ms | URI: /api/books
+2026-10-15 09:44:50.116 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 09:44:50.121 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/admin/users
+2026-10-15 09:44:57.728 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 09:44:57.735 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/admin/users
+2026-10-15 09:44:58.426 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 09:44:58.431 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/admin/users
+2026-10-15 09:44:59.014 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 09:44:59.019 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [keyword=[], page=[0], size=[8]]
+2026-10-15 09:44:59.020 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/admin/users
+2026-10-15 09:44:59.024 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/admin/users
+2026-10-15 09:44:59.055 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [keyword=[], page=[0], size=[8]]
+2026-10-15 09:44:59.060 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/admin/users
+2026-10-15 09:44:59.377 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 09:44:59.382 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 3ms | URI: /api/admin/users
+2026-10-15 09:44:59.957 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [keyword=[], page=[0], size=[8]]
+2026-10-15 09:44:59.957 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 09:44:59.962 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/admin/users
+2026-10-15 09:44:59.962 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/admin/users
+2026-10-15 09:44:59.993 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [keyword=[], page=[0], size=[8]]
+2026-10-15 09:45:00.000 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/admin/users
+2026-10-15 09:45:00.790 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 09:45:00.795 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/admin/users
+2026-10-15 09:45:03.605 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 09:45:03.605 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 09:45:03.609 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 3ms | URI: /api/admin/users
+2026-10-15 09:45:03.617 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 10ms | URI: /api/books
+2026-10-15 09:45:08.101 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], keyword=[dsa]]
+2026-10-15 09:45:08.129 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 26ms | URI: /api/books
+2026-10-15 09:45:11.125 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], keyword=[sp]]
+2026-10-15 09:45:11.133 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/books
+2026-10-15 09:45:15.076 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], keyword=[cra]]
+2026-10-15 09:45:15.084 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/books
+2026-10-15 09:45:15.847 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], keyword=[cra]]
+2026-10-15 09:45:15.858 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 11ms | URI: /api/books
+2026-10-15 09:45:16.025 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], keyword=[cra]]
+2026-10-15 09:45:16.034 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/books
+2026-10-15 09:45:18.469 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], keyword=[wa]]
+2026-10-15 09:45:18.476 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/books
+2026-10-15 09:45:24.703 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], keyword=[w]]
+2026-10-15 09:45:24.713 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/books
+2026-10-15 09:45:25.207 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], keyword=[w]]
+2026-10-15 09:45:25.216 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/books
+2026-10-15 09:45:25.471 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], keyword=[w]]
+2026-10-15 09:45:25.479 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/books
+2026-10-15 09:45:27.426 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], keyword=[a]]
+2026-10-15 09:45:27.441 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 14ms | URI: /api/books
+2026-10-15 09:45:34.345 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], keyword=[walls]]
+2026-10-15 09:45:34.354 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/books
+2026-10-15 09:45:40.712 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 09:45:40.720 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/books
+2026-10-15 09:45:43.355 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], keyword=[Công]]
+2026-10-15 09:45:43.362 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/books
+2026-10-15 09:45:48.835 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], keyword=[con]]
+2026-10-15 09:45:48.841 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/books
+2026-10-15 09:45:50.670 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], keyword=[con]]
+2026-10-15 09:45:50.677 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/books
+2026-10-15 09:45:52.763 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 09:45:52.772 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/books
+2026-10-15 09:46:08.730 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], keyword=[aut]]
+2026-10-15 09:46:08.742 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 11ms | URI: /api/books
+2026-10-15 09:46:14.674 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 09:46:14.681 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/books
+2026-10-15 10:08:30.351 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 10:08:30.356 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 3ms | URI: /api/admin/users
+2026-10-15 10:26:37.768 [http-nio-8080-exec-5] WARN  com.example.demo.security.JwtAuthEntryPoint - Unauthorized error: Full authentication is required to access this resource
+2026-10-15 10:26:38.107 [http-nio-8080-exec-9] WARN  com.example.demo.security.JwtAuthEntryPoint - Unauthorized error: Full authentication is required to access this resource
+2026-10-15 10:26:43.317 [http-nio-8080-exec-5] INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 724 ms
+2026-10-15 10:30:41.067 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 10:30:41.071 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/admin/users
+2026-10-15 10:39:52.139 [http-nio-8080-exec-5] ERROR com.example.demo.security.JwtTokenProvider - Expired JWT token
+2026-10-15 10:39:52.139 [http-nio-8080-exec-9] ERROR com.example.demo.security.JwtTokenProvider - Expired JWT token
+2026-10-15 10:39:52.139 [http-nio-8080-exec-4] ERROR com.example.demo.security.JwtTokenProvider - Expired JWT token
+2026-10-15 10:39:52.170 [http-nio-8080-exec-7] ERROR com.example.demo.security.JwtTokenProvider - Expired JWT token
+2026-10-15 10:40:05.702 [http-nio-8080-exec-8] ERROR com.example.demo.security.JwtTokenProvider - Expired JWT token
+2026-10-15 10:40:06.148 [http-nio-8080-exec-3] ERROR com.example.demo.security.JwtTokenProvider - Expired JWT token
+2026-10-15 10:40:07.846 [http-nio-8080-exec-1] ERROR com.example.demo.security.JwtTokenProvider - Expired JWT token
+2026-10-15 10:40:07.977 [http-nio-8080-exec-2] ERROR com.example.demo.security.JwtTokenProvider - Expired JWT token
+2026-10-15 10:40:10.619 [http-nio-8080-exec-9] ERROR com.example.demo.security.JwtTokenProvider - Expired JWT token
+2026-10-15 10:41:08.668 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-15 10:41:08.777 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 108ms | URI: /auth/login
+2026-10-15 10:41:08.813 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 10:41:08.819 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/admin/users
+2026-10-15 10:41:08.827 [http-nio-8080-exec-2] ERROR com.example.demo.exception.GlobalExceptionHandler - Unexpected error
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/categories for request '/api/categories'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:527)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:132)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:59)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$2(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.demo.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.demo.security.MaintenanceModeFilter.doFilterInternal(MaintenanceModeFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:535)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:86)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:71)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:347)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:406)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:71)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1307)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2036)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:949)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:483)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-10-15 10:41:08.836 [http-nio-8080-exec-2] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/categories for request '/api/categories'.]
+2026-10-15 10:41:08.857 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 10:41:08.861 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 3ms | URI: /api/admin/users
+2026-10-15 10:41:14.472 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 10:41:14.474 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 10:41:14.478 [http-nio-8080-exec-6] ERROR com.example.demo.exception.GlobalExceptionHandler - Unexpected error
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/categories for request '/api/categories'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:527)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:132)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:59)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$2(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.demo.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.demo.security.MaintenanceModeFilter.doFilterInternal(MaintenanceModeFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:535)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:86)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:71)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:347)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:406)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:71)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1307)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2036)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:949)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:483)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-10-15 10:41:14.481 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/admin/users
+2026-10-15 10:41:14.482 [http-nio-8080-exec-6] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/categories for request '/api/categories'.]
+2026-10-15 10:41:14.489 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 16ms | URI: /api/books
+2026-10-15 10:41:14.517 [http-nio-8080-exec-1] ERROR com.example.demo.exception.GlobalExceptionHandler - Unexpected error
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/categories for request '/api/categories'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:527)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:132)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:59)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$2(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.demo.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.demo.security.MaintenanceModeFilter.doFilterInternal(MaintenanceModeFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:535)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:86)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:71)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:347)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:406)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:71)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1307)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2036)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:949)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:483)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-10-15 10:41:14.519 [http-nio-8080-exec-1] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/categories for request '/api/categories'.]
+2026-10-15 11:09:53.786 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-15 11:09:53.888 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 99ms | URI: /auth/login
+2026-10-15 11:09:53.921 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 11:09:53.926 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/admin/users
+2026-10-15 11:09:53.945 [http-nio-8080-exec-8] ERROR com.example.demo.exception.GlobalExceptionHandler - Unexpected error
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/categories for request '/api/categories'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:527)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:132)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:59)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$2(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.demo.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.demo.security.MaintenanceModeFilter.doFilterInternal(MaintenanceModeFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:535)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:86)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:71)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:347)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:406)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:71)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1307)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2036)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:949)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:483)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-10-15 11:09:53.948 [http-nio-8080-exec-8] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/categories for request '/api/categories'.]
+2026-10-15 11:09:53.964 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 11:09:53.970 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/admin/users
+2026-10-15 11:09:55.236 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 11:09:55.238 [http-nio-8080-exec-3] ERROR com.example.demo.exception.GlobalExceptionHandler - Unexpected error
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/categories for request '/api/categories'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:527)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:132)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:59)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$2(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.demo.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.demo.security.MaintenanceModeFilter.doFilterInternal(MaintenanceModeFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:535)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:86)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:71)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:347)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:406)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:71)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1307)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2036)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:949)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:483)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-10-15 11:09:55.238 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 11:09:55.241 [http-nio-8080-exec-3] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/categories for request '/api/categories'.]
+2026-10-15 11:09:55.241 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/admin/users
+2026-10-15 11:09:55.251 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 11ms | URI: /api/books
+2026-10-15 11:09:55.271 [http-nio-8080-exec-5] ERROR com.example.demo.exception.GlobalExceptionHandler - Unexpected error
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/categories for request '/api/categories'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:527)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:132)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:59)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$2(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.demo.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.demo.security.MaintenanceModeFilter.doFilterInternal(MaintenanceModeFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:535)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:86)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:71)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:347)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:406)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:71)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1307)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2036)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:949)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:483)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-10-15 11:09:55.272 [http-nio-8080-exec-5] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/categories for request '/api/categories'.]
+2026-10-15 11:14:23.234 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-15 11:14:23.334 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 99ms | URI: /auth/login
+2026-10-15 11:14:23.364 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 11:14:23.369 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/admin/users
+2026-10-15 11:14:23.390 [http-nio-8080-exec-3] ERROR com.example.demo.exception.GlobalExceptionHandler - Unexpected error
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/categories for request '/api/categories'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:527)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:132)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:59)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$2(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.demo.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.demo.security.MaintenanceModeFilter.doFilterInternal(MaintenanceModeFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:535)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:86)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:71)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:347)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:406)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:71)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1307)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2036)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:949)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:483)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-10-15 11:14:23.393 [http-nio-8080-exec-3] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/categories for request '/api/categories'.]
+2026-10-15 11:14:23.401 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 11:14:23.405 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/admin/users
+2026-10-15 11:14:24.758 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 11:14:24.760 [http-nio-8080-exec-9] ERROR com.example.demo.exception.GlobalExceptionHandler - Unexpected error
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/categories for request '/api/categories'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:527)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:132)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:59)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$2(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.demo.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.demo.security.MaintenanceModeFilter.doFilterInternal(MaintenanceModeFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:535)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:86)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:71)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:347)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:406)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:71)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1307)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2036)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:949)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:483)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-10-15 11:14:24.763 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 11:14:24.765 [http-nio-8080-exec-9] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/categories for request '/api/categories'.]
+2026-10-15 11:14:24.764 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/admin/users
+2026-10-15 11:14:24.779 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 14ms | URI: /api/books
+2026-10-15 11:14:24.805 [http-nio-8080-exec-4] ERROR com.example.demo.exception.GlobalExceptionHandler - Unexpected error
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/categories for request '/api/categories'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:527)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:132)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:59)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$2(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.demo.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.demo.security.MaintenanceModeFilter.doFilterInternal(MaintenanceModeFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:535)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:86)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:71)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:347)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:406)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:71)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1307)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2036)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:949)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:483)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-10-15 11:14:24.808 [http-nio-8080-exec-4] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/categories for request '/api/categories'.]
+2026-10-15 11:14:45.862 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 11:14:45.869 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/admin/users
+2026-10-15 11:14:45.876 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 11:14:45.890 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 14ms | URI: /api/books
+2026-10-15 11:14:45.903 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 11:14:45.908 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/admin/users
+2026-10-15 11:14:45.968 [http-nio-8080-exec-2] ERROR com.example.demo.exception.GlobalExceptionHandler - Unexpected error
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/categories for request '/api/categories'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:527)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:132)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:59)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$2(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.demo.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.demo.security.MaintenanceModeFilter.doFilterInternal(MaintenanceModeFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:535)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:86)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:71)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:347)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:406)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:71)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1307)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2036)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:949)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:483)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-10-15 11:14:45.973 [http-nio-8080-exec-2] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/categories for request '/api/categories'.]
+2026-10-15 11:24:26.226 [restartedMain] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 17.0.12 with PID 6608 (D:\Java_Sps\demo\target\classes started by thanh in D:\Java_Sps\demo)
+2026-10-15 11:24:26.239 [restartedMain] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-15 11:24:26.302 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-15 11:24:26.303 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-15 11:24:26.601 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-10-15 11:24:27.486 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-15 11:24:27.661 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 161 ms. Found 14 JPA repository interfaces.
+2026-10-15 11:24:28.802 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-15 11:24:28.826 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-15 11:24:28.835 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-15 11:24:28.836 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-15 11:24:28.925 [restartedMain] INFO  org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2620 ms
+2026-10-15 11:24:29.124 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-15 11:24:29.723 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@613d7cbe
+2026-10-15 11:24:29.730 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-15 11:24:32.067 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-15 11:24:32.246 [restartedMain] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-10-15 11:24:32.249 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-15 11:24:32.264 [restartedMain] INFO  liquibase.util - UPDATE SUMMARY
+2026-10-15 11:24:32.265 [restartedMain] INFO  liquibase.util - Run:                          0
+2026-10-15 11:24:32.265 [restartedMain] INFO  liquibase.util - Previously run:              10
+2026-10-15 11:24:32.265 [restartedMain] INFO  liquibase.util - Filtered out:                 0
+2026-10-15 11:24:32.266 [restartedMain] INFO  liquibase.util - -------------------------------
+2026-10-15 11:24:32.266 [restartedMain] INFO  liquibase.util - Total change sets:           10
+2026-10-15 11:24:32.267 [restartedMain] INFO  liquibase.util - Update summary generated
+2026-10-15 11:24:32.268 [restartedMain] INFO  liquibase.command - Command execution complete
+2026-10-15 11:24:32.433 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-15 11:24:32.566 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-15 11:24:33.253 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-15 11:24:33.418 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/library_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Ho_Chi_Minh]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: library_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-15 11:24:35.399 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-15 11:24:35.457 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-15 11:24:35.548 [restartedMain] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-15 11:24:37.845 [restartedMain] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-15 11:24:38.169 [restartedMain] WARN  org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-15 11:24:38.633 [restartedMain] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 
+	c.e.d.c.AccountController:
+	{POST [/account/forgot-password]}: forgotPassword(ForgotPasswordRequest)
+	{POST [/account/change-email]}: requestChangeEmail(Authentication,ChangeEmailRequest)
+	{POST [/account/change-password]}: changePassword(Authentication,ChangePasswordRequest)
+	{POST [/account/reset-password]}: resetPassword(ResetPasswordRequest)
+	{POST [/account/confirm-change-email]}: confirmChangeEmail(Authentication,ConfirmChangeEmailRequest)
+2026-10-15 11:24:38.642 [restartedMain] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 
+	c.e.d.c.AdminUserController:
+	{GET [/api/admin/users]}: getUsers(String,int,int)
+2026-10-15 11:24:38.646 [restartedMain] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 
+	c.e.d.c.AdminUserPermissionController:
+	{GET [/api/admin/users/{userId}/permissions]}: getPermissions(Long)
+	{PUT [/api/admin/users/{userId}/permissions]}: updatePermission(Long,UserPermissionUpdateRequest)
+	{DELETE [/api/admin/users/{userId}/permissions/{permissionId}]}: resetPermission(Long,Long)
+2026-10-15 11:24:38.652 [restartedMain] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 
+	c.e.d.c.AuthController:
+	{POST [/auth/register]}: register(RegisterRequest)
+	{POST [/auth/logout]}: logout(HttpServletRequest)
+	{POST [/auth/login]}: login(LoginRequest)
+	{GET [/auth/verify]}: verifyEmail(String)
+	{POST [/auth/refresh-token]}: refreshToken(TokenRefreshRequest)
+2026-10-15 11:24:38.658 [restartedMain] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 
+	c.e.d.c.BookController:
+	{GET [/api/books/combobox]}: getBooksForCombobox()
+	{POST [/api/books]}: createBook(BookRequest)
+	{DELETE [/api/books/{id}]}: deleteBook(Long)
+	{GET [/api/books]}: getAllBooks(String,Long,int)
+	{GET [/api/books/{id}]}: getBookById(Long)
+	{POST [/api/books/import], consumes [multipart/form-data]}: importBooksFromCsv(MultipartFile)
+	{PUT [/api/books/{id}]}: updateBook(Long,BookRequest)
+2026-10-15 11:24:38.662 [restartedMain] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 
+	c.e.d.c.BorrowController:
+	{PUT [/api/borrows/{id}/return]}: returnBook(Long)
+	{POST [/api/borrows]}: borrowBook(BorrowRequest)
+2026-10-15 11:24:38.664 [restartedMain] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 
+	c.e.d.c.CategoryController:
+	{GET [/api/categories]}: getAllCategories()
+	{GET [/api/categories/{id}]}: getCategoryById(Long)
+2026-10-15 11:24:38.668 [restartedMain] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 
+	c.e.d.c.MemberController:
+	{GET [/api/members]}: searchMembers(String,String,String,String,Long,Boolean,int,int)
+	{DELETE [/api/members/{id}]}: deleteMember(Long)
+	{PUT [/api/members/me]}: updateMyProfile(Authentication,MemberProfileRequest)
+	{GET [/api/members/me]}: getMyProfile(Authentication)
+	{POST [/api/members]}: createMember(MemberRequest)
+	{PUT [/api/members/{id}]}: updateMember(Long,MemberRequest)
+2026-10-15 11:24:38.672 [restartedMain] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 
+	c.e.d.c.SystemConfigController:
+	{GET [/api/configs/maintenance]}: getMaintenanceStatus()
+	{PUT [/api/configs/maintenance]}: toggleMaintenance(boolean)
+2026-10-15 11:24:38.677 [restartedMain] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 
+	o.s.b.w.a.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2026-10-15 11:24:38.699 [restartedMain] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 
+	o.s.w.a.OpenApiWebMvcResource:
+	{GET [/v3/api-docs], produces [application/json]}: openapiJson(HttpServletRequest,String,Locale)
+	{GET [/v3/api-docs.yaml], produces [application/vnd.oai.openapi]}: openapiYaml(HttpServletRequest,String,Locale)
+2026-10-15 11:24:38.701 [restartedMain] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 
+	o.s.w.u.SwaggerWelcomeWebMvc:
+	{GET [/swagger-ui.html]}: redirectToUi(HttpServletRequest)
+2026-10-15 11:24:38.703 [restartedMain] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 
+	o.s.w.u.SwaggerConfigResource:
+	{GET [/v3/api-docs/swagger-config], produces [application/json]}: openapiJson(HttpServletRequest)
+2026-10-15 11:24:38.707 [restartedMain] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 39 mappings in 'requestMappingHandlerMapping'
+2026-10-15 11:24:39.093 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-15 11:24:39.132 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-15 11:24:39.141 [restartedMain] INFO  com.example.demo.DemoApplication - Started DemoApplication in 13.613 seconds (process running for 14.433)
+2026-10-15 11:24:39.147 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-15 11:24:39.147 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-15 11:28:06.554 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-15 11:28:06.556 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-15 11:28:06.558 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-10-15 11:28:06.886 [http-nio-8080-exec-2] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.AdminUserController#getUsers(String, int, int)
+2026-10-15 11:28:06.933 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 11:28:06.978 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 44ms | URI: /api/admin/users
+2026-10-15 11:28:07.082 [http-nio-8080-exec-2] WARN  org.springframework.data.web.config.SpringDataJackson3Configuration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-10-15 11:30:50.415 [http-nio-8080-exec-4] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.AdminUserController#getUsers(String, int, int)
+2026-10-15 11:30:50.415 [http-nio-8080-exec-8] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.BookController#getAllBooks(String, Long, int)
+2026-10-15 11:30:50.419 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 11:30:50.420 [http-nio-8080-exec-9] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.CategoryController#getAllCategories()
+2026-10-15 11:30:50.420 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 11:30:50.422 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/categories | Params: []
+2026-10-15 11:30:50.428 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/admin/users
+2026-10-15 11:30:50.452 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 29ms | URI: /api/categories
+2026-10-15 11:30:50.478 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 57ms | URI: /api/books
+2026-10-15 11:30:50.487 [http-nio-8080-exec-10] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.CategoryController#getAllCategories()
+2026-10-15 11:30:50.489 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/categories | Params: []
+2026-10-15 11:30:50.496 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/categories
+2026-10-15 11:30:54.023 [http-nio-8080-exec-2] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.BookController#getAllBooks(String, Long, int)
+2026-10-15 11:30:54.024 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], keyword=[czx]]
+2026-10-15 11:30:54.039 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 13ms | URI: /api/books
+2026-10-15 11:30:57.592 [http-nio-8080-exec-6] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.BookController#getAllBooks(String, Long, int)
+2026-10-15 11:30:57.593 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 11:30:57.607 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 13ms | URI: /api/books
+2026-10-15 11:35:24.302 [http-nio-8080-exec-8] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.BookController#updateBook(Long, BookRequest)
+2026-10-15 11:35:24.380 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: PUT | URI: /api/books/2 | Params: []
+2026-10-15 11:35:24.445 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 65ms | URI: /api/books/2
+2026-10-15 11:35:24.490 [http-nio-8080-exec-1] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.BookController#getAllBooks(String, Long, int)
+2026-10-15 11:35:24.492 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 11:35:24.513 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 20ms | URI: /api/books
+2026-10-15 11:35:31.356 [http-nio-8080-exec-3] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.BookController#updateBook(Long, BookRequest)
+2026-10-15 11:35:31.357 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: PUT | URI: /api/books/2 | Params: []
+2026-10-15 11:35:31.385 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 27ms | URI: /api/books/2
+2026-10-15 11:35:31.425 [http-nio-8080-exec-7] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.BookController#getAllBooks(String, Long, int)
+2026-10-15 11:35:31.426 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 11:35:31.440 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 13ms | URI: /api/books
+2026-10-15 11:36:04.123 [http-nio-8080-exec-4] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.BookController#createBook(BookRequest)
+2026-10-15 11:36:04.129 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /api/books | Params: []
+2026-10-15 11:36:04.168 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 39ms | URI: /api/books
+2026-10-15 11:36:04.204 [http-nio-8080-exec-8] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.BookController#getAllBooks(String, Long, int)
+2026-10-15 11:36:04.206 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 11:36:04.220 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 13ms | URI: /api/books
+2026-10-15 11:46:29.243 [http-nio-8080-exec-2] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.BookController#updateBook(Long, BookRequest)
+2026-10-15 11:46:29.246 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: PUT | URI: /api/books/9 | Params: []
+2026-10-15 11:46:29.270 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 23ms | URI: /api/books/9
+2026-10-15 11:46:29.305 [http-nio-8080-exec-6] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.BookController#getAllBooks(String, Long, int)
+2026-10-15 11:46:29.307 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 11:46:29.318 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 11ms | URI: /api/books
+2026-10-15 11:46:33.439 [http-nio-8080-exec-7] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.BookController#updateBook(Long, BookRequest)
+2026-10-15 11:46:33.442 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: PUT | URI: /api/books/9 | Params: []
+2026-10-15 11:46:33.469 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 26ms | URI: /api/books/9
+2026-10-15 11:46:33.503 [http-nio-8080-exec-5] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.BookController#getAllBooks(String, Long, int)
+2026-10-15 11:46:33.504 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 11:46:33.519 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 13ms | URI: /api/books
+2026-10-15 11:46:49.008 [http-nio-8080-exec-9] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.BookController#deleteBook(Long)
+2026-10-15 11:46:49.010 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: DELETE | URI: /api/books/9 | Params: []
+2026-10-15 11:46:49.041 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 30ms | URI: /api/books/9
+2026-10-15 11:46:49.073 [http-nio-8080-exec-10] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.BookController#getAllBooks(String, Long, int)
+2026-10-15 11:46:49.075 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 11:46:49.087 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 12ms | URI: /api/books
+2026-10-15 11:47:08.093 [http-nio-8080-exec-2] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.BookController#deleteBook(Long)
+2026-10-15 11:47:08.095 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: DELETE | URI: /api/books/7 | Params: []
+2026-10-15 11:47:08.112 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 16ms | URI: /api/books/7
+2026-10-15 11:47:08.142 [http-nio-8080-exec-6] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.BookController#getAllBooks(String, Long, int)
+2026-10-15 11:47:08.143 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 11:47:08.154 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 10ms | URI: /api/books
+2026-10-15 11:47:20.414 [http-nio-8080-exec-5] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.BookController#createBook(BookRequest)
+2026-10-15 11:47:20.416 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /api/books | Params: []
+2026-10-15 11:47:20.431 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 14ms | URI: /api/books
+2026-10-15 11:47:20.465 [http-nio-8080-exec-9] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.BookController#getAllBooks(String, Long, int)
+2026-10-15 11:47:20.467 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 11:47:20.481 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 14ms | URI: /api/books
+2026-10-15 11:50:24.971 [http-nio-8080-exec-1] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.AdminUserController#getUsers(String, int, int)
+2026-10-15 11:50:24.975 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 11:50:24.980 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/admin/users
+2026-10-15 11:50:26.037 [http-nio-8080-exec-2] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.AdminUserController#getUsers(String, int, int)
+2026-10-15 11:50:26.038 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 11:50:26.042 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 3ms | URI: /api/admin/users
+2026-10-15 11:50:26.511 [http-nio-8080-exec-3] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.AdminUserController#getUsers(String, int, int)
+2026-10-15 11:50:26.512 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 11:50:26.517 [http-nio-8080-exec-5] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.CategoryController#getAllCategories()
+2026-10-15 11:50:26.517 [http-nio-8080-exec-4] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.BookController#getAllBooks(String, Long, int)
+2026-10-15 11:50:26.520 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/categories | Params: []
+2026-10-15 11:50:26.521 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 11:50:26.524 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/admin/users
+2026-10-15 11:50:26.548 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 24ms | URI: /api/categories
+2026-10-15 11:50:26.556 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 29ms | URI: /api/books
+2026-10-15 11:50:26.585 [http-nio-8080-exec-9] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.CategoryController#getAllCategories()
+2026-10-15 11:50:26.587 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/categories | Params: []
+2026-10-15 11:50:26.596 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/categories
+2026-10-15 11:50:26.897 [http-nio-8080-exec-8] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.AdminUserController#getUsers(String, int, int)
+2026-10-15 11:50:26.898 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 11:50:26.905 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/admin/users
+2026-10-15 11:50:27.687 [http-nio-8080-exec-10] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.AdminUserController#getUsers(String, int, int)
+2026-10-15 11:50:27.690 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 11:50:27.695 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/admin/users
+2026-10-15 11:50:28.245 [http-nio-8080-exec-1] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.BookController#getAllBooks(String, Long, int)
+2026-10-15 11:50:28.245 [http-nio-8080-exec-6] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.CategoryController#getAllCategories()
+2026-10-15 11:50:28.245 [http-nio-8080-exec-2] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.AdminUserController#getUsers(String, int, int)
+2026-10-15 11:50:28.246 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/categories | Params: []
+2026-10-15 11:50:28.246 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 11:50:28.246 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 11:50:28.253 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/categories
+2026-10-15 11:50:28.253 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/admin/users
+2026-10-15 11:50:28.258 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 11ms | URI: /api/books
+2026-10-15 11:50:28.286 [http-nio-8080-exec-7] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.CategoryController#getAllCategories()
+2026-10-15 11:50:28.287 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/categories | Params: []
+2026-10-15 11:50:28.293 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/categories
+2026-10-15 11:50:29.104 [http-nio-8080-exec-3] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.AdminUserController#getUsers(String, int, int)
+2026-10-15 11:50:29.105 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 11:50:29.111 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/admin/users
+2026-10-15 11:50:29.670 [http-nio-8080-exec-5] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.AdminUserController#getUsers(String, int, int)
+2026-10-15 11:50:29.671 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 11:50:29.676 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/admin/users
+2026-10-15 11:50:30.974 [http-nio-8080-exec-9] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.BookController#getAllBooks(String, Long, int)
+2026-10-15 11:50:30.974 [http-nio-8080-exec-8] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.CategoryController#getAllCategories()
+2026-10-15 11:50:30.975 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/categories | Params: []
+2026-10-15 11:50:30.975 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 11:50:30.982 [http-nio-8080-exec-10] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.AdminUserController#getUsers(String, int, int)
+2026-10-15 11:50:30.985 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/categories
+2026-10-15 11:50:30.985 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 11:50:30.989 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 14ms | URI: /api/books
+2026-10-15 11:50:30.989 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/admin/users
+2026-10-15 11:50:31.022 [http-nio-8080-exec-6] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.CategoryController#getAllCategories()
+2026-10-15 11:50:31.023 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/categories | Params: []
+2026-10-15 11:50:31.031 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/categories
+2026-10-15 12:00:16.076 [http-nio-8080-exec-4] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.AdminUserController#getUsers(String, int, int)
+2026-10-15 12:00:16.076 [http-nio-8080-exec-8] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.BookController#getAllBooks(String, Long, int)
+2026-10-15 12:00:16.078 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 12:00:16.078 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0]]
+2026-10-15 12:00:16.083 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/admin/users
+2026-10-15 12:00:16.093 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 14ms | URI: /api/books
+2026-10-15 12:00:16.121 [http-nio-8080-exec-10] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.CategoryController#getAllCategories()
+2026-10-15 12:00:16.122 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/categories | Params: []
+2026-10-15 12:00:16.128 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/categories
+2026-10-15 12:00:20.063 [http-nio-8080-exec-6] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.AdminUserController#getUsers(String, int, int)
+2026-10-15 12:00:20.065 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 12:00:20.071 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/admin/users
+2026-10-15 12:00:21.088 [http-nio-8080-exec-3] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.AdminUserController#getUsers(String, int, int)
+2026-10-15 12:00:21.088 [http-nio-8080-exec-5] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.MemberController#searchMembers(String, String, String, String, Long, Boolean, int, int)
+2026-10-15 12:00:21.091 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/users | Params: [page=[0], size=[1]]
+2026-10-15 12:00:21.092 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/members | Params: [page=[0], size=[10]]
+2026-10-15 12:00:21.097 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/admin/users
+2026-10-15 12:00:21.118 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 25ms | URI: /api/members
+2026-10-15 12:00:21.143 [http-nio-8080-exec-4] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.MemberController#searchMembers(String, String, String, String, Long, Boolean, int, int)
+2026-10-15 12:00:21.144 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/members | Params: [page=[0], size=[10]]
+2026-10-15 12:00:21.154 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/members
+2026-10-15 12:00:21.174 [http-nio-8080-exec-8] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.MemberController#searchMembers(String, String, String, String, Long, Boolean, int, int)
+2026-10-15 12:00:21.175 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/members | Params: [page=[0], size=[10]]
+2026-10-15 12:00:21.184 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/members
+2026-10-15 12:00:21.205 [http-nio-8080-exec-9] TRACE org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.demo.controller.MemberController#searchMembers(String, String, String, String, Long, Boolean, int, int)
+2026-10-15 12:00:21.207 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/members | Params: [page=[0], size=[10]]
+2026-10-15 12:00:21.217 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 10ms | URI: /api/members

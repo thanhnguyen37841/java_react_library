@@ -1,0 +1,81 @@
+
+databaseChangeLog:
+  - changeSet:
+      id: 016-link-special-permission-groups
+      author: thanh
+      changes:
+        - sql:
+            sql: |
+              INSERT INTO permission_group_permissions (group_id, permission_id)
+              SELECT g.id, p.id
+              FROM permission_groups g
+              JOIN permissions p ON p.name = 'BOOK_READ'
+              WHERE g.name = 'Nhân viên kiểm kê'
+                AND NOT EXISTS (
+                  SELECT 1
+                  FROM permission_group_permissions gp
+                  WHERE gp.group_id = g.id
+                    AND gp.permission_id = p.id
+                );
+
+              INSERT INTO permission_group_permissions (group_id, permission_id)
+              SELECT g.id, p.id
+              FROM permission_groups g
+              JOIN permissions p
+                ON p.name IN ('BOOK_READ', 'BOOK_CREATE', 'BOOK_UPDATE')
+              WHERE g.name = 'Nhân viên nhập liệu'
+                AND NOT EXISTS (
+                  SELECT 1
+                  FROM permission_group_permissions gp
+                  WHERE gp.group_id = g.id
+                    AND gp.permission_id = p.id
+                );
+
+              INSERT INTO permission_group_permissions (group_id, permission_id)
+              SELECT g.id, p.id
+              FROM permission_groups g
+              JOIN permissions p
+                ON p.name IN (
+                  'MEMBER_READ', 'MEMBER_CREATE', 'MEMBER_UPDATE'
+                )
+              WHERE g.name = 'Nhân viên quản lý thành viên'
+                AND NOT EXISTS (
+                  SELECT 1
+                  FROM permission_group_permissions gp
+                  WHERE gp.group_id = g.id
+                    AND gp.permission_id = p.id
+                );
+
+              INSERT INTO permission_group_permissions (group_id, permission_id)
+              SELECT g.id, p.id
+              FROM permission_groups g
+              JOIN permissions p
+                ON p.name IN (
+                  'BORROW_READ', 'BORROW_CREATE', 'BORROW_RETURN'
+                )
+              WHERE g.name = 'Nhân viên hỗ trợ mượn/trả'
+                AND NOT EXISTS (
+                  SELECT 1
+                  FROM permission_group_permissions gp
+                  WHERE gp.group_id = g.id
+                    AND gp.permission_id = p.id
+                );
+
+              INSERT INTO permission_group_permissions (group_id, permission_id)
+              SELECT g.id, p.id
+              FROM permission_groups g
+              JOIN permissions p
+                ON p.name IN (
+                  'BOOK_READ', 'BOOK_CREATE', 'BOOK_UPDATE',
+                  'BOOK_DELETE', 'BOOK_IMPORT',
+                  'MEMBER_READ', 'MEMBER_CREATE',
+                  'MEMBER_UPDATE', 'MEMBER_DELETE',
+                  'BORROW_READ', 'BORROW_CREATE', 'BORROW_RETURN'
+                )
+              WHERE g.name = 'Trưởng bộ phận'
+                AND NOT EXISTS (
+                  SELECT 1
+                  FROM permission_group_permissions gp
+                  WHERE gp.group_id = g.id
+                    AND gp.permission_id = p.id
+                );

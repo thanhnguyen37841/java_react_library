@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: 020-paper-ebook-workflows
+      author: openai
+      changes:
+        - dropNotNullConstraint:
+            tableName: borrow_records
+            columnName: borrow_date
+            columnDataType: date
+        - dropNotNullConstraint:
+            tableName: borrow_records
+            columnName: due_date
+            columnDataType: date
+        - addColumn:
+            tableName: borrow_records
+            columns:
+              - column:
+                  name: loan_type
+                  type: VARCHAR(20)
+                  defaultValue: PAPER
+                  constraints:
+                    nullable: false
+        - addColumn:
+            tableName: books
+            columns:
+              - column:
+                  name: ebook_file_path
+                  type: VARCHAR(1000)
+                  constraints:
+                    nullable: true

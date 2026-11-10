@@ -1,0 +1,44 @@
+databaseChangeLog:
+  - changeSet:
+      id: 3
+      author: dev
+      changes:
+        - insert:
+            tableName: roles
+            columns:
+              - column: { name: id, valueNumeric: 1 }
+              - column: { name: name, value: ROLE_ADMIN }
+              - column: { name: created_at, valueDate: CURRENT_TIMESTAMP }
+              - column: { name: updated_at, valueDate: CURRENT_TIMESTAMP }
+        - insert:
+            tableName: roles
+            columns:
+              - column: { name: id, valueNumeric: 2 }
+              - column: { name: name, value: ROLE_USER }
+              - column: { name: created_at, valueDate: CURRENT_TIMESTAMP }
+              - column: { name: updated_at, valueDate: CURRENT_TIMESTAMP }
+              
+        - insert:
+            tableName: users
+            columns:
+              - column: { name: id, valueNumeric: 1 }
+              - column: { name: email, value: admin@gmail.com }
+              - column: { name: password, value: "$2a$10$XURPShQNCsLjp1ESc2laoObo9QZDhxz73hJPaEv7/cBha4pk0AgP." }
+              - column: { name: is_verified, valueBoolean: true }
+              - column: { name: created_at, valueDate: CURRENT_TIMESTAMP }
+              - column: { name: updated_at, valueDate: CURRENT_TIMESTAMP }
+              
+        - insert:
+            tableName: users_roles
+            columns:
+              - column: { name: user_id, valueNumeric: 1 }
+              - column: { name: role_id, valueNumeric: 1 }
+
+        - insert:
+            tableName: system_configs
+            columns:
+              - column: { name: id, valueNumeric: 1 }
+              - column: { name: config_key, value: MAINTENANCE_MODE }
+              - column: { name: config_value, value: "false" }
+              - column: { name: created_at, valueDate: CURRENT_TIMESTAMP }
+              - column: { name: updated_at, valueDate: CURRENT_TIMESTAMP }

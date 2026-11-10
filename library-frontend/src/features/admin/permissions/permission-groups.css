@@ -1,0 +1,856 @@
+/* =========================================================
+   PERMISSION GROUPS PAGE
+   ========================================================= */
+
+.permission-groups-page {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 24px;
+    color: #1f2937;
+    box-sizing: border-box;
+}
+
+.permission-groups-page *,
+.permission-groups-page *::before,
+.permission-groups-page *::after {
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.pg-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.pg-header h1 {
+    margin: 0 0 8px;
+    color: #111827;
+    font-size: 28px;
+    font-weight: 750;
+    line-height: 1.3;
+}
+
+.pg-header p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* =========================================================
+   LAYOUT
+   ========================================================= */
+
+.pg-layout {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 0.95fr)
+        minmax(0, 1.05fr);
+    gap: 20px;
+    align-items: start;
+}
+
+.pg-panel {
+    min-width: 0;
+    padding: 22px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgb(15 23 42 / 4%);
+}
+
+.pg-panel h2 {
+    margin: 0 0 20px;
+    color: #111827;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.pg-label {
+    display: block;
+    margin-bottom: 16px;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.pg-label input,
+.pg-label textarea,
+.pg-search {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    padding: 11px 12px;
+    color: #111827;
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font: inherit;
+    font-size: 14px;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.pg-label textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.pg-label input::placeholder,
+.pg-label textarea::placeholder,
+.pg-search::placeholder {
+    color: #9ca3af;
+}
+
+.pg-label input:focus,
+.pg-label textarea:focus,
+.pg-search:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgb(37 99 235 / 12%);
+}
+
+/* =========================================================
+   PERMISSION SELECTION
+   ========================================================= */
+
+.pg-permission-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.pg-permission-heading h3 {
+    margin: 8px 0;
+    color: #111827;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.pg-permission-heading span,
+.pg-count {
+    color: #1d4ed8;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.pg-permission-tree {
+    max-height: 420px;
+    overflow-y: auto;
+    margin-top: 14px;
+    padding: 12px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+.pg-permission-tree::-webkit-scrollbar {
+    width: 6px;
+}
+
+.pg-permission-tree::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 10px;
+}
+
+.pg-category + .pg-category {
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.pg-category h4 {
+    margin: 0 0 10px;
+    color: #1d4ed8;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.pg-permission {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 8px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.pg-permission:hover {
+    background: #f3f4f6;
+}
+
+.pg-permission input,
+.pg-user-option input {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    accent-color: #2563eb;
+    cursor: pointer;
+}
+
+.pg-permission span,
+.pg-user-option span {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: 4px;
+    overflow-wrap: anywhere;
+}
+
+.pg-permission strong,
+.pg-user-option strong {
+    color: #374151;
+    font-size: 13px;
+    font-weight: 650;
+}
+
+.pg-permission small,
+.pg-user-option small {
+    color: #6b7280;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.pg-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.pg-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    min-height: 36px;
+    padding: 9px 14px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font: inherit;
+    font-size: 13px;
+    font-weight: 650;
+    line-height: 1.4;
+    text-align: center;
+    cursor: pointer;
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.pg-button:focus-visible {
+    outline: 3px solid rgb(37 99 235 / 25%);
+    outline-offset: 2px;
+}
+
+.pg-button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.pg-button.primary {
+    color: #ffffff;
+    background: #2563eb;
+    border-color: #2563eb;
+}
+
+.pg-button.primary:hover:not(:disabled) {
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+.pg-button.secondary {
+    color: #374151;
+    background: #f3f4f6;
+    border-color: #e5e7eb;
+}
+
+.pg-button.secondary:hover:not(:disabled) {
+    background: #e5e7eb;
+    border-color: #d1d5db;
+}
+
+.pg-button.danger {
+    color: #ffffff;
+    background: #dc2626;
+    border-color: #dc2626;
+}
+
+.pg-button.danger:hover:not(:disabled) {
+    background: #b91c1c;
+    border-color: #b91c1c;
+}
+
+/* =========================================================
+   ALERTS
+   ========================================================= */
+
+.pg-alert {
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.pg-alert.error {
+    color: #991b1b;
+    background: #fef2f2;
+    border-color: #fecaca;
+}
+
+.pg-alert.success {
+    color: #166534;
+    background: #f0fdf4;
+    border-color: #bbf7d0;
+}
+
+/* =========================================================
+   PERMISSION GROUP LIST
+   ========================================================= */
+
+.pg-group-list {
+    display: grid;
+    gap: 12px;
+}
+
+.pg-group-card {
+    min-width: 0;
+    padding: 16px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 11px;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.pg-group-card:hover {
+    border-color: #cbd5e1;
+}
+
+.pg-group-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.pg-group-top > div:first-child {
+    flex: 1;
+    min-width: 0;
+}
+
+.pg-group-top h3 {
+    margin: 0 0 7px;
+    color: #111827;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.pg-group-top p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 13px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.pg-group-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    margin-top: 12px;
+    padding-top: 12px;
+    color: #6b7280;
+    border-top: 1px solid #f3f4f6;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.pg-empty {
+    padding: 20px 8px;
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* =========================================================
+   EXPANDABLE GROUP ACTIONS
+   Áp dụng cho danh sách thao tác khi mở rộng nhóm quyền.
+   ========================================================= */
+
+.pg-group-card .pg-actions {
+    align-items: center;
+}
+
+.pg-group-card .pg-actions .pg-button {
+    flex: 0 0 auto;
+}
+
+.pg-group-card .pg-actions .pg-button.secondary {
+    color: #374151;
+}
+
+.pg-group-card .pg-actions .pg-button.danger {
+    color: #ffffff;
+}
+
+/* =========================================================
+   USER MANAGER
+   ========================================================= */
+
+.pg-user-manager {
+    min-width: 0;
+    margin-top: 16px;
+    padding: 16px;
+    background: #f8fbff;
+    border: 1px solid #bfdbfe;
+    border-radius: 10px;
+}
+
+.pg-user-manager h4 {
+    margin: 0 0 12px;
+    color: #1e3a8a;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.pg-user-manager .pg-search {
+    margin-top: 0;
+    margin-bottom: 10px;
+    background: #ffffff;
+}
+
+.pg-user-help {
+    margin: 8px 0 12px;
+    color: #64748b;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.pg-user-option {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 8px;
+    border-bottom: 1px solid #e5e7eb;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.pg-user-option:last-of-type {
+    border-bottom-color: transparent;
+}
+
+.pg-user-option:hover {
+    background: #eff6ff;
+}
+
+.pg-user-option input {
+    margin-top: 2px;
+}
+
+.pg-user-option strong {
+    color: #1f2937;
+}
+
+.pg-user-option small {
+    overflow-wrap: anywhere;
+}
+
+/* =========================================================
+   USER PAGINATION
+   ========================================================= */
+
+.pg-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid #dbeafe;
+}
+
+.pg-pagination > span {
+    color: #64748b;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.pg-pagination > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.pg-pagination .pg-button {
+    min-width: 76px;
+}
+
+/* =========================================================
+   LOADING STATE
+   ========================================================= */
+
+.permission-groups-page button:disabled {
+    cursor: not-allowed;
+}
+
+/* =========================================================
+   RESPONSIVE: TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+    .pg-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .pg-panel {
+        padding: 20px;
+    }
+
+    .pg-permission-tree {
+        max-height: 360px;
+    }
+}
+
+/* =========================================================
+   RESPONSIVE: MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+    .permission-groups-page {
+        padding: 14px;
+    }
+
+    .pg-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .pg-header h1 {
+        font-size: 23px;
+    }
+
+    .pg-header > button {
+        align-self: flex-start;
+    }
+
+    .pg-panel {
+        padding: 15px;
+        border-radius: 11px;
+    }
+
+    .pg-panel h2 {
+        font-size: 18px;
+    }
+
+    .pg-group-card {
+        padding: 13px;
+    }
+
+    .pg-group-top {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .pg-group-top > .pg-actions {
+        width: 100%;
+    }
+
+    .pg-group-card .pg-actions {
+        gap: 7px;
+    }
+
+    .pg-group-card .pg-actions .pg-button {
+        flex: 1 1 auto;
+    }
+
+    .pg-user-manager {
+        padding: 12px;
+    }
+
+    .pg-pagination {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .pg-pagination > div {
+        width: 100%;
+    }
+
+    .pg-pagination .pg-button {
+        flex: 1;
+    }
+
+    .pg-permission-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+
+/* =========================================================
+   RESPONSIVE: SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 380px) {
+    .permission-groups-page {
+        padding: 10px;
+    }
+
+    .pg-panel {
+        padding: 12px;
+    }
+
+    .pg-button {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .pg-group-card .pg-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .pg-group-card .pg-actions .pg-button {
+        width: 100%;
+    }
+}
+
+/* Danh sách điều hướng chức năng */
+.pg-section-menu {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    margin: 24px 0;
+}
+
+.pg-section-toggle {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    min-width: 0;
+    padding: 18px 20px;
+    color: #1f2937;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    text-align: left;
+    font: inherit;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.pg-section-toggle:hover {
+    background: #f8fbff;
+    border-color: #93c5fd;
+}
+
+.pg-section-toggle.active {
+    background: #eff6ff;
+    border-color: #3b82f6;
+}
+
+.pg-section-toggle:focus-visible,
+.pg-group-summary:focus-visible {
+    outline: 3px solid rgb(37 99 235 / 30%);
+    outline-offset: 2px;
+}
+
+.pg-section-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 42px;
+    width: 42px;
+    height: 42px;
+    color: #1d4ed8;
+    background: #dbeafe;
+    border-radius: 10px;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.pg-section-text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+}
+
+.pg-section-text strong {
+    color: #111827;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.pg-section-text small {
+    color: #6b7280;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.pg-section-chevron {
+    flex-shrink: 0;
+    color: #64748b;
+    font-size: 12px;
+}
+
+.pg-section-content {
+    width: 100%;
+    min-width: 0;
+    margin-bottom: 24px;
+    animation: pg-section-appear 0.18s ease-out;
+}
+
+@keyframes pg-section-appear {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Nút tóm tắt nhóm quyền */
+.pg-group-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    padding: 14px 16px;
+    color: #1f2937;
+    background: #fff;
+    border: 0;
+    border-radius: 9px;
+    text-align: left;
+    font: inherit;
+    cursor: pointer;
+}
+
+.pg-group-summary:hover {
+    background: #f8fafc;
+}
+
+.pg-group-summary-main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+}
+
+.pg-group-summary-main strong {
+    font-size: 15px;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.pg-group-summary-main small {
+    color: #6b7280;
+    font-size: 12px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.pg-summary-right {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.pg-chevron {
+    color: #1d4ed8;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.pg-group-card {
+    overflow: hidden;
+}
+
+.pg-expanded-actions {
+    padding: 0 16px 16px;
+    border-top: 1px solid #f1f5f9;
+}
+
+@media (max-width: 600px) {
+    .pg-section-toggle {
+        gap: 10px;
+        padding: 14px;
+    }
+
+    .pg-section-icon {
+        flex-basis: 36px;
+        width: 36px;
+        height: 36px;
+    }
+
+    .pg-section-text strong {
+        font-size: 14px;
+    }
+
+    .pg-section-text small {
+        font-size: 12px;
+    }
+
+    .pg-group-summary {
+        align-items: flex-start;
+        padding: 12px;
+    }
+
+    .pg-summary-right {
+        align-items: flex-end;
+    }
+
+    .pg-expanded-actions {
+        padding: 0 12px 12px;
+    }
+}

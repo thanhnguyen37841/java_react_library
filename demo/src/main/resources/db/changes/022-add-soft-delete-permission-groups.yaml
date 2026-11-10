@@ -1,0 +1,18 @@
+
+databaseChangeLog:
+  - changeSet:
+      id: 022-add-soft-delete-permission-groups
+      author: thanh
+      changes:
+        - addColumn:
+            tableName: permission_groups
+            columns:
+              - column:
+                  name: is_deleted
+                  type: BOOLEAN
+                  defaultValueBoolean: false
+                  constraints:
+                    nullable: false
+              - column:
+                  name: deleted_at
+                  type: DATETIME

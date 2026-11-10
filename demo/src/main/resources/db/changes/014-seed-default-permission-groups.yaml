@@ -1,0 +1,67 @@
+
+databaseChangeLog:
+  - changeSet:
+      id: 014-seed-default-permission-groups
+      author: thanh
+      changes:
+        - sql:
+            sql: |
+              INSERT INTO permission_groups (name, description, created_at, updated_at)
+              SELECT 'Quản lý sách', 'Xem, thêm, sửa, xóa và nhập sách CSV', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP
+              WHERE NOT EXISTS (
+                  SELECT 1 FROM permission_groups WHERE name = 'Quản lý sách'
+              );
+
+              INSERT INTO permission_groups (name, description, created_at, updated_at)
+              SELECT 'Quản lý thành viên', 'Xem, thêm, sửa và xóa thành viên', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP
+              WHERE NOT EXISTS (
+                  SELECT 1 FROM permission_groups WHERE name = 'Quản lý thành viên'
+              );
+
+              INSERT INTO permission_groups (name, description, created_at, updated_at)
+              SELECT 'Quản lý mượn/trả', 'Xem phiếu mượn, tạo lượt mượn và xử lý trả sách', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP
+              WHERE NOT EXISTS (
+                  SELECT 1 FROM permission_groups WHERE name = 'Quản lý mượn/trả'
+              );
+
+              INSERT INTO permission_groups (name, description, created_at, updated_at)
+              SELECT 'Quản lý tài khoản', 'Đổi mật khẩu và đổi email tài khoản', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP
+              WHERE NOT EXISTS (
+                  SELECT 1 FROM permission_groups WHERE name = 'Quản lý tài khoản'
+              );
+
+              INSERT INTO permission_groups (name, description, created_at, updated_at)
+              SELECT 'Quản lý hệ thống', 'Xem và cập nhật cấu hình hệ thống', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP
+              WHERE NOT EXISTS (
+                  SELECT 1 FROM permission_groups WHERE name = 'Quản lý hệ thống'
+              );
+
+              INSERT INTO permission_groups (name, description, created_at, updated_at)
+              SELECT 'Nhân viên kiểm kê', 'Xem danh sách sách để phục vụ kiểm kê', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP
+              WHERE NOT EXISTS (
+                  SELECT 1 FROM permission_groups WHERE name = 'Nhân viên kiểm kê'
+              );
+
+              INSERT INTO permission_groups (name, description, created_at, updated_at)
+              SELECT 'Nhân viên nhập liệu', 'Xem, thêm và cập nhật sách; không có quyền xóa sách', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP
+              WHERE NOT EXISTS (
+                  SELECT 1 FROM permission_groups WHERE name = 'Nhân viên nhập liệu'
+              );
+
+              INSERT INTO permission_groups (name, description, created_at, updated_at)
+              SELECT 'Nhân viên quản lý thành viên', 'Xem, thêm và cập nhật thành viên; không có quyền xóa', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP
+              WHERE NOT EXISTS (
+                  SELECT 1 FROM permission_groups WHERE name = 'Nhân viên quản lý thành viên'
+              );
+
+              INSERT INTO permission_groups (name, description, created_at, updated_at)
+              SELECT 'Nhân viên hỗ trợ mượn/trả', 'Xem phiếu mượn, tạo lượt mượn và xử lý trả sách', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP
+              WHERE NOT EXISTS (
+                  SELECT 1 FROM permission_groups WHERE name = 'Nhân viên hỗ trợ mượn/trả'
+              );
+
+              INSERT INTO permission_groups (name, description, created_at, updated_at)
+              SELECT 'Trưởng bộ phận', 'Quản lý sách, thành viên và hoạt động mượn/trả', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP
+              WHERE NOT EXISTS (
+                  SELECT 1 FROM permission_groups WHERE name = 'Trưởng bộ phận'
+              );

@@ -1,0 +1,32 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: seed-admin-permissions
+      author: thanh
+      changes:
+
+        - sql:
+            sql: |
+              INSERT INTO role_permissions (role_id, permission_id)
+              SELECT r.id, p.id
+              FROM roles r
+              CROSS JOIN permissions p
+              WHERE r.name = 'ROLE_ADMIN';
+
+  - changeSet:
+      id: seed-user-permissions
+      author: thanh
+      changes:
+
+        - sql:
+            sql: |
+              INSERT INTO role_permissions (role_id, permission_id)
+              SELECT r.id, p.id
+              FROM roles r
+              JOIN permissions p
+                ON p.name IN (
+                    'BOOK_READ',
+                    'ACCOUNT_CHANGE_PASSWORD',
+                    'ACCOUNT_CHANGE_EMAIL'
+                )
+              WHERE r.name = 'ROLE_USER';

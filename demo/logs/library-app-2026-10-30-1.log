@@ -1,0 +1,1086 @@
+2026-10-30 11:32:26.443 [restartedMain] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 17.0.12 with PID 11328 (D:\Java_Sps\demo\target\classes started by thanh in D:\Java_Sps\demo)
+2026-10-30 11:32:26.470 [restartedMain] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-30 11:32:26.545 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-30 11:32:26.547 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-30 11:32:27.102 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-10-30 11:32:28.630 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-30 11:32:28.817 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 169 ms. Found 15 JPA repository interfaces.
+2026-10-30 11:32:30.236 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-30 11:32:30.270 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-30 11:32:30.274 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-30 11:32:30.275 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-30 11:32:30.361 [restartedMain] INFO  org.springframework.boot.web.context.servlet.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3812 ms
+2026-10-30 11:32:30.569 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-30 11:32:31.191 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3524c4cf
+2026-10-30 11:32:31.196 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-30 11:32:39.383 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-30 11:32:39.722 [restartedMain] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-10-30 11:32:39.727 [restartedMain] INFO  liquibase.changelog - Reading from library_db.databasechangelog
+2026-10-30 11:32:39.748 [restartedMain] INFO  liquibase.util - UPDATE SUMMARY
+2026-10-30 11:32:39.749 [restartedMain] INFO  liquibase.util - Run:                          0
+2026-10-30 11:32:39.749 [restartedMain] INFO  liquibase.util - Previously run:              25
+2026-10-30 11:32:39.749 [restartedMain] INFO  liquibase.util - Filtered out:                 0
+2026-10-30 11:32:39.750 [restartedMain] INFO  liquibase.util - -------------------------------
+2026-10-30 11:32:39.750 [restartedMain] INFO  liquibase.util - Total change sets:           25
+2026-10-30 11:32:39.753 [restartedMain] INFO  liquibase.util - Update summary generated
+2026-10-30 11:32:39.756 [restartedMain] INFO  liquibase.command - Command execution complete
+2026-10-30 11:32:39.888 [restartedMain] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-30 11:32:40.026 [restartedMain] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-30 11:32:40.750 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-30 11:32:40.895 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/library_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Ho_Chi_Minh]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: library_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-30 11:32:42.661 [restartedMain] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-30 11:32:42.728 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-30 11:32:42.858 [restartedMain] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-30 11:32:45.209 [restartedMain] INFO  org.springframework.boot.web.servlet.RegistrationBean - Filter profileCompletionFilterRegistration was not registered (disabled)
+2026-10-30 11:32:45.517 [restartedMain] INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-10-30 11:32:46.007 [restartedMain] WARN  org.springframework.boot.jpa.autoconfigure.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-30 11:32:46.976 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-30 11:32:47.014 [restartedMain] INFO  org.springframework.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-30 11:32:47.025 [restartedMain] INFO  com.example.demo.DemoApplication - Started DemoApplication in 21.388 seconds (process running for 22.606)
+2026-10-30 11:32:47.031 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-30 11:32:47.032 [restartedMain] WARN  org.springdoc.core.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-30 11:33:03.773 [http-nio-8080-exec-3] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-30 11:33:03.775 [http-nio-8080-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-30 11:33:03.777 [http-nio-8080-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-10-30 11:33:04.204 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/refresh-token | Params: []
+2026-10-30 11:33:04.204 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/refresh-token | Params: []
+2026-10-30 11:33:04.525 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 321ms | URI: /auth/refresh-token
+2026-10-30 11:33:04.527 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 321ms | URI: /auth/refresh-token
+2026-10-30 11:33:04.532 [http-nio-8080-exec-4] ERROR com.example.demo.exception.GlobalExceptionHandler - Unexpected runtime error at /auth/refresh-token
+java.lang.RuntimeException: Refresh token không t?n t?i ho?c phiên ?ã b? vô hi?u hóa.
+	at com.example.demo.service.AuthService.lambda$refreshToken$1(AuthService.java:179)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.example.demo.service.AuthService.refreshToken(AuthService.java:178)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.example.demo.service.AuthService$$SpringCGLIB$$0.refreshToken(<generated>)
+	at com.example.demo.controller.AuthController.refreshToken(AuthController.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:82)
+	at com.example.demo.aspect.LoggingAspect.logAround(LoggingAspect.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:648)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:630)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.example.demo.controller.AuthController$$SpringCGLIB$$0.refreshToken(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:132)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:59)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$2(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.demo.security.ProfileCompletionFilter.doFilterInternal(ProfileCompletionFilter.java:32)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.demo.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:52)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.example.demo.security.MaintenanceModeFilter.doFilterInternal(MaintenanceModeFilter.java:36)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:535)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:86)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:71)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:347)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:406)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:71)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1307)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2036)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:949)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:483)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-10-30 11:33:04.612 [http-nio-8080-exec-4] WARN  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [java.lang.RuntimeException: Refresh token không t?n t?i ho?c phiên ?ã b? vô hi?u hóa.]
+2026-10-30 11:33:04.779 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:33:04.782 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], stockStatus=[ALL], isbnStatus=[ALL], ebookStatus=[ALL], myBorrowStatus=[ALL], sortBy=[updatedAt], sortDir=[desc]]
+2026-10-30 11:33:04.813 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 34ms | URI: /api/borrows/my
+2026-10-30 11:33:04.834 [http-nio-8080-exec-5] WARN  org.springframework.data.web.config.SpringDataJackson3Configuration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-10-30 11:33:04.867 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 83ms | URI: /api/books
+2026-10-30 11:33:04.888 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:33:04.899 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/borrows/my
+2026-10-30 11:33:04.916 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], stockStatus=[ALL], isbnStatus=[ALL], ebookStatus=[ALL], myBorrowStatus=[ALL], sortBy=[updatedAt], sortDir=[desc]]
+2026-10-30 11:33:04.943 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 26ms | URI: /api/books
+2026-10-30 11:33:04.960 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/members/me | Params: []
+2026-10-30 11:33:04.960 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/me/permissions | Params: []
+2026-10-30 11:33:04.962 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 0ms | URI: /api/me/permissions
+2026-10-30 11:33:04.985 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 24ms | URI: /api/members/me
+2026-10-30 11:33:05.040 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/me/permissions | Params: []
+2026-10-30 11:33:05.041 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 0ms | URI: /api/me/permissions
+2026-10-30 11:33:05.101 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/admin/dashboard/stats | Params: []
+2026-10-30 11:33:05.163 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 61ms | URI: /api/admin/dashboard/stats
+2026-10-30 11:33:09.959 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:33:09.970 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/borrows/my
+2026-10-30 11:33:12.550 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/categories | Params: []
+2026-10-30 11:33:12.551 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], stockStatus=[ALL], isbnStatus=[ALL], ebookStatus=[ALL], myBorrowStatus=[ALL], sortBy=[title], sortDir=[asc]]
+2026-10-30 11:33:12.552 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/me/permissions | Params: []
+2026-10-30 11:33:12.552 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 0ms | URI: /api/me/permissions
+2026-10-30 11:33:12.563 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 11ms | URI: /api/categories
+2026-10-30 11:33:12.574 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 22ms | URI: /api/books
+2026-10-30 11:33:12.603 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/categories | Params: []
+2026-10-30 11:33:12.613 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/categories
+2026-10-30 11:33:12.643 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/categories | Params: []
+2026-10-30 11:33:12.650 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/categories
+2026-10-30 11:33:12.685 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/categories | Params: []
+2026-10-30 11:33:12.692 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/categories
+2026-10-30 11:33:14.965 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:33:14.975 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/borrows/my
+2026-10-30 11:33:18.664 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books/covers/e6c6a9d9-4401-438e-a5b6-7eeb3afaa68b.jpg | Params: []
+2026-10-30 11:33:18.667 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 1ms | URI: /api/books/covers/e6c6a9d9-4401-438e-a5b6-7eeb3afaa68b.jpg
+2026-10-30 11:33:19.957 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:33:19.965 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:33:25.459 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:33:25.472 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 12ms | URI: /api/borrows/my
+2026-10-30 11:33:30.441 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:33:30.455 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 13ms | URI: /api/borrows/my
+2026-10-30 11:33:35.432 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:33:35.441 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/borrows/my
+2026-10-30 11:33:40.445 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:33:40.457 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 11ms | URI: /api/borrows/my
+2026-10-30 11:33:45.431 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:33:45.440 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/borrows/my
+2026-10-30 11:33:50.437 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:33:50.446 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/borrows/my
+2026-10-30 11:33:55.428 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:33:55.436 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:34:00.441 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:34:00.449 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:34:05.425 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:34:05.433 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:34:10.435 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:34:10.444 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:34:15.435 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:34:15.445 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/borrows/my
+2026-10-30 11:34:20.440 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:34:20.447 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:34:25.438 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:34:25.446 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:34:30.438 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:34:30.447 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/borrows/my
+2026-10-30 11:34:34.956 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:34:34.964 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:34:39.947 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:34:39.956 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/borrows/my
+2026-10-30 11:34:44.956 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:34:44.967 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/borrows/my
+2026-10-30 11:34:50.449 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:34:50.456 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:34:55.430 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:34:55.436 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:35:00.437 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:35:00.444 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:35:05.425 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:35:05.435 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/borrows/my
+2026-10-30 11:35:10.422 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:35:10.432 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/borrows/my
+2026-10-30 11:35:15.419 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:35:15.429 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/borrows/my
+2026-10-30 11:35:20.428 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:35:20.438 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/borrows/my
+2026-10-30 11:35:25.425 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:35:25.433 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/borrows/my
+2026-10-30 11:35:30.435 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:35:30.443 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/borrows/my
+2026-10-30 11:35:35.432 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:35:35.442 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/borrows/my
+2026-10-30 11:35:40.423 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:35:40.428 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:35:45.429 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:35:45.437 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:35:50.434 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:35:50.444 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/borrows/my
+2026-10-30 11:35:55.425 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:35:55.433 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/borrows/my
+2026-10-30 11:36:00.433 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:36:00.441 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:36:05.421 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:36:05.428 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:36:10.432 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:36:10.440 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:36:15.413 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:36:15.420 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:36:20.426 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:36:20.434 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:36:25.421 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:36:25.429 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:36:30.434 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:36:30.443 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/borrows/my
+2026-10-30 11:36:35.429 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:36:35.435 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:36:40.426 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:36:40.433 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:36:45.419 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:36:45.426 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:36:50.422 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:36:50.430 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:36:55.431 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:36:55.439 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/borrows/my
+2026-10-30 11:37:00.444 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:37:00.455 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 10ms | URI: /api/borrows/my
+2026-10-30 11:37:05.426 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:37:05.434 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:37:10.435 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:37:10.447 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 11ms | URI: /api/borrows/my
+2026-10-30 11:37:15.436 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:37:15.444 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:37:20.421 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:37:20.427 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:37:24.943 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:37:24.951 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/borrows/my
+2026-10-30 11:37:30.433 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:37:30.438 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:37:35.430 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:37:35.438 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:37:40.421 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:37:40.427 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:37:45.428 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:37:45.436 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:37:49.954 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:37:49.965 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/borrows/my
+2026-10-30 11:37:54.950 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:37:54.960 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/borrows/my
+2026-10-30 11:37:59.943 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:37:59.950 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:38:03.542 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: PUT | URI: /api/books/18 | Params: []
+2026-10-30 11:38:03.603 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 59ms | URI: /api/books/18
+2026-10-30 11:38:03.643 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], stockStatus=[ALL], isbnStatus=[ALL], ebookStatus=[ALL], myBorrowStatus=[ALL], sortBy=[title], sortDir=[asc]]
+2026-10-30 11:38:03.656 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 11ms | URI: /api/books
+2026-10-30 11:38:04.953 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:38:04.959 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:38:09.952 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:38:09.960 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:38:15.431 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:38:15.440 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/borrows/my
+2026-10-30 11:38:20.424 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:38:20.430 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:38:25.426 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:38:25.435 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/borrows/my
+2026-10-30 11:38:30.435 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:38:30.444 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:38:35.427 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:38:35.438 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/borrows/my
+2026-10-30 11:38:40.425 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:38:40.436 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 10ms | URI: /api/borrows/my
+2026-10-30 11:38:42.172 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books/covers/3a7909e4-8799-456c-add9-cd39df3fa82f.jpg | Params: []
+2026-10-30 11:38:42.173 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 0ms | URI: /api/books/covers/3a7909e4-8799-456c-add9-cd39df3fa82f.jpg
+2026-10-30 11:38:45.432 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:38:45.438 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:38:49.952 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:38:49.962 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/borrows/my
+2026-10-30 11:38:55.423 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:38:55.432 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:39:00.439 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:39:00.446 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:39:04.948 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:39:04.955 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:39:10.430 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:39:10.435 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:39:15.428 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:39:15.433 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:39:20.420 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:39:20.425 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:39:25.429 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:39:25.434 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:39:30.413 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:39:30.420 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:39:35.430 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:39:35.439 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:39:40.423 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:39:40.429 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:39:45.420 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:39:45.426 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:39:50.430 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:39:50.435 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:39:55.422 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:39:55.428 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:39:59.942 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:39:59.949 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:40:04.941 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:40:04.949 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:40:10.431 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:40:10.437 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:40:14.945 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:40:14.951 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:40:17.658 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: PUT | URI: /api/books/19 | Params: []
+2026-10-30 11:40:17.687 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 28ms | URI: /api/books/19
+2026-10-30 11:40:17.721 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], stockStatus=[ALL], isbnStatus=[ALL], ebookStatus=[ALL], myBorrowStatus=[ALL], sortBy=[title], sortDir=[asc]]
+2026-10-30 11:40:17.734 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 13ms | URI: /api/books
+2026-10-30 11:40:19.943 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:40:19.950 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:40:24.936 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:40:24.942 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:40:30.420 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:40:30.430 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/borrows/my
+2026-10-30 11:40:35.434 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:40:35.440 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:40:40.429 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:40:40.434 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:40:45.432 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:40:45.440 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:40:50.427 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:40:50.434 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:40:55.428 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:40:55.434 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:41:00.428 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:41:00.434 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:41:05.431 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:41:05.437 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:41:10.428 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:41:10.432 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:41:15.427 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:41:15.433 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:41:20.431 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:41:20.440 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/borrows/my
+2026-10-30 11:41:25.427 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:41:25.434 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:41:30.415 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:41:30.420 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:41:35.429 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:41:35.433 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:41:40.425 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:41:40.435 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 10ms | URI: /api/borrows/my
+2026-10-30 11:41:45.428 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:41:45.433 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:41:50.431 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:41:50.436 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:41:55.423 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:41:55.430 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:42:00.426 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:42:00.433 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:42:05.435 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:42:05.439 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:42:10.422 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:42:10.430 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:42:15.442 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:42:15.447 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:42:20.468 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:42:20.483 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 13ms | URI: /api/borrows/my
+2026-10-30 11:42:25.415 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:42:25.422 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:42:30.424 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:42:30.430 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:42:35.425 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:42:35.435 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/borrows/my
+2026-10-30 11:42:40.425 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:42:40.431 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:42:45.475 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:42:45.484 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:42:50.427 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:42:50.433 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:42:55.421 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:42:55.427 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:42:58.547 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books/covers/f61b7bef-3f77-46eb-bb99-efb14b2f2dc8.png | Params: []
+2026-10-30 11:42:58.548 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 0ms | URI: /api/books/covers/f61b7bef-3f77-46eb-bb99-efb14b2f2dc8.png
+2026-10-30 11:42:59.943 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:42:59.949 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:43:05.424 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:43:05.433 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:43:09.947 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:43:09.953 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:43:15.439 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:43:15.446 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:43:19.948 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:43:19.954 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:43:25.429 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:43:25.436 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:43:30.427 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:43:30.434 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:43:34.988 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:43:34.993 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:43:40.425 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:43:40.437 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 10ms | URI: /api/borrows/my
+2026-10-30 11:43:45.419 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:43:45.424 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:43:50.437 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:43:50.444 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:43:55.431 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:43:55.437 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:44:00.427 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:44:00.434 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:44:05.434 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:44:05.440 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:44:10.434 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:44:10.441 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:44:15.424 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:44:15.429 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:44:20.422 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:44:20.427 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:44:25.421 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:44:25.428 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:44:30.412 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:44:30.419 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:44:35.424 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:44:35.428 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:44:40.424 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:44:40.432 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:44:45.415 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:44:45.420 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:44:50.418 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:44:50.425 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:44:55.414 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:44:55.422 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:45:00.439 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:45:00.445 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:45:05.412 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:45:05.417 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:45:10.420 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:45:10.427 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:45:15.421 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:45:15.426 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:45:20.421 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:45:20.426 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:45:25.416 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:45:25.421 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:45:30.427 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:45:30.431 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:45:35.424 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:45:35.429 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:45:40.419 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:45:40.424 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:45:45.428 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:45:45.431 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 3ms | URI: /api/borrows/my
+2026-10-30 11:45:50.421 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:45:50.427 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:45:55.422 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:45:55.428 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:46:00.425 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:46:00.432 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:46:05.432 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:46:05.438 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:46:10.422 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:46:10.427 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:46:15.421 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:46:15.425 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:46:20.426 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:46:20.432 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:46:25.434 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:46:25.440 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:46:30.417 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:46:30.424 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:46:35.431 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:46:35.440 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/borrows/my
+2026-10-30 11:46:40.426 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:46:40.433 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:46:45.416 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:46:45.421 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:46:49.949 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:46:49.956 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:46:54.947 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:46:54.953 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:46:58.211 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: PUT | URI: /api/books/14 | Params: []
+2026-10-30 11:46:58.245 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 33ms | URI: /api/books/14
+2026-10-30 11:46:58.279 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], stockStatus=[ALL], isbnStatus=[ALL], ebookStatus=[ALL], myBorrowStatus=[ALL], sortBy=[title], sortDir=[asc]]
+2026-10-30 11:46:58.291 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 11ms | URI: /api/books
+2026-10-30 11:46:59.948 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:46:59.953 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:47:04.944 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:47:04.950 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:47:09.935 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:47:09.942 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:47:14.943 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:47:14.946 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 3ms | URI: /api/borrows/my
+2026-10-30 11:47:20.438 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:47:20.448 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/borrows/my
+2026-10-30 11:47:25.417 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:47:25.421 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:47:30.423 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:47:30.428 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:47:35.420 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:47:35.426 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:47:39.941 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:47:39.949 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:47:45.430 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:47:45.435 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:47:49.944 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:47:49.949 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:47:54.954 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:47:54.959 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:47:59.948 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:47:59.954 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:48:04.950 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:48:04.955 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:48:10.432 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:48:10.438 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:48:15.424 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:48:15.429 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 3ms | URI: /api/borrows/my
+2026-10-30 11:48:19.941 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:48:19.948 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:48:25.435 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:48:25.441 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:48:30.416 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:48:30.421 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:48:35.423 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:48:35.429 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:48:40.430 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:48:40.436 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:48:45.428 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:48:45.432 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 3ms | URI: /api/borrows/my
+2026-10-30 11:48:50.427 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:48:50.433 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:48:55.419 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:48:55.423 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:49:00.432 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:49:00.440 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:49:05.360 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:49:05.365 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:49:10.427 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:49:10.431 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:49:15.420 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:49:15.425 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:49:19.949 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:49:19.955 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:49:24.956 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:49:24.964 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/borrows/my
+2026-10-30 11:49:29.945 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:49:29.950 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:49:34.937 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:49:34.943 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:49:40.426 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:49:40.433 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:49:45.432 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:49:45.437 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:49:50.423 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:49:50.428 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:49:55.423 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:49:55.427 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 3ms | URI: /api/borrows/my
+2026-10-30 11:50:00.440 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:50:00.447 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:50:05.428 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:50:05.434 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:50:10.413 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:50:10.418 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:50:15.421 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:50:15.426 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:50:20.432 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:50:20.439 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:50:25.434 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:50:25.441 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:50:29.934 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:50:29.942 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:50:31.959 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: PUT | URI: /api/books/4 | Params: []
+2026-10-30 11:50:31.994 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 35ms | URI: /api/books/4
+2026-10-30 11:50:32.031 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], stockStatus=[ALL], isbnStatus=[ALL], ebookStatus=[ALL], myBorrowStatus=[ALL], sortBy=[title], sortDir=[asc]]
+2026-10-30 11:50:32.045 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 14ms | URI: /api/books
+2026-10-30 11:50:34.953 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:50:34.957 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:50:40.431 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:50:40.437 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:50:45.413 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:50:45.418 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:50:50.416 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:50:50.423 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:50:55.422 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:50:55.427 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:51:00.431 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:51:00.436 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:51:05.415 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:51:05.422 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:51:10.427 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:51:10.432 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:51:15.425 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:51:15.431 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:51:20.420 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:51:20.425 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:51:25.444 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:51:25.453 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:51:30.417 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:51:30.422 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:51:35.436 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:51:35.443 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:51:40.424 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:51:40.431 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:51:45.414 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:51:45.421 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:51:50.417 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:51:50.423 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:51:55.425 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:51:55.430 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:51:59.778 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books/covers/2ae4a5b0-f572-44c4-aa6c-27023403747e.jpg | Params: []
+2026-10-30 11:51:59.779 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 0ms | URI: /api/books/covers/2ae4a5b0-f572-44c4-aa6c-27023403747e.jpg
+2026-10-30 11:51:59.950 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:51:59.954 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:52:05.424 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:52:05.430 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:52:09.940 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:52:09.944 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:52:14.962 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:52:14.968 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:52:20.422 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:52:20.429 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:52:25.416 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:52:25.424 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:52:29.953 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:52:29.958 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:52:35.420 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:52:35.425 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:52:39.941 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:52:39.947 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 11:52:44.945 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:52:44.950 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:52:49.935 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:52:49.943 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:52:51.567 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: PUT | URI: /api/books/23 | Params: []
+2026-10-30 11:52:51.590 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 22ms | URI: /api/books/23
+2026-10-30 11:52:51.621 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], stockStatus=[ALL], isbnStatus=[ALL], ebookStatus=[ALL], myBorrowStatus=[ALL], sortBy=[title], sortDir=[asc]]
+2026-10-30 11:52:51.633 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 12ms | URI: /api/books
+2026-10-30 11:52:54.940 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:52:54.945 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:53:00.438 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:53:00.446 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:53:05.421 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:53:05.427 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:53:10.422 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:53:10.428 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:53:15.432 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:53:15.436 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:53:19.947 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:53:19.952 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:53:25.428 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:53:25.433 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:53:29.939 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:53:29.943 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:53:34.955 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:53:34.960 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:53:39.939 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:53:39.945 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:53:45.421 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:53:45.427 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:53:49.952 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:53:49.957 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:53:52.374 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: PUT | URI: /api/books/13 | Params: []
+2026-10-30 11:53:52.403 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 28ms | URI: /api/books/13
+2026-10-30 11:53:52.435 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], stockStatus=[ALL], isbnStatus=[ALL], ebookStatus=[ALL], myBorrowStatus=[ALL], sortBy=[title], sortDir=[asc]]
+2026-10-30 11:53:52.447 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 11ms | URI: /api/books
+2026-10-30 11:53:54.939 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:53:54.944 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:53:59.945 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:53:59.950 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:54:05.437 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:54:05.443 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:54:10.423 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:54:10.428 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:54:15.419 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:54:15.427 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:54:20.415 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:54:20.421 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:54:25.425 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:54:25.429 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:54:29.947 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:54:29.952 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:54:31.813 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books/covers/4ed97ff6-bca3-429a-924e-958dac4fa5dc.jpg | Params: []
+2026-10-30 11:54:31.813 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 0ms | URI: /api/books/covers/4ed97ff6-bca3-429a-924e-958dac4fa5dc.jpg
+2026-10-30 11:54:35.418 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:54:35.424 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:54:40.417 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:54:40.423 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:54:44.934 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:54:44.940 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:54:49.947 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:54:49.954 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:54:55.436 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:54:55.441 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:55:00.424 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:55:00.430 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:55:05.420 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:55:05.427 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:55:10.424 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:55:10.429 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:55:15.428 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:55:15.434 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:55:19.937 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:55:19.943 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:55:25.431 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:55:25.436 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:55:30.421 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:55:30.426 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:55:35.418 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:55:35.424 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:55:39.938 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:55:39.945 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:55:43.538 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: PUT | URI: /api/books/3 | Params: []
+2026-10-30 11:55:43.567 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 27ms | URI: /api/books/3
+2026-10-30 11:55:43.598 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], stockStatus=[ALL], isbnStatus=[ALL], ebookStatus=[ALL], myBorrowStatus=[ALL], sortBy=[title], sortDir=[asc]]
+2026-10-30 11:55:43.611 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 12ms | URI: /api/books
+2026-10-30 11:55:44.942 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:55:44.948 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:55:45.999 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[1], stockStatus=[ALL], isbnStatus=[ALL], ebookStatus=[ALL], myBorrowStatus=[ALL], sortBy=[title], sortDir=[asc]]
+2026-10-30 11:55:46.010 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/books
+2026-10-30 11:55:49.248 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books/covers/8d8b2dc0-736e-4b01-be53-8a701dda0466.jpg | Params: []
+2026-10-30 11:55:49.248 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 0ms | URI: /api/books/covers/8d8b2dc0-736e-4b01-be53-8a701dda0466.jpg
+2026-10-30 11:55:49.938 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:55:49.941 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 3ms | URI: /api/borrows/my
+2026-10-30 11:55:55.433 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:55:55.437 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:56:00.422 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:56:00.430 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:56:05.429 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:56:05.433 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:56:10.431 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:56:10.438 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:56:15.421 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:56:15.425 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:56:20.415 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:56:20.420 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:56:25.427 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:56:25.433 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:56:30.431 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:56:30.438 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:56:35.414 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:56:35.419 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:56:39.935 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:56:39.940 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:56:44.942 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:56:44.948 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:56:50.419 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:56:50.423 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 3ms | URI: /api/borrows/my
+2026-10-30 11:56:55.425 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:56:55.431 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:57:00.418 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:57:00.425 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:57:05.437 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:57:05.446 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/borrows/my
+2026-10-30 11:57:10.427 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:57:10.432 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:57:15.430 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:57:15.435 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:57:20.426 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:57:20.430 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:57:24.940 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:57:24.945 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:57:30.455 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:57:30.462 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:57:35.423 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:57:35.429 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:57:40.419 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:57:40.427 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:57:45.415 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:57:45.421 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:57:50.426 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:57:50.431 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:57:55.434 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:57:55.439 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:57:59.938 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:57:59.944 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:58:00.393 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: PUT | URI: /api/books/22 | Params: []
+2026-10-30 11:58:00.437 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 42ms | URI: /api/books/22
+2026-10-30 11:58:00.480 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[1], stockStatus=[ALL], isbnStatus=[ALL], ebookStatus=[ALL], myBorrowStatus=[ALL], sortBy=[title], sortDir=[asc]]
+2026-10-30 11:58:00.488 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/books
+2026-10-30 11:58:02.999 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books/covers/8b136e04-61e0-41ac-bc3d-cbfc1d6477b5.jpg | Params: []
+2026-10-30 11:58:03.000 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 0ms | URI: /api/books/covers/8b136e04-61e0-41ac-bc3d-cbfc1d6477b5.jpg
+2026-10-30 11:58:04.943 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:58:04.948 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:58:10.418 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:58:10.422 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:58:15.433 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:58:15.439 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:58:20.431 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:58:20.436 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:58:24.935 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:58:24.941 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:58:30.420 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:58:30.425 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:58:35.419 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:58:35.423 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:58:39.948 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:58:39.952 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:58:45.420 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:58:45.426 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:58:50.428 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:58:50.434 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 6ms | URI: /api/borrows/my
+2026-10-30 11:58:55.415 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:58:55.418 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 3ms | URI: /api/borrows/my
+2026-10-30 11:58:59.939 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:58:59.944 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:59:04.972 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:59:04.977 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:59:10.432 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:59:10.438 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:59:15.418 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:59:15.424 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:59:19.950 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:59:19.957 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:59:24.934 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:59:24.940 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:59:29.543 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: PUT | URI: /api/books/11 | Params: []
+2026-10-30 11:59:29.574 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 30ms | URI: /api/books/11
+2026-10-30 11:59:29.606 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[1], stockStatus=[ALL], isbnStatus=[ALL], ebookStatus=[ALL], myBorrowStatus=[ALL], sortBy=[title], sortDir=[asc]]
+2026-10-30 11:59:29.613 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/books
+2026-10-30 11:59:29.936 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:59:29.941 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:59:35.416 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:59:35.422 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:59:40.421 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:59:40.427 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:59:43.452 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /auth/login | Params: []
+2026-10-30 11:59:43.664 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 211ms | URI: /auth/login
+2026-10-30 11:59:43.702 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/me/permissions | Params: []
+2026-10-30 11:59:43.707 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 3ms | URI: /api/me/permissions
+2026-10-30 11:59:43.755 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], stockStatus=[ALL], isbnStatus=[ALL], ebookStatus=[ALL], myBorrowStatus=[ALL], sortBy=[title], sortDir=[asc]]
+2026-10-30 11:59:43.761 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/members/me | Params: []
+2026-10-30 11:59:43.765 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/me/permissions | Params: []
+2026-10-30 11:59:43.767 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], stockStatus=[ALL], isbnStatus=[ALL], ebookStatus=[ALL], myBorrowStatus=[ALL], sortBy=[updatedAt], sortDir=[desc]]
+2026-10-30 11:59:43.767 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 1ms | URI: /api/me/permissions
+2026-10-30 11:59:43.772 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 10ms | URI: /api/members/me
+2026-10-30 11:59:43.774 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 18ms | URI: /api/books
+2026-10-30 11:59:43.786 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 17ms | URI: /api/books
+2026-10-30 11:59:43.796 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/members/me | Params: []
+2026-10-30 11:59:43.804 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/members/me
+2026-10-30 11:59:43.818 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], stockStatus=[ALL], isbnStatus=[ALL], ebookStatus=[ALL], myBorrowStatus=[ALL], sortBy=[updatedAt], sortDir=[desc]]
+2026-10-30 11:59:43.841 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 22ms | URI: /api/books
+2026-10-30 11:59:43.912 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], stockStatus=[ALL], isbnStatus=[ALL], ebookStatus=[ALL], myBorrowStatus=[ALL], sortBy=[updatedAt], sortDir=[desc]]
+2026-10-30 11:59:43.941 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 27ms | URI: /api/books
+2026-10-30 11:59:43.984 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], stockStatus=[ALL], isbnStatus=[ALL], ebookStatus=[ALL], myBorrowStatus=[ALL], sortBy=[updatedAt], sortDir=[desc]]
+2026-10-30 11:59:44.001 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 16ms | URI: /api/books
+2026-10-30 11:59:44.045 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books/covers/4ed97ff6-bca3-429a-924e-958dac4fa5dc.jpg | Params: []
+2026-10-30 11:59:44.045 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books/covers/8d8b2dc0-736e-4b01-be53-8a701dda0466.jpg | Params: []
+2026-10-30 11:59:44.045 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books/covers/2ae4a5b0-f572-44c4-aa6c-27023403747e.jpg | Params: []
+2026-10-30 11:59:44.046 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books/covers/8b136e04-61e0-41ac-bc3d-cbfc1d6477b5.jpg | Params: []
+2026-10-30 11:59:44.046 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 0ms | URI: /api/books/covers/8d8b2dc0-736e-4b01-be53-8a701dda0466.jpg
+2026-10-30 11:59:44.046 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 0ms | URI: /api/books/covers/8b136e04-61e0-41ac-bc3d-cbfc1d6477b5.jpg
+2026-10-30 11:59:44.046 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 0ms | URI: /api/books/covers/4ed97ff6-bca3-429a-924e-958dac4fa5dc.jpg
+2026-10-30 11:59:44.046 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 0ms | URI: /api/books/covers/2ae4a5b0-f572-44c4-aa6c-27023403747e.jpg
+2026-10-30 11:59:44.047 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books/covers/3a7909e4-8799-456c-add9-cd39df3fa82f.jpg | Params: []
+2026-10-30 11:59:44.047 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books/covers/f61b7bef-3f77-46eb-bb99-efb14b2f2dc8.png | Params: []
+2026-10-30 11:59:44.048 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 0ms | URI: /api/books/covers/3a7909e4-8799-456c-add9-cd39df3fa82f.jpg
+2026-10-30 11:59:44.048 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 0ms | URI: /api/books/covers/f61b7bef-3f77-46eb-bb99-efb14b2f2dc8.png
+2026-10-30 11:59:45.426 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:59:45.431 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 3ms | URI: /api/borrows/my
+2026-10-30 11:59:46.931 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/members/me | Params: []
+2026-10-30 11:59:46.944 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 11ms | URI: /api/members/me
+2026-10-30 11:59:46.945 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], stockStatus=[ALL], isbnStatus=[ALL], ebookStatus=[ALL], myBorrowStatus=[ALL], sortBy=[updatedAt], sortDir=[desc]]
+2026-10-30 11:59:46.948 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/categories | Params: []
+2026-10-30 11:59:46.957 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/categories
+2026-10-30 11:59:46.964 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 18ms | URI: /api/books
+2026-10-30 11:59:47.008 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/categories | Params: []
+2026-10-30 11:59:47.014 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/categories
+2026-10-30 11:59:47.017 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], stockStatus=[ALL], isbnStatus=[ALL], ebookStatus=[ALL], myBorrowStatus=[ALL], sortBy=[updatedAt], sortDir=[desc]]
+2026-10-30 11:59:47.039 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 21ms | URI: /api/books
+2026-10-30 11:59:47.062 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/categories | Params: []
+2026-10-30 11:59:47.073 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 11ms | URI: /api/categories
+2026-10-30 11:59:47.092 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], stockStatus=[ALL], isbnStatus=[ALL], ebookStatus=[ALL], myBorrowStatus=[ALL], sortBy=[updatedAt], sortDir=[desc]]
+2026-10-30 11:59:47.119 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 23ms | URI: /api/books
+2026-10-30 11:59:47.139 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/categories | Params: []
+2026-10-30 11:59:47.148 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/categories
+2026-10-30 11:59:47.177 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], stockStatus=[ALL], isbnStatus=[ALL], ebookStatus=[ALL], myBorrowStatus=[ALL], sortBy=[updatedAt], sortDir=[desc]]
+2026-10-30 11:59:47.199 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 21ms | URI: /api/books
+2026-10-30 11:59:47.342 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books/covers/e6c6a9d9-4401-438e-a5b6-7eeb3afaa68b.jpg | Params: []
+2026-10-30 11:59:47.343 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 0ms | URI: /api/books/covers/e6c6a9d9-4401-438e-a5b6-7eeb3afaa68b.jpg
+2026-10-30 11:59:48.695 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:59:48.712 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 16ms | URI: /api/borrows/my
+2026-10-30 11:59:50.426 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:59:50.431 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 11:59:53.100 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/members/me | Params: []
+2026-10-30 11:59:53.110 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/members/me
+2026-10-30 11:59:53.114 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books/11 | Params: []
+2026-10-30 11:59:53.122 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/books/11
+2026-10-30 11:59:53.155 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books/11 | Params: []
+2026-10-30 11:59:53.160 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/books/11
+2026-10-30 11:59:53.188 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books/11 | Params: []
+2026-10-30 11:59:53.195 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/books/11
+2026-10-30 11:59:53.221 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books/11 | Params: []
+2026-10-30 11:59:53.227 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/books/11
+2026-10-30 11:59:53.260 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], stockStatus=[ALL], isbnStatus=[ALL], ebookStatus=[ALL], myBorrowStatus=[ALL], sortBy=[updatedAt], sortDir=[desc], categoryId=[2]]
+2026-10-30 11:59:53.273 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 12ms | URI: /api/books
+2026-10-30 11:59:53.697 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:59:53.714 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 14ms | URI: /api/borrows/my
+2026-10-30 11:59:55.415 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:59:55.419 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 11:59:58.695 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 11:59:58.712 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 17ms | URI: /api/borrows/my
+2026-10-30 12:00:00.432 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 12:00:00.439 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/borrows/my
+2026-10-30 12:00:03.712 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 12:00:03.732 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 19ms | URI: /api/borrows/my
+2026-10-30 12:00:05.426 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 12:00:05.432 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 12:00:06.466 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/members/me | Params: []
+2026-10-30 12:00:06.466 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: [page=[0], size=[10]]
+2026-10-30 12:00:06.479 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 12ms | URI: /api/members/me
+2026-10-30 12:00:06.479 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/ebooks | Params: []
+2026-10-30 12:00:06.489 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 21ms | URI: /api/borrows/my
+2026-10-30 12:00:06.495 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 15ms | URI: /api/ebooks
+2026-10-30 12:00:06.511 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: [page=[0], size=[10]]
+2026-10-30 12:00:06.525 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 13ms | URI: /api/borrows/my
+2026-10-30 12:00:06.528 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/ebooks | Params: []
+2026-10-30 12:00:06.539 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 10ms | URI: /api/ebooks
+2026-10-30 12:00:06.544 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: [page=[0], size=[10]]
+2026-10-30 12:00:06.558 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 13ms | URI: /api/borrows/my
+2026-10-30 12:00:06.565 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/ebooks | Params: []
+2026-10-30 12:00:06.575 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/ebooks
+2026-10-30 12:00:06.577 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: [page=[0], size=[10]]
+2026-10-30 12:00:06.594 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 15ms | URI: /api/borrows/my
+2026-10-30 12:00:06.607 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/ebooks | Params: []
+2026-10-30 12:00:06.618 [http-nio-8080-exec-1] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 10ms | URI: /api/ebooks
+2026-10-30 12:00:08.696 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 12:00:08.711 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 14ms | URI: /api/borrows/my
+2026-10-30 12:00:09.264 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: POST | URI: /api/borrows/me/ebooks | Params: [bookId=[11]]
+2026-10-30 12:00:09.291 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 26ms | URI: /api/borrows/me/ebooks
+2026-10-30 12:00:09.321 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: [page=[0], size=[10]]
+2026-10-30 12:00:09.330 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/ebooks | Params: []
+2026-10-30 12:00:09.338 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 16ms | URI: /api/borrows/my
+2026-10-30 12:00:09.340 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 9ms | URI: /api/ebooks
+2026-10-30 12:00:10.425 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 12:00:10.430 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 12:00:11.010 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/ebooks/books/11/content | Params: []
+2026-10-30 12:00:11.024 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 13ms | URI: /api/ebooks/books/11/content
+2026-10-30 12:00:13.696 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 12:00:13.707 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 11ms | URI: /api/borrows/my
+2026-10-30 12:00:15.414 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 12:00:15.417 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 3ms | URI: /api/borrows/my
+2026-10-30 12:00:18.694 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 12:00:18.710 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 16ms | URI: /api/borrows/my
+2026-10-30 12:00:20.423 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 12:00:20.429 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 12:00:23.704 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 12:00:23.717 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 12ms | URI: /api/borrows/my
+2026-10-30 12:00:25.412 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 12:00:25.417 [http-nio-8080-exec-5] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 12:00:28.699 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 12:00:28.714 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 15ms | URI: /api/borrows/my
+2026-10-30 12:00:30.427 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 12:00:30.433 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 12:00:33.706 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 12:00:33.721 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 14ms | URI: /api/borrows/my
+2026-10-30 12:00:35.415 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 12:00:35.419 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 12:00:38.695 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 12:00:38.706 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 11ms | URI: /api/borrows/my
+2026-10-30 12:00:40.416 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 12:00:40.422 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 12:00:43.695 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 12:00:43.711 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 14ms | URI: /api/borrows/my
+2026-10-30 12:00:44.171 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/members/me | Params: []
+2026-10-30 12:00:44.185 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 13ms | URI: /api/members/me
+2026-10-30 12:00:44.187 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books/11 | Params: []
+2026-10-30 12:00:44.195 [http-nio-8080-exec-8] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/books/11
+2026-10-30 12:00:44.228 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books/11 | Params: []
+2026-10-30 12:00:44.234 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/books/11
+2026-10-30 12:00:44.262 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books/11 | Params: []
+2026-10-30 12:00:44.267 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/books/11
+2026-10-30 12:00:44.298 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books/11 | Params: []
+2026-10-30 12:00:44.305 [http-nio-8080-exec-6] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 7ms | URI: /api/books/11
+2026-10-30 12:00:44.360 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/books | Params: [page=[0], stockStatus=[ALL], isbnStatus=[ALL], ebookStatus=[ALL], myBorrowStatus=[ALL], sortBy=[updatedAt], sortDir=[desc], categoryId=[2]]
+2026-10-30 12:00:44.369 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 8ms | URI: /api/books
+2026-10-30 12:00:45.415 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 12:00:45.422 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my
+2026-10-30 12:00:48.707 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 12:00:48.721 [http-nio-8080-exec-10] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 14ms | URI: /api/borrows/my
+2026-10-30 12:00:50.423 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 12:00:50.427 [http-nio-8080-exec-4] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 4ms | URI: /api/borrows/my
+2026-10-30 12:00:53.708 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 12:00:53.723 [http-nio-8080-exec-7] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 14ms | URI: /api/borrows/my
+2026-10-30 12:00:55.421 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? REQUEST | Method: GET | URI: /api/borrows/my | Params: []
+2026-10-30 12:00:55.426 [http-nio-8080-exec-9] INFO  com.example.demo.aspect.LoggingAspect - ?? RESPONSE | Status: 200 | Time: 5ms | URI: /api/borrows/my

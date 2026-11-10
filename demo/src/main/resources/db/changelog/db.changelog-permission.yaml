@@ -1,0 +1,236 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: create-permissions
+      author: thanh
+      changes:
+
+        - createTable:
+            tableName: permissions
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+
+              - column:
+                  name: name
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+                    unique: true
+
+              - column:
+                  name: description
+                  type: VARCHAR(255)
+
+  - changeSet:
+      id: create-role-permissions
+      author: thanh
+      changes:
+
+        - createTable:
+            tableName: role_permissions
+            columns:
+              - column:
+                  name: role_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: permission_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+        - addPrimaryKey:
+            tableName: role_permissions
+            columnNames: role_id, permission_id
+            constraintName: pk_role_permissions
+
+        - addForeignKeyConstraint:
+            baseTableName: role_permissions
+            baseColumnNames: role_id
+            referencedTableName: roles
+            referencedColumnNames: id
+            constraintName: fk_role_permissions_role
+
+        - addForeignKeyConstraint:
+            baseTableName: role_permissions
+            baseColumnNames: permission_id
+            referencedTableName: permissions
+            referencedColumnNames: id
+            constraintName: fk_role_permissions_permission
+
+  - changeSet:
+      id: seed-permissions
+      author: thanh
+      changes:
+
+        - insert:
+            tableName: permissions
+            columns:
+              - column:
+                  name: name
+                  value: BOOK_READ
+              - column:
+                  name: description
+                  value: Xem và tìm kiếm sách
+
+        - insert:
+            tableName: permissions
+            columns:
+              - column:
+                  name: name
+                  value: BOOK_CREATE
+              - column:
+                  name: description
+                  value: Thêm sách
+
+        - insert:
+            tableName: permissions
+            columns:
+              - column:
+                  name: name
+                  value: BOOK_UPDATE
+              - column:
+                  name: description
+                  value: Cập nhật sách
+
+        - insert:
+            tableName: permissions
+            columns:
+              - column:
+                  name: name
+                  value: BOOK_DELETE
+              - column:
+                  name: description
+                  value: Xóa sách
+
+        - insert:
+            tableName: permissions
+            columns:
+              - column:
+                  name: name
+                  value: BOOK_IMPORT
+              - column:
+                  name: description
+                  value: Import sách từ CSV
+
+        - insert:
+            tableName: permissions
+            columns:
+              - column:
+                  name: name
+                  value: MEMBER_READ
+              - column:
+                  name: description
+                  value: Xem và tìm kiếm member
+
+        - insert:
+            tableName: permissions
+            columns:
+              - column:
+                  name: name
+                  value: MEMBER_CREATE
+              - column:
+                  name: description
+                  value: Thêm member
+
+        - insert:
+            tableName: permissions
+            columns:
+              - column:
+                  name: name
+                  value: MEMBER_UPDATE
+              - column:
+                  name: description
+                  value: Cập nhật member
+
+        - insert:
+            tableName: permissions
+            columns:
+              - column:
+                  name: name
+                  value: MEMBER_DELETE
+              - column:
+                  name: description
+                  value: Xóa member
+
+        - insert:
+            tableName: permissions
+            columns:
+              - column:
+                  name: name
+                  value: BORROW_CREATE
+              - column:
+                  name: description
+                  value: Tạo phiếu mượn sách
+
+        - insert:
+            tableName: permissions
+            columns:
+              - column:
+                  name: name
+                  value: BORROW_RETURN
+              - column:
+                  name: description
+                  value: Trả sách
+
+        - insert:
+            tableName: permissions
+            columns:
+              - column:
+                  name: name
+                  value: ACCOUNT_CHANGE_PASSWORD
+              - column:
+                  name: description
+                  value: Đổi mật khẩu
+
+        - insert:
+            tableName: permissions
+            columns:
+              - column:
+                  name: name
+                  value: ACCOUNT_CHANGE_EMAIL
+              - column:
+                  name: description
+                  value: Đổi email
+
+        - insert:
+            tableName: permissions
+            columns:
+              - column:
+                  name: name
+                  value: SYSTEM_CONFIG_READ
+              - column:
+                  name: description
+                  value: Xem cấu hình hệ thống
+
+        - insert:
+            tableName: permissions
+            columns:
+              - column:
+                  name: name
+                  value: SYSTEM_CONFIG_UPDATE
+              - column:
+                  name: description
+                  value: Thay đổi cấu hình hệ thống
+    
+  - changeSet:
+      id: add-borrow-read-permission
+      author: thanh
+      changes:
+        - insert:
+            tableName: permissions
+            columns:
+              - column:
+                  name: name
+                  value: BORROW_READ
+              - column:
+                  name: description
+                  value: Xem, tìm kiếm và phân trang phiếu mượn

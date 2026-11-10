@@ -1,0 +1,261 @@
+
+databaseChangeLog:
+  - changeSet:
+      id: 8
+      author: dev
+      changes:
+
+        # BOOK
+        - insert:
+            tableName: permissions
+            columns:
+              - column: { name: id, valueNumeric: 1 }
+              - column: { name: name, value: BOOK_READ }
+              - column: { name: description, value: Xem sách }
+
+        - insert:
+            tableName: permissions
+            columns:
+              - column: { name: id, valueNumeric: 2 }
+              - column: { name: name, value: BOOK_CREATE }
+              - column: { name: description, value: Thêm sách }
+
+        - insert:
+            tableName: permissions
+            columns:
+              - column: { name: id, valueNumeric: 3 }
+              - column: { name: name, value: BOOK_UPDATE }
+              - column: { name: description, value: Cập nhật sách }
+
+        - insert:
+            tableName: permissions
+            columns:
+              - column: { name: id, valueNumeric: 4 }
+              - column: { name: name, value: BOOK_DELETE }
+              - column: { name: description, value: Xóa sách }
+
+        - insert:
+            tableName: permissions
+            columns:
+              - column: { name: id, valueNumeric: 5 }
+              - column: { name: name, value: BOOK_IMPORT }
+              - column: { name: description, value: Import sách CSV }
+
+        # MEMBER
+        - insert:
+            tableName: permissions
+            columns:
+              - column: { name: id, valueNumeric: 6 }
+              - column: { name: name, value: MEMBER_READ }
+              - column: { name: description, value: Xem thành viên }
+
+        - insert:
+            tableName: permissions
+            columns:
+              - column: { name: id, valueNumeric: 7 }
+              - column: { name: name, value: MEMBER_CREATE }
+              - column: { name: description, value: Thêm thành viên }
+
+        - insert:
+            tableName: permissions
+            columns:
+              - column: { name: id, valueNumeric: 8 }
+              - column: { name: name, value: MEMBER_UPDATE }
+              - column: { name: description, value: Cập nhật thành viên }
+
+        - insert:
+            tableName: permissions
+            columns:
+              - column: { name: id, valueNumeric: 9 }
+              - column: { name: name, value: MEMBER_DELETE }
+              - column: { name: description, value: Xóa thành viên }
+
+        # BORROW
+        - insert:
+            tableName: permissions
+            columns:
+              - column: { name: id, valueNumeric: 10 }
+              - column: { name: name, value: BORROW_CREATE }
+              - column: { name: description, value: Mượn sách }
+
+        - insert:
+            tableName: permissions
+            columns:
+              - column: { name: id, valueNumeric: 11 }
+              - column: { name: name, value: BORROW_RETURN }
+              - column: { name: description, value: Trả sách }
+
+        # ACCOUNT
+        - insert:
+            tableName: permissions
+            columns:
+              - column: { name: id, valueNumeric: 12 }
+              - column: { name: name, value: ACCOUNT_CHANGE_PASSWORD }
+              - column: { name: description, value: Đổi mật khẩu }
+
+        - insert:
+            tableName: permissions
+            columns:
+              - column: { name: id, valueNumeric: 13 }
+              - column: { name: name, value: ACCOUNT_CHANGE_EMAIL }
+              - column: { name: description, value: Đổi email }
+
+        # SYSTEM CONFIG
+        - insert:
+            tableName: permissions
+            columns:
+              - column: { name: id, valueNumeric: 14 }
+              - column: { name: name, value: SYSTEM_CONFIG_READ }
+              - column: { name: description, value: Xem cấu hình hệ thống }
+
+        - insert:
+            tableName: permissions
+            columns:
+              - column: { name: id, valueNumeric: 15 }
+              - column: { name: name, value: SYSTEM_CONFIG_UPDATE }
+              - column: { name: description, value: Cập nhật cấu hình hệ thống }
+
+        # ADMIN - toàn quyền hiện có
+        - insert:
+            tableName: role_permissions
+            columns:
+              - column: { name: role_id, valueNumeric: 1 }
+              - column: { name: permission_id, valueNumeric: 1 }
+
+        - insert:
+            tableName: role_permissions
+            columns:
+              - column: { name: role_id, valueNumeric: 1 }
+              - column: { name: permission_id, valueNumeric: 2 }
+
+        - insert:
+            tableName: role_permissions
+            columns:
+              - column: { name: role_id, valueNumeric: 1 }
+              - column: { name: permission_id, valueNumeric: 3 }
+
+        - insert:
+            tableName: role_permissions
+            columns:
+              - column: { name: role_id, valueNumeric: 1 }
+              - column: { name: permission_id, valueNumeric: 4 }
+
+        - insert:
+            tableName: role_permissions
+            columns:
+              - column: { name: role_id, valueNumeric: 1 }
+              - column: { name: permission_id, valueNumeric: 5 }
+
+        - insert:
+            tableName: role_permissions
+            columns:
+              - column: { name: role_id, valueNumeric: 1 }
+              - column: { name: permission_id, valueNumeric: 6 }
+
+        - insert:
+            tableName: role_permissions
+            columns:
+              - column: { name: role_id, valueNumeric: 1 }
+              - column: { name: permission_id, valueNumeric: 7 }
+
+        - insert:
+            tableName: role_permissions
+            columns:
+              - column: { name: role_id, valueNumeric: 1 }
+              - column: { name: permission_id, valueNumeric: 8 }
+
+        - insert:
+            tableName: role_permissions
+            columns:
+              - column: { name: role_id, valueNumeric: 1 }
+              - column: { name: permission_id, valueNumeric: 9 }
+
+        - insert:
+            tableName: role_permissions
+            columns:
+              - column: { name: role_id, valueNumeric: 1 }
+              - column: { name: permission_id, valueNumeric: 10 }
+
+        - insert:
+            tableName: role_permissions
+            columns:
+              - column: { name: role_id, valueNumeric: 1 }
+              - column: { name: permission_id, valueNumeric: 11 }
+
+        - insert:
+            tableName: role_permissions
+            columns:
+              - column: { name: role_id, valueNumeric: 1 }
+              - column: { name: permission_id, valueNumeric: 12 }
+
+        - insert:
+            tableName: role_permissions
+            columns:
+              - column: { name: role_id, valueNumeric: 1 }
+              - column: { name: permission_id, valueNumeric: 13 }
+
+        - insert:
+            tableName: role_permissions
+            columns:
+              - column: { name: role_id, valueNumeric: 1 }
+              - column: { name: permission_id, valueNumeric: 14 }
+
+        - insert:
+            tableName: role_permissions
+            columns:
+              - column: { name: role_id, valueNumeric: 1 }
+              - column: { name: permission_id, valueNumeric: 15 }
+
+        # USER
+        - insert:
+            tableName: role_permissions
+            columns:
+              - column: { name: role_id, valueNumeric: 2 }
+              - column: { name: permission_id, valueNumeric: 1 }
+
+        - insert:
+            tableName: role_permissions
+            columns:
+              - column: { name: role_id, valueNumeric: 2 }
+              - column: { name: permission_id, valueNumeric: 12 }
+
+        - insert:
+            tableName: role_permissions
+            columns:
+              - column: { name: role_id, valueNumeric: 2 }
+              - column: { name: permission_id, valueNumeric: 13 }
+
+  # CHANGESET MỚI: thêm quyền BORROW_READ
+  - changeSet:
+      id: 16
+      author: dev
+      changes:
+        - insert:
+            tableName: permissions
+            columns:
+              - column:
+                  name: name
+                  value: BORROW_READ
+              - column:
+                  name: description
+                  value: "Xem, tìm kiếm và phân trang phiếu mượn"
+
+  # CHANGESET MỚI: gán BORROW_READ cho ROLE_ADMIN
+  - changeSet:
+      id: 17
+      author: dev
+      changes:
+        - sql:
+            sql: |
+              INSERT INTO role_permissions (role_id, permission_id)
+              SELECT r.id, p.id
+              FROM roles r
+              CROSS JOIN permissions p
+              WHERE r.name = 'ROLE_ADMIN'
+                AND p.name = 'BORROW_READ'
+                AND NOT EXISTS (
+                    SELECT 1
+                    FROM role_permissions rp
+                    WHERE rp.role_id = r.id
+                      AND rp.permission_id = p.id
+                );
